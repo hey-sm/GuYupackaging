@@ -32,7 +32,7 @@ const FormItemText: React.FC<IProps> = ({
       });
     }
     if (properties.regexs && properties.regexs.length > 0) {
-      const regexs: Rule[] = properties.regexs.map((v) => ({
+      const regexs: Rule[] = properties.regexs.map((v: any) => ({
         pattern: new RegExp(v.rule),
         message: v.message,
       }));

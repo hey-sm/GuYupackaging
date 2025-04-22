@@ -1,0 +1,19 @@
+<svg width="100%" height="200" viewBox="0 0 500 200" preserveAspectRatio="none">
+  <defs>
+    <radialGradient id="gradient-16" cx=".5" cy="1.25" r="1.15">
+      <stop offset="50%" stop-color="#000000"></stop>
+      <stop offset="56%" stop-color="#0a0a0a"></stop>
+      <stop offset="63%" stop-color="#262626"></stop>
+      <stop offset="69%" stop-color="#4f4f4f"></stop>
+      <stop offset="75%" stop-color="#808080"></stop>
+      <stop offset="81%" stop-color="#b1b1b1"></stop>
+      <stop offset="88%" stop-color="#dadada"></stop>
+      <stop offset="94%" stop-color="#f6f6f6"></stop>
+      <stop offset="100%" stop-color="#ffffff"></stop>
+    </radialGradient>
+    <mask id="mask-16">
+      <rect x="0" y="0" width="100%" height="200" fill="url(#gradient-16)"></rect>
+    </mask>
+  </defs>
+  <rect x="0" width="100%" height="200" fill="currentColor" mask="url(#mask-16)"></rect>
+</svg>
