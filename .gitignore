@@ -37,10 +37,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
-# Nx 相关缓存
-.nx/*
-.nx/workspace-data/
+.nx
 
 .pnp.*
 .yarn/*
