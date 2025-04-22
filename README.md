@@ -4,7 +4,9 @@
 
 ✨ monorepo的项目✨
 
-初始化按照文档进行
+初始化按照文档进行版本选择` nx: "19.3.0"`
+
+[Nx官网](https://17.nx.dev/getting-started/tutorials/react-monorepo-tutorial)
 
 创建libs
 
@@ -32,8 +34,8 @@ nx serve admin
  nx storybook features-components
 ````
 
+包管理工具使用`yarn3.x`
 
 安装依赖
-`npm install --legacy-peer-deps`
-
+`yarn`
 

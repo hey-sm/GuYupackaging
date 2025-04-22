@@ -182,44 +182,60 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".gitignore",
-        "hash": "13058679144993716528"
-      },
-      {
-        "file": "nx.json",
-        "hash": "6483045841896018479"
-      },
-      {
         "file": ".editorconfig",
         "hash": "5443105041930014821"
-      },
-      {
-        "file": "README.md",
-        "hash": "6837494529879883375"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "14688272390704683536"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "4934098906304722861"
-      },
-      {
-        "file": "yarn.lock",
-        "hash": "7624233767249996274"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
       },
       {
         "file": ".eslintignore",
         "hash": "7663861978715868291"
       },
       {
-        "file": "vitest.workspace.ts",
-        "hash": "7870362608836821141"
+        "file": ".eslintrc.json",
+        "hash": "18315524891129148814"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "13058679144993716528"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "14688272390704683536"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "4934098906304722861"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "5611575663710579895"
+      },
+      {
+        "file": ".yarn/plugins/@yarnpkg/plugin-interactive-tools.cjs",
+        "hash": "11136503031876747926"
+      },
+      {
+        "file": ".yarnrc.yml",
+        "hash": "16892933094638475179"
+      },
+      {
+        "file": "README.md",
+        "hash": "14440881704429208944"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "nx.json",
+        "hash": "9396881993290039785"
       },
       {
         "file": "package.json",
@@ -230,28 +246,12 @@
         "hash": "5913080905727570452"
       },
       {
-        "file": ".yarnrc.yml",
-        "hash": "16892933094638475179"
+        "file": "vitest.workspace.ts",
+        "hash": "7870362608836821141"
       },
       {
-        "file": "jest.preset.js",
-        "hash": "9430166341120122740"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "3494843969422251966"
-      },
-      {
-        "file": ".eslintrc.json",
-        "hash": "18315524891129148814"
-      },
-      {
-        "file": ".vscode/settings.json",
-        "hash": "5611575663710579895"
-      },
-      {
-        "file": ".yarn/plugins/@yarnpkg/plugin-interactive-tools.cjs",
-        "hash": "11136503031876747926"
+        "file": "yarn.lock",
+        "hash": "7624233767249996274"
       }
     ],
     "projectFileMap": {
@@ -1015,6 +1015,100 @@
             "npm:@vitejs/plugin-react",
             "npm:vite-plugin-dts",
             "npm:@nx/vite"
+          ]
+        }
+      ],
+      "admin": [
+        {
+          "file": "apps/admin/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/admin/index.html",
+          "hash": "9043941734586189845"
+        },
+        {
+          "file": "apps/admin/jest.config.ts",
+          "hash": "17486881110826544956"
+        },
+        {
+          "file": "apps/admin/postcss.config.js",
+          "hash": "2759402739052110475"
+        },
+        {
+          "file": "apps/admin/project.json",
+          "hash": "18208476474798616270"
+        },
+        {
+          "file": "apps/admin/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/admin/src/app/app.tsx",
+          "hash": "2445861800812094143",
+          "deps": [
+            "npm:react-quill",
+            "admin-shared",
+            "npm:antd",
+            "features-architecture",
+            "npm:moment",
+            "npm:react-activation",
+            "npm:react-router-dom",
+            "shared"
+          ]
+        },
+        {
+          "file": "apps/admin/src/app/authProvider.ts",
+          "hash": "7995624992476286462",
+          "deps": [
+            "admin-shared",
+            "features-architecture",
+            "npm:lodash-es",
+            "shared"
+          ]
+        },
+        {
+          "file": "apps/admin/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/admin/src/main.tsx",
+          "hash": "2745067394124757262",
+          "deps": [
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/admin/src/styles.scss",
+          "hash": "16893724619679396922"
+        },
+        {
+          "file": "apps/admin/tailwind.config.js",
+          "hash": "13090734457927965885",
+          "deps": [
+            "npm:@nx/react"
+          ]
+        },
+        {
+          "file": "apps/admin/tsconfig.app.json",
+          "hash": "7232119452847825095"
+        },
+        {
+          "file": "apps/admin/tsconfig.json",
+          "hash": "824604371006306276"
+        },
+        {
+          "file": "apps/admin/tsconfig.spec.json",
+          "hash": "11378287594513225419"
+        },
+        {
+          "file": "apps/admin/vite.config.ts",
+          "hash": "15462645565377061929",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite",
+            "npm:vite-plugin-windicss"
           ]
         }
       ],
@@ -7685,6 +7779,443 @@
           ]
         }
       ],
+      "shared": [
+        {
+          "file": "libs/shared/.babelrc",
+          "hash": "2946678488919325452"
+        },
+        {
+          "file": "libs/shared/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "libs/shared/README.md",
+          "hash": "11453672666776903667"
+        },
+        {
+          "file": "libs/shared/project.json",
+          "hash": "2214406144155872643"
+        },
+        {
+          "file": "libs/shared/src/index.ts",
+          "hash": "7559029326039270415"
+        },
+        {
+          "file": "libs/shared/src/lib/aliyun/AliyunOSSContext.tsx",
+          "hash": "910841375016185728",
+          "deps": [
+            "npm:antd",
+            "npm:axios",
+            "npm:react",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/aliyun/index.ts",
+          "hash": "2370792708052874106"
+        },
+        {
+          "file": "libs/shared/src/lib/aliyun/useAliyunOSSContext.ts",
+          "hash": "12684431183017019925",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/aliyun/useAliyunOSSUploadProps.ts",
+          "hash": "10976128164428794439",
+          "deps": [
+            "npm:antd",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/app-icons/icons-modal.tsx",
+          "hash": "11300562128091459359",
+          "deps": [
+            "npm:@ant-design/icons",
+            "npm:antd",
+            "npm:lodash-es",
+            "npm:react",
+            "npm:react-virtualized-auto-sizer",
+            "npm:react-window"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/app-icons/icons.json",
+          "hash": "12294178504800845642"
+        },
+        {
+          "file": "libs/shared/src/lib/app-icons/icons.tsx",
+          "hash": "5629159014151020280",
+          "deps": [
+            "npm:@ant-design/icons",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/app-icons/index.ts",
+          "hash": "8821676700110979677"
+        },
+        {
+          "file": "libs/shared/src/lib/app-icons/style.ts",
+          "hash": "12697502829454696006",
+          "deps": [
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/auth/index.ts",
+          "hash": "13400059467293846648",
+          "deps": [
+            "npm:lodash-es"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/components/ModalVideo/ModalVideo.tsx",
+          "hash": "919688660310535309",
+          "deps": [
+            "npm:@icon-park/react",
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/components/ModalVideo/index.ts",
+          "hash": "11038757065630924931"
+        },
+        {
+          "file": "libs/shared/src/lib/components/index.ts",
+          "hash": "11038757065630924931"
+        },
+        {
+          "file": "libs/shared/src/lib/draggable-modal/index.tsx",
+          "hash": "5109839412948634253",
+          "deps": [
+            "npm:@ant-design/icons",
+            "npm:antd",
+            "npm:react",
+            "npm:react-draggable",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/index.ts",
+          "hash": "15428022061062079207"
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/item/areas.tsx",
+          "hash": "836316424910375516",
+          "deps": [
+            "npm:antd",
+            "npm:rc-field-form",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/item/code.tsx",
+          "hash": "12820515998534041577",
+          "deps": [
+            "npm:antd",
+            "npm:rc-field-form",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/item/company.tsx",
+          "hash": "4639667552506167867",
+          "deps": [
+            "npm:antd",
+            "npm:lodash-es",
+            "npm:rc-field-form",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/item/date.tsx",
+          "hash": "8333416175267583368",
+          "deps": [
+            "npm:antd",
+            "npm:rc-field-form",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/item/department.tsx",
+          "hash": "16586080860428590613",
+          "deps": [
+            "npm:antd",
+            "npm:lodash-es",
+            "npm:rc-field-form",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/item/index.tsx",
+          "hash": "17038970132857995147",
+          "deps": [
+            "npm:antd",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/item/input.tsx",
+          "hash": "8452086984146667879",
+          "deps": [
+            "npm:antd",
+            "npm:rc-field-form",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/item/interface.d.ts",
+          "hash": "3844933413659352075"
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/item/number.tsx",
+          "hash": "18291279053004577467",
+          "deps": [
+            "npm:antd",
+            "npm:rc-field-form",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/item/password.tsx",
+          "hash": "2981666710570827373",
+          "deps": [
+            "npm:antd",
+            "npm:rc-field-form",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/item/radio.tsx",
+          "hash": "3726769585793730804",
+          "deps": [
+            "npm:antd",
+            "npm:rc-field-form",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/item/select.tsx",
+          "hash": "3037411961626568458",
+          "deps": [
+            "npm:antd",
+            "npm:rc-field-form",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/item/textarea.tsx",
+          "hash": "18189073652618689278",
+          "deps": [
+            "npm:antd",
+            "npm:rc-field-form",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/item/upload-img.tsx",
+          "hash": "9781283419963554833",
+          "deps": [
+            "npm:antd",
+            "npm:rc-field-form",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/item/upload.tsx",
+          "hash": "9771123041962434647",
+          "deps": [
+            "npm:antd",
+            "npm:rc-field-form",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/style.ts",
+          "hash": "10513114067628654105",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/upload-file/OssUploadFile.tsx",
+          "hash": "9120611938080543424",
+          "deps": [
+            "npm:@ant-design/icons",
+            "npm:antd",
+            "npm:nanoid",
+            "npm:react",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/upload-file/index.tsx",
+          "hash": "17328709818725377550",
+          "deps": [
+            "npm:@ant-design/icons",
+            "npm:antd",
+            "npm:lodash-es",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/dynamic-form-set/upload-img/index.tsx",
+          "hash": "1408638323238409185",
+          "deps": [
+            "npm:@ant-design/icons",
+            "npm:antd",
+            "npm:lodash-es",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/form-components/form-area-picker.tsx",
+          "hash": "12000618877921407020",
+          "deps": [
+            "npm:antd",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/form-components/form-color-picker.tsx",
+          "hash": "15949596238086072776",
+          "deps": [
+            "npm:antd",
+            "npm:react",
+            "npm:react-color"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/form-components/form-date-picker.tsx",
+          "hash": "9878176910822130448",
+          "deps": [
+            "npm:antd",
+            "npm:moment",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/form-components/form-icon-picker.tsx",
+          "hash": "5900623876708134325",
+          "deps": [
+            "npm:@ant-design/icons",
+            "npm:antd",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/form-components/form-menu-picker.tsx",
+          "hash": "18416212106310710257",
+          "deps": [
+            "npm:antd",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/form-components/form-select-multiple.tsx",
+          "hash": "11235659347694704055",
+          "deps": [
+            "npm:antd",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/form-components/form-user-picker.tsx",
+          "hash": "16521859613736755866",
+          "deps": [
+            "npm:antd",
+            "npm:react",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/form-components/index.ts",
+          "hash": "1798533926549707309"
+        },
+        {
+          "file": "libs/shared/src/lib/form-dynamic/DynamicFormPanel.tsx",
+          "hash": "8784486139187578681",
+          "deps": [
+            "npm:antd",
+            "npm:rc-field-form",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/form-dynamic/index.ts",
+          "hash": "204321557537799318"
+        },
+        {
+          "file": "libs/shared/src/lib/scroll-wrapper/index.tsx",
+          "hash": "5350605916923156712",
+          "deps": [
+            "npm:lodash-es",
+            "npm:rc-scrollbars",
+            "npm:react",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/tree-card/index.tsx",
+          "hash": "343086938920489276",
+          "deps": [
+            "npm:antd",
+            "npm:lodash-es",
+            "npm:rc-scrollbars",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/tree-card/style.ts",
+          "hash": "1574955582745696014",
+          "deps": [
+            "npm:antd",
+            "npm:styled-components"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/tree/index.tsx",
+          "hash": "9978891109541260010",
+          "deps": [
+            "npm:antd",
+            "npm:react"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/utils/index.ts",
+          "hash": "18195726226923960284"
+        },
+        {
+          "file": "libs/shared/src/lib/utils/parseServerResources.ts",
+          "hash": "5802691978175854037"
+        },
+        {
+          "file": "libs/shared/tsconfig.json",
+          "hash": "12937361759397702261"
+        },
+        {
+          "file": "libs/shared/tsconfig.lib.json",
+          "hash": "10729871428936955739"
+        },
+        {
+          "file": "libs/shared/tsconfig.spec.json",
+          "hash": "15943385144407153049"
+        },
+        {
+          "file": "libs/shared/vite.config.ts",
+          "hash": "16041967098741003676",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
       "features-architecture": [
         {
           "file": "libs/features/architecture/.babelrc",
@@ -8532,537 +9063,6 @@
             "npm:@vitejs/plugin-react",
             "npm:vite-plugin-dts",
             "npm:@nx/vite"
-          ]
-        }
-      ],
-      "shared": [
-        {
-          "file": "libs/shared/.babelrc",
-          "hash": "2946678488919325452"
-        },
-        {
-          "file": "libs/shared/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "libs/shared/README.md",
-          "hash": "11453672666776903667"
-        },
-        {
-          "file": "libs/shared/project.json",
-          "hash": "2214406144155872643"
-        },
-        {
-          "file": "libs/shared/src/index.ts",
-          "hash": "7559029326039270415"
-        },
-        {
-          "file": "libs/shared/src/lib/aliyun/AliyunOSSContext.tsx",
-          "hash": "910841375016185728",
-          "deps": [
-            "npm:antd",
-            "npm:axios",
-            "npm:react",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/aliyun/index.ts",
-          "hash": "2370792708052874106"
-        },
-        {
-          "file": "libs/shared/src/lib/aliyun/useAliyunOSSContext.ts",
-          "hash": "12684431183017019925",
-          "deps": [
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/aliyun/useAliyunOSSUploadProps.ts",
-          "hash": "10976128164428794439",
-          "deps": [
-            "npm:antd",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/app-icons/icons-modal.tsx",
-          "hash": "11300562128091459359",
-          "deps": [
-            "npm:@ant-design/icons",
-            "npm:antd",
-            "npm:lodash-es",
-            "npm:react",
-            "npm:react-virtualized-auto-sizer",
-            "npm:react-window"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/app-icons/icons.json",
-          "hash": "12294178504800845642"
-        },
-        {
-          "file": "libs/shared/src/lib/app-icons/icons.tsx",
-          "hash": "5629159014151020280",
-          "deps": [
-            "npm:@ant-design/icons",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/app-icons/index.ts",
-          "hash": "8821676700110979677"
-        },
-        {
-          "file": "libs/shared/src/lib/app-icons/style.ts",
-          "hash": "12697502829454696006",
-          "deps": [
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/auth/index.ts",
-          "hash": "13400059467293846648",
-          "deps": [
-            "npm:lodash-es"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/components/ModalVideo/ModalVideo.tsx",
-          "hash": "919688660310535309",
-          "deps": [
-            "npm:@icon-park/react",
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/components/ModalVideo/index.ts",
-          "hash": "11038757065630924931"
-        },
-        {
-          "file": "libs/shared/src/lib/components/index.ts",
-          "hash": "11038757065630924931"
-        },
-        {
-          "file": "libs/shared/src/lib/draggable-modal/index.tsx",
-          "hash": "5109839412948634253",
-          "deps": [
-            "npm:@ant-design/icons",
-            "npm:antd",
-            "npm:react",
-            "npm:react-draggable",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/index.ts",
-          "hash": "15428022061062079207"
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/item/areas.tsx",
-          "hash": "836316424910375516",
-          "deps": [
-            "npm:antd",
-            "npm:rc-field-form",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/item/code.tsx",
-          "hash": "12820515998534041577",
-          "deps": [
-            "npm:antd",
-            "npm:rc-field-form",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/item/company.tsx",
-          "hash": "4639667552506167867",
-          "deps": [
-            "npm:antd",
-            "npm:lodash-es",
-            "npm:rc-field-form",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/item/date.tsx",
-          "hash": "8333416175267583368",
-          "deps": [
-            "npm:antd",
-            "npm:rc-field-form",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/item/department.tsx",
-          "hash": "16586080860428590613",
-          "deps": [
-            "npm:antd",
-            "npm:lodash-es",
-            "npm:rc-field-form",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/item/index.tsx",
-          "hash": "17038970132857995147",
-          "deps": [
-            "npm:antd",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/item/input.tsx",
-          "hash": "8452086984146667879",
-          "deps": [
-            "npm:antd",
-            "npm:rc-field-form",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/item/interface.d.ts",
-          "hash": "3844933413659352075"
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/item/number.tsx",
-          "hash": "18291279053004577467",
-          "deps": [
-            "npm:antd",
-            "npm:rc-field-form",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/item/password.tsx",
-          "hash": "2981666710570827373",
-          "deps": [
-            "npm:antd",
-            "npm:rc-field-form",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/item/radio.tsx",
-          "hash": "3726769585793730804",
-          "deps": [
-            "npm:antd",
-            "npm:rc-field-form",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/item/select.tsx",
-          "hash": "3037411961626568458",
-          "deps": [
-            "npm:antd",
-            "npm:rc-field-form",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/item/textarea.tsx",
-          "hash": "18189073652618689278",
-          "deps": [
-            "npm:antd",
-            "npm:rc-field-form",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/item/upload-img.tsx",
-          "hash": "9781283419963554833",
-          "deps": [
-            "npm:antd",
-            "npm:rc-field-form",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/item/upload.tsx",
-          "hash": "9771123041962434647",
-          "deps": [
-            "npm:antd",
-            "npm:rc-field-form",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/style.ts",
-          "hash": "10513114067628654105",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/upload-file/OssUploadFile.tsx",
-          "hash": "9120611938080543424",
-          "deps": [
-            "npm:@ant-design/icons",
-            "npm:antd",
-            "npm:nanoid",
-            "npm:react",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/upload-file/index.tsx",
-          "hash": "17328709818725377550",
-          "deps": [
-            "npm:@ant-design/icons",
-            "npm:antd",
-            "npm:lodash-es",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/dynamic-form-set/upload-img/index.tsx",
-          "hash": "1408638323238409185",
-          "deps": [
-            "npm:@ant-design/icons",
-            "npm:antd",
-            "npm:lodash-es",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/form-components/form-area-picker.tsx",
-          "hash": "12000618877921407020",
-          "deps": [
-            "npm:antd",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/form-components/form-color-picker.tsx",
-          "hash": "15949596238086072776",
-          "deps": [
-            "npm:antd",
-            "npm:react",
-            "npm:react-color"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/form-components/form-date-picker.tsx",
-          "hash": "9878176910822130448",
-          "deps": [
-            "npm:antd",
-            "npm:moment",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/form-components/form-icon-picker.tsx",
-          "hash": "5900623876708134325",
-          "deps": [
-            "npm:@ant-design/icons",
-            "npm:antd",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/form-components/form-menu-picker.tsx",
-          "hash": "18416212106310710257",
-          "deps": [
-            "npm:antd",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/form-components/form-select-multiple.tsx",
-          "hash": "11235659347694704055",
-          "deps": [
-            "npm:antd",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/form-components/form-user-picker.tsx",
-          "hash": "16521859613736755866",
-          "deps": [
-            "npm:antd",
-            "npm:react",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/form-components/index.ts",
-          "hash": "1798533926549707309"
-        },
-        {
-          "file": "libs/shared/src/lib/form-dynamic/DynamicFormPanel.tsx",
-          "hash": "8784486139187578681",
-          "deps": [
-            "npm:antd",
-            "npm:rc-field-form",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/form-dynamic/index.ts",
-          "hash": "204321557537799318"
-        },
-        {
-          "file": "libs/shared/src/lib/scroll-wrapper/index.tsx",
-          "hash": "5350605916923156712",
-          "deps": [
-            "npm:lodash-es",
-            "npm:rc-scrollbars",
-            "npm:react",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/tree-card/index.tsx",
-          "hash": "343086938920489276",
-          "deps": [
-            "npm:antd",
-            "npm:lodash-es",
-            "npm:rc-scrollbars",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/tree-card/style.ts",
-          "hash": "1574955582745696014",
-          "deps": [
-            "npm:antd",
-            "npm:styled-components"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/tree/index.tsx",
-          "hash": "9978891109541260010",
-          "deps": [
-            "npm:antd",
-            "npm:react"
-          ]
-        },
-        {
-          "file": "libs/shared/src/lib/utils/index.ts",
-          "hash": "18195726226923960284"
-        },
-        {
-          "file": "libs/shared/src/lib/utils/parseServerResources.ts",
-          "hash": "5802691978175854037"
-        },
-        {
-          "file": "libs/shared/tsconfig.json",
-          "hash": "12937361759397702261"
-        },
-        {
-          "file": "libs/shared/tsconfig.lib.json",
-          "hash": "10729871428936955739"
-        },
-        {
-          "file": "libs/shared/tsconfig.spec.json",
-          "hash": "15943385144407153049"
-        },
-        {
-          "file": "libs/shared/vite.config.ts",
-          "hash": "16041967098741003676",
-          "deps": [
-            "npm:vite",
-            "npm:@vitejs/plugin-react",
-            "npm:@nx/vite"
-          ]
-        }
-      ],
-      "admin": [
-        {
-          "file": "apps/admin/.eslintrc.json",
-          "hash": "11012487992710232822"
-        },
-        {
-          "file": "apps/admin/index.html",
-          "hash": "9043941734586189845"
-        },
-        {
-          "file": "apps/admin/jest.config.ts",
-          "hash": "17486881110826544956"
-        },
-        {
-          "file": "apps/admin/postcss.config.js",
-          "hash": "2759402739052110475"
-        },
-        {
-          "file": "apps/admin/project.json",
-          "hash": "18208476474798616270"
-        },
-        {
-          "file": "apps/admin/public/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "apps/admin/src/app/app.tsx",
-          "hash": "2445861800812094143",
-          "deps": [
-            "npm:react-quill",
-            "admin-shared",
-            "npm:antd",
-            "features-architecture",
-            "npm:moment",
-            "npm:react-activation",
-            "npm:react-router-dom",
-            "shared"
-          ]
-        },
-        {
-          "file": "apps/admin/src/app/authProvider.ts",
-          "hash": "7995624992476286462",
-          "deps": [
-            "admin-shared",
-            "features-architecture",
-            "npm:lodash-es",
-            "shared"
-          ]
-        },
-        {
-          "file": "apps/admin/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/admin/src/main.tsx",
-          "hash": "2745067394124757262",
-          "deps": [
-            "npm:react-dom"
-          ]
-        },
-        {
-          "file": "apps/admin/src/styles.scss",
-          "hash": "16893724619679396922"
-        },
-        {
-          "file": "apps/admin/tailwind.config.js",
-          "hash": "13090734457927965885",
-          "deps": [
-            "npm:@nx/react"
-          ]
-        },
-        {
-          "file": "apps/admin/tsconfig.app.json",
-          "hash": "7232119452847825095"
-        },
-        {
-          "file": "apps/admin/tsconfig.json",
-          "hash": "824604371006306276"
-        },
-        {
-          "file": "apps/admin/tsconfig.spec.json",
-          "hash": "11378287594513225419"
-        },
-        {
-          "file": "apps/admin/vite.config.ts",
-          "hash": "15462645565377061929",
-          "deps": [
-            "npm:vite",
-            "npm:@vitejs/plugin-react",
-            "npm:@nx/vite",
-            "npm:vite-plugin-windicss"
           ]
         }
       ]
