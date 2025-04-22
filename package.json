@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start:admin": "nx serve admin"
+    "start:admin": "nx serve admin",
+    "start:f-cmpt": "nx storybook features-components"
   },
   "private": true,
   "dependencies": {
