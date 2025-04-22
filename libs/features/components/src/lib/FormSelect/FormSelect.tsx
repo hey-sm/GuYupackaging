@@ -26,7 +26,7 @@ export const FormSelect = ({
   const validateCount = (rule: any, values: any) => {
     if (!values) return Promise.resolve();
     if (maxCount && values.length > maxCount) {
-      message.warn(`最多选择${maxCount}个标签`);
+      message.warning(`最多选择${maxCount}个标签`);
       setFields(values);
       return Promise.resolve();
     }

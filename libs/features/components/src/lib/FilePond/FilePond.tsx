@@ -94,7 +94,7 @@ const FilePondComponent = () => {
         );
 
         if (currentTotalSize > validateSize.maxTotalFileSize) {
-          message.warn(validateSize.labelMaxTotalFileSizeExceeded);
+          message.warning(validateSize.labelMaxTotalFileSizeExceeded);
           return false;
         }
       }
@@ -111,7 +111,7 @@ const FilePondComponent = () => {
         return true;
       }
 
-      message.warn(`最大上传数量为${maxFileCount ?? 1}`);
+      message.warning(`最大上传数量为${maxFileCount ?? 1}`);
 
       return false;
     },

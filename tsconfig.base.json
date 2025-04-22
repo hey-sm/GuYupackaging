@@ -16,6 +16,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@org/features/architecture": ["libs/features/architecture/src/index.ts"],
       "@org/features/components": ["libs/features/components/src/index.ts"],
       "@org/shared": ["libs/shared/src/index.ts"]
     }
