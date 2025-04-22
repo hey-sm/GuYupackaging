@@ -1,5 +1,5 @@
 import { CloseSmall } from '@icon-park/react';
-import { useAuthStore } from 'admin-shared';
+import { useAuthStore } from '../../auth/auth.store';
 import { Tabs } from 'antd';
 import { Tab } from 'rc-tabs/lib/interface';
 import { useCallback, useMemo } from 'react';
@@ -44,14 +44,13 @@ export const TagsView = () => {
 
   const handleChange = useCallback(
     (key: string) => {
-      const info =  (infoList ?? []).find((item:any) => item?.path === key);
+      const info = (infoList ?? []).find((item: any) => item?.path === key);
       if (info) {
-        const mode = info?.state?.mode === 'audit' ? '?type=audit' : ''
-        navigate(key+mode, { replace: true, state:{ ...info.state } });
+        const mode = info?.state?.mode === 'audit' ? '?type=audit' : '';
+        navigate(key + mode, { replace: true, state: { ...info.state } });
       } else {
         navigate({ pathname: key }, { replace: true });
       }
-
     },
     [navigate]
   );

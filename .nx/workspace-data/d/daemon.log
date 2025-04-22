@@ -798,3 +798,115 @@
 [NX Daemon Server] - 2025-04-22T15:10:08.875Z - Done responding to the client handleGlob
 [NX Daemon Server] - 2025-04-22T15:10:08.876Z - Handled GLOB. Handling time: 3. Response time: 7.
 [NX Daemon Server] - 2025-04-22T15:10:13.139Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-04-22T15:10:38.170Z - Started listening on: \\.\pipe\nx\C:\Users\admin\AppData\Local\Temp\8f2c1c29b7439ef1a730\d.sock
+[NX Daemon Server] - 2025-04-22T15:10:38.178Z - [WATCHER]: Subscribed to changes within: D:\myproject\org (native)
+[NX Daemon Server] - 2025-04-22T15:10:38.184Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-04-22T15:10:38.189Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-04-22T15:10:38.189Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-04-22T15:10:38.193Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-04-22T15:10:38.689Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-04-22T15:10:38.689Z - [REQUEST]: 
+[NX Daemon Server] - 2025-04-22T15:10:38.689Z - [REQUEST]: 
+[NX Daemon Server] - 2025-04-22T15:10:45.361Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-04-22T15:10:45.364Z - Time taken for 'total for creating and serializing project graph' 7167.961700000102ms
+[NX Daemon Server] - 2025-04-22T15:10:45.366Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-04-22T15:10:45.366Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 7169. Response time: 5.
+[NX Daemon Server] - 2025-04-22T15:10:45.580Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-04-22T15:10:45.581Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-04-22T15:10:45.581Z - Handled HASH_TASKS. Handling time: 27. Response time: 1.
+[NX Daemon Server] - 2025-04-22T15:11:14.254Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-04-22T15:11:14.255Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-04-22T15:11:14.255Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-04-22T15:11:14.257Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-04-22T15:11:14.258Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-04-22T15:11:14.259Z - Time taken for 'total for creating and serializing project graph' 0.2979999999515712ms
+[NX Daemon Server] - 2025-04-22T15:11:14.259Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-04-22T15:11:14.259Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2025-04-22T15:11:14.404Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-04-22T15:11:14.404Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-04-22T15:11:14.404Z - Handled HASH_TASKS. Handling time: 9. Response time: 0.
+[NX Daemon Server] - 2025-04-22T15:15:14.724Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-04-22T15:15:14.726Z - [WATCHER]: apps/admin/src/styles.scss was modified
+[NX Daemon Server] - 2025-04-22T15:15:14.833Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-04-22T15:15:14.833Z - [REQUEST]: apps/admin/src/styles.scss
+[NX Daemon Server] - 2025-04-22T15:15:14.833Z - [REQUEST]: 
+[NX Daemon Server] - 2025-04-22T15:15:15.234Z - Time taken for 'hash changed files from watcher' 5.905400000046939ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2025-04-22T15:15:15.828Z - Time taken for 'build-project-configs' 746.8915999999736ms
+[NX Daemon Server] - 2025-04-22T15:15:36.864Z - [WATCHER]: apps/admin/src/main.tsx was modified
+[NX Daemon Server] - 2025-04-22T15:15:36.865Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-04-22T15:15:37.093Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-04-22T15:15:37.093Z - [REQUEST]: apps/admin/src/main.tsx
+[NX Daemon Server] - 2025-04-22T15:15:37.093Z - [REQUEST]: 
+[NX Daemon Server] - 2025-04-22T15:15:37.220Z - Time taken for 'hash changed files from watcher' 19.69650000007823ms
+[NX Daemon Server] - 2025-04-22T15:15:37.476Z - Time taken for 'build-project-configs' 148.57219999982044ms
+[NX Daemon Server] - 2025-04-22T15:15:37.479Z - [WATCHER]: apps/admin/src/main.tsx was modified
+[NX Daemon Server] - 2025-04-22T15:15:37.480Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-04-22T15:15:37.894Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-04-22T15:15:37.894Z - [REQUEST]: apps/admin/src/main.tsx
+[NX Daemon Server] - 2025-04-22T15:15:37.894Z - [REQUEST]: 
+[NX Daemon Server] - 2025-04-22T15:15:38.026Z - Time taken for 'hash changed files from watcher' 3.4496999999973923ms
+[NX Daemon Server] - 2025-04-22T15:18:31.427Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-04-22T15:18:31.431Z - [WATCHER]: Stopping the watcher for D:\myproject\org (sources)
+[NX Daemon Server] - 2025-04-22T15:18:31.431Z - [WATCHER]: Stopping the watcher for D:\myproject\org (outputs)
+[NX Daemon Server] - 2025-04-22T15:18:31.431Z - Server stopped because: "LOCK_FILES_CHANGED"
+[NX Daemon Server] - 2025-04-22T15:34:26.013Z - Started listening on: \\.\pipe\nx\C:\Users\admin\AppData\Local\Temp\8f2c1c29b7439ef1a730\d.sock
+[NX Daemon Server] - 2025-04-22T15:34:26.024Z - [WATCHER]: Subscribed to changes within: d:\myproject\org (native)
+[NX Daemon Server] - 2025-04-22T15:34:26.029Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-04-22T15:34:26.034Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-04-22T15:35:05.551Z - [WATCHER]: libs/admin-shared/src/hooks/useCurrentMenu.ts was modified
+[NX Daemon Server] - 2025-04-22T15:35:05.552Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-04-22T15:35:09.571Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-04-22T15:35:09.571Z - [REQUEST]: libs/admin-shared/src/hooks/useCurrentMenu.ts
+[NX Daemon Server] - 2025-04-22T15:35:09.571Z - [REQUEST]: 
+[NX Daemon Server] - 2025-04-22T15:35:34.586Z - Time taken for 'Load Nx Plugin: d:\myproject\org\node_modules\nx\src\plugins\project-json\build-nodes\package-json-next-to-project-json' 3896.2598999999464ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2025-04-22T15:35:46.591Z - Time taken for 'read cache' 14.233599999919534ms
+[NX Daemon Server] - 2025-04-22T15:35:47.658Z - Time taken for 'build-project-configs' 37033.08059999999ms
+[NX Daemon Server] - 2025-04-22T15:36:29.703Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-04-22T15:36:29.706Z - [WATCHER]: libs/admin-shared/src/components/app-layout/AppLayoutSider.tsx was modified
+[NX Daemon Server] - 2025-04-22T15:36:29.918Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-04-22T15:36:29.918Z - [REQUEST]: libs/admin-shared/src/components/app-layout/AppLayoutSider.tsx
+[NX Daemon Server] - 2025-04-22T15:36:29.918Z - [REQUEST]: 
+[NX Daemon Server] - 2025-04-22T15:36:30.239Z - Time taken for 'hash changed files from watcher' 7.205500000156462ms
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[NX Daemon Server] - 2025-04-22T15:36:34.280Z - Time taken for 'build-project-configs' 4005.3633000003174ms
+[NX Daemon Server] - 2025-04-22T15:38:20.906Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-04-22T15:38:20.908Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-04-22T15:38:20.908Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-04-22T15:38:20.913Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2025-04-22T15:38:20.914Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2025-04-22T15:38:20.917Z - Time taken for 'total for creating and serializing project graph' 0.9273000000976026ms
+[NX Daemon Server] - 2025-04-22T15:38:20.917Z - Done responding to the client project-graph
+[NX Daemon Server] - 2025-04-22T15:38:20.917Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 1. Response time: 3.
+[NX Daemon Server] - 2025-04-22T15:38:21.682Z - [REQUEST]: Responding to the client. handleHashTasks
+[NX Daemon Server] - 2025-04-22T15:38:21.682Z - Done responding to the client handleHashTasks
+[NX Daemon Server] - 2025-04-22T15:38:21.682Z - Handled HASH_TASKS. Handling time: 34. Response time: 0.
+[NX Daemon Server] - 2025-04-22T15:38:57.870Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-04-22T15:38:57.873Z - [WATCHER]: libs/admin-shared/src/components/app-layout/TagsView.tsx was modified
+[NX Daemon Server] - 2025-04-22T15:38:58.006Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-04-22T15:38:58.006Z - [REQUEST]: libs/admin-shared/src/components/app-layout/TagsView.tsx
+[NX Daemon Server] - 2025-04-22T15:38:58.006Z - [REQUEST]: 
+[NX Daemon Server] - 2025-04-22T15:38:58.559Z - Time taken for 'hash changed files from watcher' 9.45589999994263ms
+[NX Daemon Server] - 2025-04-22T15:38:59.046Z - Time taken for 'build-project-configs' 634.5438999999315ms
+[NX Daemon Server] - 2025-04-22T15:39:23.086Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-04-22T15:39:23.089Z - [WATCHER]: libs/admin-shared/src/components/app-layout/AppLayoutHeader.tsx was modified
+[NX Daemon Server] - 2025-04-22T15:39:23.308Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-04-22T15:39:23.308Z - [REQUEST]: libs/admin-shared/src/components/app-layout/AppLayoutHeader.tsx
+[NX Daemon Server] - 2025-04-22T15:39:23.308Z - [REQUEST]: 
+[NX Daemon Server] - 2025-04-22T15:39:23.499Z - Time taken for 'hash changed files from watcher' 5.21929999999702ms
+[NX Daemon Server] - 2025-04-22T15:39:23.927Z - Time taken for 'build-project-configs' 243.20520000020042ms
+[NX Daemon Server] - 2025-04-22T15:39:28.545Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-04-22T15:39:28.550Z - [WATCHER]: libs/admin-shared/src/components/app-layout/AppLayoutHeader.tsx was modified
+[NX Daemon Server] - 2025-04-22T15:39:28.967Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-04-22T15:39:28.967Z - [REQUEST]: libs/admin-shared/src/components/app-layout/AppLayoutHeader.tsx
+[NX Daemon Server] - 2025-04-22T15:39:28.967Z - [REQUEST]: 
+[NX Daemon Server] - 2025-04-22T15:39:29.171Z - Time taken for 'hash changed files from watcher' 5.123300000093877ms
+[NX Daemon Server] - 2025-04-22T15:39:29.518Z - Time taken for 'build-project-configs' 242.81279999995604ms
+[NX Daemon Server] - 2025-04-22T15:39:43.567Z - [WATCHER]: libs/admin-shared/src/components/app-layout/userInfo.tsx was modified
+[NX Daemon Server] - 2025-04-22T15:39:43.568Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2025-04-22T15:39:44.386Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2025-04-22T15:39:44.386Z - [REQUEST]: libs/admin-shared/src/components/app-layout/userInfo.tsx
+[NX Daemon Server] - 2025-04-22T15:39:44.386Z - [REQUEST]: 
+[NX Daemon Server] - 2025-04-22T15:39:44.606Z - Time taken for 'hash changed files from watcher' 6.381400000303984ms
+[NX Daemon Server] - 2025-04-22T15:39:45.047Z - Time taken for 'build-project-configs' 263.9618999999948ms

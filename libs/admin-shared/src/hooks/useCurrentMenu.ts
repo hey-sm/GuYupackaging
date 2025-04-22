@@ -1,4 +1,4 @@
-import { useGetMenus } from 'features/new-architecture';
+import { useGetMenus } from '@org/features/architecture';
 import { cloneDeep, last } from 'lodash-es';
 import { useMemo } from 'react';
 import { useLocation, useMatches } from 'react-router-dom';

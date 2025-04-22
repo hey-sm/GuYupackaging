@@ -1,6 +1,6 @@
 import { Layout, Menu, Skeleton } from 'antd';
-import { ItemType, SubMenuType } from 'antd/lib/menu/hooks/useItems';
-import { useGetMenus } from 'features/new-architecture';
+import { ItemType, SubMenuType } from 'antd/lib/menu/interface';
+import { useGetMenus } from '@org/features/architecture';
 import { cloneDeep } from 'lodash-es';
 import { Scrollbars } from 'rc-scrollbars';
 import React, { useCallback, useMemo } from 'react';

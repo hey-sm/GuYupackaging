@@ -524,6 +524,7 @@
             "inputs": [
               "default",
               "^production",
+              "{workspaceRoot}\\jest.preset.js",
               {
                 "externalDependencies": [
                   "jest"
@@ -761,6 +762,15 @@
         "version": "1.1.2",
         "packageName": "@ant-design/react-slick",
         "hash": "e3f310ceb003311a72bcade5f2171dcd05130ead2c859ebd7111b2c324b079f146fb6f2770b07a3588457fab80c6132b5ec41da4e78f2f2f2944f913c36958c2"
+      }
+    },
+    "npm:@antfu/utils": {
+      "type": "npm",
+      "name": "npm:@antfu/utils",
+      "data": {
+        "version": "0.7.10",
+        "packageName": "@antfu/utils",
+        "hash": "b93dd9e2c7e96ae6dca8a07c1fc5e7165ea9c7a89e78ecb75959bc9a8e769d3f565aea1b5c43db7374dd1f405cc277b6d14d85f884886f9d424dd6144d9203f2"
       }
     },
     "npm:@aw-web-design/x-default-browser": {
@@ -1877,6 +1887,15 @@
         "version": "0.2.3",
         "packageName": "@bcoe/v8-coverage",
         "hash": "850f9305536d0f2bd13e9e0881cb5f02e4f93fad1189f7b2d4bebf694e3206924eadee1068130d43c11b750efcc9405f88a8e42ef098b6d75239c0f047de1a27"
+      }
+    },
+    "npm:@bufbuild/protobuf": {
+      "type": "npm",
+      "name": "npm:@bufbuild/protobuf",
+      "data": {
+        "version": "2.2.5",
+        "packageName": "@bufbuild/protobuf",
+        "hash": "4394be1cf132bcf0f7afe2abe345b399a49958227b9205fc02a33bf2667bfea00896f66922f2428a9c34c79b05e90a83a98f5dbeb54be876f9196a5f9183a63c"
       }
     },
     "npm:@chakra-ui/react-use-callback-ref": {
@@ -7162,6 +7181,24 @@
         "hash": "e9e5f5d6bd9980ba77f133599fd7c96f590391e49acf92163907318894daa5751d85093d392ae13da888765b80c502125ed9c50534414f090c920165b3e5e917"
       }
     },
+    "npm:@windicss/config": {
+      "type": "npm",
+      "name": "npm:@windicss/config",
+      "data": {
+        "version": "1.9.4",
+        "packageName": "@windicss/config",
+        "hash": "8456c8e996df8c23de43ca8c79aa58df76bb0f4262ffff2041a705854cb47ba2c976e43bf85c042bd0d97256794bf1c5d8bf94ad21ec345ed2bf8e7901b515e9"
+      }
+    },
+    "npm:@windicss/plugin-utils": {
+      "type": "npm",
+      "name": "npm:@windicss/plugin-utils",
+      "data": {
+        "version": "1.9.4",
+        "packageName": "@windicss/plugin-utils",
+        "hash": "fab9a11aa0fe6852c7bd1977637becb36f2405dd773bb5c62215002885fc2dbf1fdcefe5233a52fd82c9028c3d212cebf1635177c597d002a9207572b67c8d43"
+      }
+    },
     "npm:@xobotyi/scrollbar-width": {
       "type": "npm",
       "name": "npm:@xobotyi/scrollbar-width",
@@ -8260,6 +8297,15 @@
         "hash": "9ba4dc58ce86300c862bffc3ae91f00b2a03b01ee07f3564beeeaf82aa243b8b03ba53f123b0b842c190d4399b94697970c8e7cf7b1ea44b61aa28c3526a4449"
       }
     },
+    "npm:buffer-builder": {
+      "type": "npm",
+      "name": "npm:buffer-builder",
+      "data": {
+        "version": "0.2.0",
+        "packageName": "buffer-builder",
+        "hash": "4d8215a03dbb193a3417bcd6057e324d4b7accabb6d3db5f9b3047fd4dd314814d8e7d026a0eebac7dc3cf24420f024e545f2d3932fdf32373af27b5f03b8e5b"
+      }
+    },
     "npm:buffer-crc32": {
       "type": "npm",
       "name": "npm:buffer-crc32",
@@ -8789,6 +8835,15 @@
         "version": "2.0.20",
         "packageName": "colorette",
         "hash": "0c016fea2b91b733eb9f4bcdb580018f52c0bc0979443dad930e5037a968237ac53d9beb98e218d2e9235834f8eebce7f8e080422d6194e957454255bde71d3d"
+      }
+    },
+    "npm:colorjs.io": {
+      "type": "npm",
+      "name": "npm:colorjs.io",
+      "data": {
+        "version": "0.5.2",
+        "packageName": "colorjs.io",
+        "hash": "f4ad8a0ead4e7eb74612a5fed9ae999201116b215b2eac70660c1f643e21980922741641209bdbd010723923762e8e80bd499250acf7505605309f01b76f53fa"
       }
     },
     "npm:columnify": {
@@ -12101,6 +12156,15 @@
         "version": "9.0.21",
         "packageName": "immer",
         "hash": "70e3c274165995352f6936695f0ef4723c52c92c92dd0e9afdfe008175af39fa28e76aafb3a2ca9d57d1fb8f796efc4dd1e1cc36f18d33fa5b74f3dfb0375432"
+      }
+    },
+    "npm:immutable": {
+      "type": "npm",
+      "name": "npm:immutable",
+      "data": {
+        "version": "5.1.1",
+        "packageName": "immutable",
+        "hash": "02f8c8a106710827cf349426901257d8437c535c463f7e8680edc95c6e0c8a9720aa6fedeb09eac560ec0dad5a38e7e1d17f696bdd91c0c5c9758c53ada38fc0"
       }
     },
     "npm:import-fresh": {
@@ -17476,6 +17540,15 @@
         "hash": "bc334edef1bb8bbf56590b0b25734ba0deaf8825b703256a93714308ea36dff8a11d25533671adf8e104e5e8f256aa6fdfe39b2e248cdbd7a5f90c260acbbd1b"
       }
     },
+    "npm:rxjs@7.8.2": {
+      "type": "npm",
+      "name": "npm:rxjs@7.8.2",
+      "data": {
+        "version": "7.8.2",
+        "packageName": "rxjs",
+        "hash": "2f233d7c832a6c255dabe0759014d7d9b1c9f1cb2f2f0d59690fd11c883c9826ea35a51740c06ab45b6ade0d9087bde9192f165cba20b6730d344b831ef80744"
+      }
+    },
     "npm:safe-array-concat": {
       "type": "npm",
       "name": "npm:safe-array-concat",
@@ -17537,6 +17610,195 @@
         "version": "2.1.2",
         "packageName": "safer-buffer",
         "hash": "cab8f25ae6f1434abee8d80023d7e72b598cf1327164ddab31003c51215526801e40b66c5e65d658a0af1e9d6478cadcb4c745f4bd6751f97d8644786c0978b0"
+      }
+    },
+    "npm:sass-embedded-android-arm64@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-android-arm64@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-android-arm64",
+        "hash": "1216696281356753833"
+      }
+    },
+    "npm:sass-embedded-android-arm@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-android-arm@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-android-arm",
+        "hash": "5409919160619828031"
+      }
+    },
+    "npm:sass-embedded-android-ia32@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-android-ia32@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-android-ia32",
+        "hash": "14581989435450353038"
+      }
+    },
+    "npm:sass-embedded-android-riscv64@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-android-riscv64@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-android-riscv64",
+        "hash": "13409085085857137324"
+      }
+    },
+    "npm:sass-embedded-android-x64@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-android-x64@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-android-x64",
+        "hash": "3560391732350294867"
+      }
+    },
+    "npm:sass-embedded-darwin-arm64@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-darwin-arm64@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-darwin-arm64",
+        "hash": "4542690157434110016"
+      }
+    },
+    "npm:sass-embedded-darwin-x64@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-darwin-x64@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-darwin-x64",
+        "hash": "2312147412314745688"
+      }
+    },
+    "npm:sass-embedded-linux-arm64@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-arm64@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-linux-arm64",
+        "hash": "2480833236146881196"
+      }
+    },
+    "npm:sass-embedded-linux-arm@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-arm@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-linux-arm",
+        "hash": "16302423333918231131"
+      }
+    },
+    "npm:sass-embedded-linux-ia32@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-ia32@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-linux-ia32",
+        "hash": "16157258279232415043"
+      }
+    },
+    "npm:sass-embedded-linux-musl-arm64@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-musl-arm64@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-linux-musl-arm64",
+        "hash": "6916712646683601289"
+      }
+    },
+    "npm:sass-embedded-linux-musl-arm@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-musl-arm@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-linux-musl-arm",
+        "hash": "10212318040146106823"
+      }
+    },
+    "npm:sass-embedded-linux-musl-ia32@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-musl-ia32@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-linux-musl-ia32",
+        "hash": "47745995480657517"
+      }
+    },
+    "npm:sass-embedded-linux-musl-riscv64@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-musl-riscv64@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-linux-musl-riscv64",
+        "hash": "70002247682872089"
+      }
+    },
+    "npm:sass-embedded-linux-musl-x64@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-musl-x64@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-linux-musl-x64",
+        "hash": "5222890040482447009"
+      }
+    },
+    "npm:sass-embedded-linux-riscv64@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-riscv64@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-linux-riscv64",
+        "hash": "16929377175942889085"
+      }
+    },
+    "npm:sass-embedded-linux-x64@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-linux-x64@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-linux-x64",
+        "hash": "1528629204159572492"
+      }
+    },
+    "npm:sass-embedded-win32-arm64@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-win32-arm64@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-win32-arm64",
+        "hash": "13260351958358668326"
+      }
+    },
+    "npm:sass-embedded-win32-ia32@1.87.0": {
+      "type": "npm",
+      "name": "npm:sass-embedded-win32-ia32@1.87.0",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-win32-ia32",
+        "hash": "10127067976844946260"
+      }
+    },
+    "npm:sass-embedded-win32-x64": {
+      "type": "npm",
+      "name": "npm:sass-embedded-win32-x64",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded-win32-x64",
+        "hash": "12001434619333539571"
+      }
+    },
+    "npm:sass-embedded": {
+      "type": "npm",
+      "name": "npm:sass-embedded",
+      "data": {
+        "version": "1.87.0",
+        "packageName": "sass-embedded",
+        "hash": "cf2707bcfe0151c02fad09aa3dd5c0122a7aad455da7ba20499e0ab17ff7b9e437d8f34d1b0869935cd9ad71a5cc2c4e8842803341fefb7f68a46e50e7653963"
       }
     },
     "npm:saxes@5.0.1": {
@@ -18691,6 +18953,24 @@
         "hash": "6e8fc7e1486b8b54bea91199d9535bb72f10842e40c79e882fc94fb7b14b89866adf2fd79efa5ebb5b658bc07fb459ccce5ac0e99ef3d72f474e74aaf284029d"
       }
     },
+    "npm:sync-child-process": {
+      "type": "npm",
+      "name": "npm:sync-child-process",
+      "data": {
+        "version": "1.0.2",
+        "packageName": "sync-child-process",
+        "hash": "03939c096278d6a3fc5922575ef22bca64d4105707ad4a8c04713dd56be556e2d5b485aae7af0d012493b05e99852c12a9cdfd6e2dbeabe90e76242bb8046e2f"
+      }
+    },
+    "npm:sync-message-port": {
+      "type": "npm",
+      "name": "npm:sync-message-port",
+      "data": {
+        "version": "1.1.3",
+        "packageName": "sync-message-port",
+        "hash": "ad252d3e35b8f610efd728372edbe3ee6b51944b4c2ae4f7d07f2b25a2f7464afbd0e08557cb7efeb4e43c792b86f2f4532a1bdacef7ade0847b34c9788a485e"
+      }
+    },
     "npm:synchronous-promise": {
       "type": "npm",
       "name": "npm:synchronous-promise",
@@ -19789,6 +20069,15 @@
         "hash": "0d1faacb802336e69fafde33723b6de8e1833d1a3ec2b5202ffc69b95c8140db6d4728760026d738243d706cd324ea84808deea2ed647f571a3171d03ade8031"
       }
     },
+    "npm:varint": {
+      "type": "npm",
+      "name": "npm:varint",
+      "data": {
+        "version": "6.0.0",
+        "packageName": "varint",
+        "hash": "7684113c9d497c01e40396e50169c502eb2176203219b96e1c5ac965a3e15b4892bd22b7e48d87148e10fffe638130516b6dbeedd0efde2b2d0395aa1772eea7"
+      }
+    },
     "npm:vary": {
       "type": "npm",
       "name": "npm:vary",
@@ -19814,6 +20103,15 @@
         "version": "3.8.3",
         "packageName": "vite-plugin-dts",
         "hash": "753ee70e742dedabdea74b2e39a86eec753ef46dfe0fa632682695c4bac905dc2701a7767690e819fd4437dbd5fb11ab51e2e4d63bef28a79c3b15384545d11a"
+      }
+    },
+    "npm:vite-plugin-windicss": {
+      "type": "npm",
+      "name": "npm:vite-plugin-windicss",
+      "data": {
+        "version": "1.9.4",
+        "packageName": "vite-plugin-windicss",
+        "hash": "142e15f50aebe71d9176429afbf034b734790b01d7721d2333f1811dcf349ccc057b92327ae5be61d209c129d758793affab13594054cd343c9eb6665a04cbfe"
       }
     },
     "npm:vite": {
@@ -20075,6 +20373,15 @@
         "version": "1.1.2",
         "packageName": "wildcard",
         "hash": "f93bf48a23b7b776f7960fa7f252af55da265b4ce8127852e420f04a907b78073bc0412f74fc662f561667f3277473974f6553a260ece67f53b1975d128320ab"
+      }
+    },
+    "npm:windicss": {
+      "type": "npm",
+      "name": "npm:windicss",
+      "data": {
+        "version": "3.5.6",
+        "packageName": "windicss",
+        "hash": "e4b6ab048488387b5bebfa6e65ccd0e55504f9133dfeb8c6cd4e817925b9941fff7680dc2aacc5923d293560e834427108039acff89eabe26a7429c0151eb1e7"
       }
     },
     "npm:word-wrap": {
@@ -20731,6 +21038,11 @@
       },
       {
         "source": "admin-shared",
+        "target": "features-architecture",
+        "type": "static"
+      },
+      {
+        "source": "admin-shared",
         "target": "npm:react-activation",
         "type": "static"
       },
@@ -20812,6 +21124,11 @@
       {
         "source": "admin-shared",
         "target": "npm:react-use",
+        "type": "static"
+      },
+      {
+        "source": "admin-shared",
+        "target": "features-components",
         "type": "static"
       },
       {
@@ -20930,7 +21247,47 @@
     "admin": [
       {
         "source": "admin",
-        "target": "npm:react",
+        "target": "npm:react-quill",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "admin-shared",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "npm:antd",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "features-architecture",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "npm:moment",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "npm:react-activation",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "npm:react-router-dom",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "shared",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "npm:lodash-es",
         "type": "static"
       },
       {
@@ -20956,6 +21313,11 @@
       {
         "source": "admin",
         "target": "npm:@nx/vite",
+        "type": "static"
+      },
+      {
+        "source": "admin",
+        "target": "npm:vite-plugin-windicss",
         "type": "static"
       }
     ],
@@ -31921,6 +32283,60 @@
       {
         "source": "npm:@wangeditor/editor",
         "target": "npm:snabbdom",
+        "type": "static"
+      }
+    ],
+    "npm:@windicss/config": [
+      {
+        "source": "npm:@windicss/config",
+        "target": "npm:debug",
+        "type": "static"
+      },
+      {
+        "source": "npm:@windicss/config",
+        "target": "npm:jiti",
+        "type": "static"
+      },
+      {
+        "source": "npm:@windicss/config",
+        "target": "npm:windicss",
+        "type": "static"
+      }
+    ],
+    "npm:@windicss/plugin-utils": [
+      {
+        "source": "npm:@windicss/plugin-utils",
+        "target": "npm:@antfu/utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:@windicss/plugin-utils",
+        "target": "npm:@windicss/config",
+        "type": "static"
+      },
+      {
+        "source": "npm:@windicss/plugin-utils",
+        "target": "npm:debug",
+        "type": "static"
+      },
+      {
+        "source": "npm:@windicss/plugin-utils",
+        "target": "npm:fast-glob",
+        "type": "static"
+      },
+      {
+        "source": "npm:@windicss/plugin-utils",
+        "target": "npm:magic-string",
+        "type": "static"
+      },
+      {
+        "source": "npm:@windicss/plugin-utils",
+        "target": "npm:micromatch",
+        "type": "static"
+      },
+      {
+        "source": "npm:@windicss/plugin-utils",
+        "target": "npm:windicss",
         "type": "static"
       }
     ],
@@ -45590,6 +46006,13 @@
         "type": "static"
       }
     ],
+    "npm:rxjs@7.8.2": [
+      {
+        "source": "npm:rxjs@7.8.2",
+        "target": "npm:tslib",
+        "type": "static"
+      }
+    ],
     "npm:safe-array-concat": [
       {
         "source": "npm:safe-array-concat",
@@ -45643,6 +46066,148 @@
       {
         "source": "npm:safe-regex-test",
         "target": "npm:is-regex",
+        "type": "static"
+      }
+    ],
+    "npm:sass-embedded": [
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:@bufbuild/protobuf",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:buffer-builder",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:colorjs.io",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:immutable",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:rxjs@7.8.2",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-android-arm@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-android-arm64@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-android-ia32@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-android-riscv64@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-android-x64@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-darwin-arm64@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-darwin-x64@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-linux-arm@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-linux-arm64@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-linux-ia32@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-linux-musl-arm@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-linux-musl-arm64@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-linux-musl-ia32@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-linux-musl-riscv64@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-linux-musl-x64@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-linux-riscv64@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-linux-x64@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-win32-arm64@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-win32-ia32@1.87.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sass-embedded-win32-x64",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:supports-color@8.1.1",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:sync-child-process",
+        "type": "static"
+      },
+      {
+        "source": "npm:sass-embedded",
+        "target": "npm:varint",
         "type": "static"
       }
     ],
@@ -46748,6 +47313,13 @@
         "type": "static"
       }
     ],
+    "npm:sync-child-process": [
+      {
+        "source": "npm:sync-child-process",
+        "target": "npm:sync-message-port",
+        "type": "static"
+      }
+    ],
     "npm:szfe-tools": [
       {
         "source": "npm:szfe-tools",
@@ -47829,6 +48401,28 @@
       {
         "source": "npm:vite-plugin-dts",
         "target": "npm:vue-tsc",
+        "type": "static"
+      }
+    ],
+    "npm:vite-plugin-windicss": [
+      {
+        "source": "npm:vite-plugin-windicss",
+        "target": "npm:@windicss/plugin-utils",
+        "type": "static"
+      },
+      {
+        "source": "npm:vite-plugin-windicss",
+        "target": "npm:debug",
+        "type": "static"
+      },
+      {
+        "source": "npm:vite-plugin-windicss",
+        "target": "npm:kolorist",
+        "type": "static"
+      },
+      {
+        "source": "npm:vite-plugin-windicss",
+        "target": "npm:windicss",
         "type": "static"
       }
     ],

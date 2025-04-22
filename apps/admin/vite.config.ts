@@ -2,13 +2,14 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+import WindiCSS from 'vite-plugin-windicss';
 
 export default defineConfig({
   root: __dirname,
   cacheDir: '../../node_modules/.vite/apps/admin',
 
   server: {
-    port: 4200,
+    port: 4201,
     host: 'localhost',
   },
 
@@ -17,7 +18,7 @@ export default defineConfig({
     host: 'localhost',
   },
 
-  plugins: [react(), nxViteTsPaths()],
+  plugins: [WindiCSS(), react(), nxViteTsPaths()],
 
   // Uncomment this if you are using workers.
   // worker: {

@@ -1,5 +1,5 @@
 import { Layout } from 'antd';
-import { useGetIdentity, useGetMenus } from 'features/new-architecture';
+import { useGetIdentity, useGetMenus } from '@org/features/architecture';
 import { last } from 'lodash-es';
 import { useEffect, useState } from 'react';
 import KeepAlive from 'react-activation';

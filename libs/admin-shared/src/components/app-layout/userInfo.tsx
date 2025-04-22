@@ -1,5 +1,5 @@
 import { Card, Descriptions } from 'antd';
-import { useGetIdentity } from 'features/new-architecture';
+import { useGetIdentity } from '@org/features/architecture';
 import { useState } from 'react';
 import DraggableModal from '../draggable-modal';
 

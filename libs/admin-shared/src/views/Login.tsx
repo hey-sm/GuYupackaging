@@ -6,7 +6,7 @@
  * @Description: 请填写简介
  * 仅限内部使用
  */
-import { LoginPublic } from 'features/components';
+import { LoginPublic } from '@org/features/components';
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';

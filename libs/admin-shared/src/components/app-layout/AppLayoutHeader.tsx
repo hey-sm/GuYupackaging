@@ -5,14 +5,14 @@ import {
   TeamOutlined,
   SearchOutlined,
 } from '@ant-design/icons';
-import { SysMenuTreeResponse } from 'admin-shared';
+import { SysMenuTreeResponse } from '@org/admin-shared';
 import { Space, Modal, Select } from 'antd';
 import {
   AppBar,
   useGetMenus,
   useLogout,
   UserMenu,
-} from 'features/new-architecture';
+} from '@org/features/architecture';
 import { cloneDeep } from 'lodash-es';
 import { useCallback, useMemo, createElement } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -107,7 +107,7 @@ const AppLayoutHeader = ({ collapsed, onChange }: AppLayoutHeaderProps) => {
                 label: (
                   <Space>
                     <LogoutOutlined />
-                    <span className='ml-[2px]'>退出登录</span>
+                    <span className="ml-[2px]">退出登录</span>
                   </Space>
                 ),
                 onClick: handleLogout,

@@ -1,0 +1,566 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'AlibabaPuHuiTi';
+  src: url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-55-Regular/AlibabaPuHuiTi-2-55-Regular.eot)
+      format('embedded-opentype'),
+    url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-55-Regular/AlibabaPuHuiTi-2-55-Regular.otf)
+      format('opentype'),
+    url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-55-Regular/AlibabaPuHuiTi-2-55-Regular.ttf)
+      format('TrueType'),
+    url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-55-Regular/AlibabaPuHuiTi-2-55-Regular.woff)
+      format('woff'),
+    url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-55-Regular/AlibabaPuHuiTi-2-55-Regular.woff2)
+      format('woff2');
+}
+
+@font-face {
+  font-family: 'AlibabaPuHuiTi';
+  font-weight: bold;
+  src: url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-75-SemiBold/AlibabaPuHuiTi-2-75-SemiBold.eot)
+      format('embedded-opentype'),
+    url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-75-SemiBold/AlibabaPuHuiTi-2-75-SemiBold.otf)
+      format('opentype'),
+    url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-75-SemiBold/AlibabaPuHuiTi-2-75-SemiBold.ttf)
+      format('TrueType'),
+    url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-75-SemiBold/AlibabaPuHuiTi-2-75-SemiBold.woff)
+      format('woff'),
+    url(https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-2/AlibabaPuHuiTi-2-75-SemiBold/AlibabaPuHuiTi-2-75-SemiBold.woff2)
+      format('woff2');
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'AlibabaPuHuiTi' !important;
+}
+
+@layer base {
+  :root {
+    --color-primary: 12, 112, 238;
+  }
+}
+
+#root {
+  svg {
+    vertical-align: initial;
+  }
+
+  .ant-pro-setting-drawer-handle {
+    z-index: 1;
+  }
+}
+
+.anticon {
+  svg {
+    vertical-align: initial;
+  }
+}
+
+img.ant-image-preview-img {
+  display: inline-block;
+  max-width: 1000px;
+}
+
+.ant-tooltip.irtp_tipss {
+  max-width: 650px;
+  .ant-tooltip-inner {
+    background-color: #fff;
+    color: #999999;
+    font-size: 12px;
+    padding: 15px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.12);
+  }
+  .ant-tooltip-arrow-content {
+    --antd-arrow-background-color: #fff;
+  }
+  border-radius: 4px;
+}
+
+.ant-modal-content .ant-modal-header {
+  padding: 17px 24px 16px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  border-radius: 8px 8px 0 0;
+}
+.store_commodity {
+  .ant-form-item-label{
+    flex: 0 0 90px !important;
+  }
+}
+
+.ant-modal-content .ant-modal-footer {
+  border-radius: 0 0 8px 8px;
+}
+.ant-form .ant-form-item-label > label {
+  color: #333;
+}
+/**卡片阴影**/
+.irtp_card_shadow{
+  box-shadow: 2px 2px 8px 0px rgba(82,90,102,0.08), 1px 1px 2px 0px rgba(82,90,102,0.04);
+}
+/**Table边线**/
+.ant-table-thead tr th{
+  font-size: 14px;
+  font-family: Alibaba PuHuiTi 2.0-65 Medium, Alibaba PuHuiTi 20;
+  font-weight: bold !important;
+  color: #242A38 !important;
+  line-height: 22px;
+  border-bottom: 1px solid #E5E6EB !important;
+}
+.label {
+  display: block;
+  min-width: 0px;
+  flex-shrink: 0;
+  // margin-right: 5px;
+  background-color: #eee;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 0 5px;
+  // margin-bottom: 5px;
+}
+.columns-btn {
+  border: 0;
+  color: var(--ant-primary-color);
+  background: transparent;
+  padding: 0 4px;
+  box-shadow: 0;
+}
+.text-primary {
+  color: #0081FF;
+}
+.head-title {
+  padding-left: 18px;
+  border-left: 2px solid #0081ff;
+  height: 36px;
+  line-height: 36px;
+  background: #f5f5f5;
+  width: 100%;
+  font-size: 14px;
+  font-family: Alibaba PuHuiTi 2-65 Medium, Alibaba PuHuiTi 20;
+  font-weight: bold;
+  color: #1d2129;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.ant-table-wrapper {
+  .ant-table-container {
+    .ant-table-thead > tr > th,
+    .ant-table tfoot > tr > th {
+      padding: 12px 16px;
+    }
+
+    .ant-table-thead > tr > th {
+      background: #f2f3f5;
+      color: #1d2129;
+      border: 0;
+    }
+
+    .ant-table-tbody > tr > td {
+      border-bottom: 1px solid #f0f0f3;
+      color: #1d2129;
+      padding: 12px 16px;
+    }
+
+    .ant-table-tbody > tr.ant-table-row:hover > td,
+    .ant-table-tbody > tr > td.ant-table-cell-row-hover {
+      background: #ebf5ff;
+    }
+  }
+}
+
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+  box-shadow: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #f7f8fa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #bbbdbf;
+}
+
+
+:root {
+  --primary-color: #0c70ee;
+  --color-333: #333333;
+  --buyer-color: #666666;
+  --buyer-f3: #f3f3f3;
+  --model-tetx: #4E5969;
+  --buyer-backGround: #ecf2fe;
+  --color-text: #37445f;
+}
+.text-primary {
+  color: var(--primary-color, #0c70ee);
+}
+.merchandise_head {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--color-text);
+  background: var(--buyer-backGround);
+  border-radius: 3px 3px 0px 0px;
+  padding-left: 25px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.icon_height{
+  .ant-form-item{
+    margin-bottom: 0 !important;
+  }
+}
+
+/**表头选中样式**/
+.checkTable {
+  background-color: #EBF5FF !important;
+}
+/**上传文件样式**/
+.uploadDesc{
+  font-size: 12px;
+  font-family: Alibaba PuHuiTi 2.0-55 Regular, Alibaba PuHuiTi 20;
+  font-weight: 400;
+  color: #86909C;
+  line-height: 12px;
+}
+.upload_irtp{
+
+  .ant-upload.ant-upload-select-picture-card{
+    background-color: #ffffff !important;
+  }
+  .anticon{
+    font-size: 24px;
+    color: var(--primary-color);
+  }
+}
+.ant-upload-list-item-list-type-text{
+  width: 104px;
+  margin-left: -20px;
+}
+.icon_btn{
+  width: 93px;
+  height: 32px;
+  border-radius: 6px 6px 6px 6px;
+  opacity: 1;
+  border: 1px solid #D4D6D9;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Alibaba PuHuiTi 2.0-55 Regular, Alibaba PuHuiTi 20;
+  font-weight: 400;
+  color: #31373D;
+  line-height: 14px;
+  margin-left: -20px;
+}
+#root {
+  .anticon svg {
+    display: block;
+  }
+
+  .ant-pro-setting-drawer-handle {
+    z-index: 1;
+  }
+}
+
+img.ant-image-preview-img {
+  display: inline-block;
+  max-width: 1000px;
+}
+
+.ant-modal-content .ant-modal-header {
+  padding: 17px 24px 16px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  border-radius: 8px 8px 0 0;
+}
+
+.ant-form .ant-form-item {
+  margin: 0 0 20px;
+}
+.ant-modal-content .ant-modal-footer {
+  border-radius: 0 0 8px 8px;
+}
+.ant-form .ant-form-item-label > label {
+  color: #333;
+}
+.label {
+  display: block;
+  min-width: 0px;
+  flex-shrink: 0;
+  // margin-right: 5px;
+  background-color: #eee;
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 0 5px;
+  // margin-bottom: 5px;
+}
+.columns-btn {
+  border: 0;
+  color: var(--ant-primary-color);
+  background: transparent;
+  padding: 0 4px;
+  box-shadow: 0;
+}
+.line {
+  color: var(--ant-primary-color);
+}
+.line1 {
+  border-right: 1px solid var(--ant-primary-color);
+}
+.ant-card.gray {
+  &.ant-card-bordered {
+    border-color: #dddddd;
+  }
+  border-radius: 0;
+
+  .ant-card-head {
+    min-height: 0;
+    height: 36px;
+    padding: 0 20px;
+    border-color: #eee;
+    color: #666;
+    .ant-card-head-title {
+      padding: 0;
+      line-height: 36px;
+    }
+    font-size: 12px;
+    background: #f3f3f3;
+  }
+
+  .ant-card-body {
+    padding: 20px 30px;
+  }
+}
+
+.ant-card.blue {
+  border-radius: 3px;
+  overflow: hidden;
+  border: 0;
+  .ant-card-head {
+    min-height: 0;
+    height: 50px;
+    padding: 0 25px;
+    border-color: #f6f7f9;
+    color: var(--colors-slate-700);
+    .ant-card-head-title {
+      padding: 0;
+      line-height: 50px;
+    }
+    font-size: 16px;
+
+    background: #ecf2fe;
+  }
+
+  .ant-card-body {
+    padding: 20px 50px;
+
+    .card-descriptions-item-content {
+      font-size: 14px;
+    }
+  }
+
+  &.small {
+    .ant-card-body {
+      padding: 15px 20px;
+    }
+  }
+}
+.text-orange {
+  color: #ff5600;
+}
+
+.list_main{
+  .ant-form-item-label{
+    flex: 0 0 100px !important;
+  }
+}
+.ant-tooltip.irtp_tips {
+  max-width: 768px;
+  max-height: 553px;
+  overflow-y: auto;
+  .ant-tooltip-inner {
+    background-color: #fff;
+    font-size: 12px;
+    font-family: Alibaba PuHuiTi 2.0-55 Regular, Alibaba PuHuiTi 20;
+    font-weight: 400;
+    color: #4E5969;
+    line-height: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.12);
+  }
+  .ant-tooltip-arrow-content {
+    --antd-arrow-background-color: #fff;
+  }
+  border-radius: 4px;
+}
+/* ::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-text);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 3px;
+} */
+/**默认图片圆角**/
+.ant-image-img{
+  border-radius: 2px;
+}
+.ant-table-cell {
+  .ant-image{
+    display: block;
+  }
+  img{
+    // display: block;
+    vertical-align:top;
+  }
+}
+/**模态框样式**/
+.irtp_model_witdh{
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  // scrollbar-width: none;
+}
+//  .ant-btn-primary{
+//   width: 76px;
+//   height: 32px;
+//   background: #0081FF !important;
+//   border-color: #0081FF;
+//   border-radius: 6px 6px 6px 6px;
+// }
+// .ant-btn-default{
+//   width: 76px;
+//   height: 32px;
+//   background: #F2F3F5 !important;
+//   border-color: #F2F3F5 !important;
+//   border-radius: 6px 6px 6px 6px;
+//   opacity: 1;
+// }
+.ant-btn-default:hover{
+  color: #0081FF !important;
+}
+.irtp_model {
+  scrollbar-width: none !important;
+  .span{
+    color: #E53434;
+  }
+  .irtp_model_small_text {
+    font-size: 14px;
+    font-family: PingFang SC-常规体, PingFang SC;
+    font-weight: 400;
+    color: var(--model-tetx);
+    line-height: 22px;
+    margin-bottom: 6px;
+
+  }
+  .irtp_model_smart_text {
+    font-size: 16px;
+    font-family: Alibaba PuHuiTi 2.0-75 SemiBold, Alibaba PuHuiTi 20;
+    font-weight: bold;
+    color: #1D2129;
+    line-height: 24px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+}
+.goods_cascader_popup {
+  .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled),
+  .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
+    background-color: #ecf2fe;
+  }
+  .ant-cascader-menu {
+    width: 230px;
+    height: 269px;
+    min-width: 230px;
+    padding: 8px 5px;
+    box-sizing: border-box;
+  }
+  /**最后一级类目**/
+  .ant-cascader-menu:last-child {
+    .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled),
+    .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
+      background-color: #f3f3f3;
+    }
+    .ant-cascader-menu-item-active {
+      height: 32px;
+      border-radius: 3px !important;
+      overflow: hidden;
+      position: relative;
+      .ant-cascader-menu-item-content {
+        font-size: 12px;
+
+        font-weight: 500;
+        color: #333333;
+        line-height: 17px;
+      }
+    }
+    .ant-cascader-menu-item-active::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -1px !important;
+      height: 100%;
+      border-left: 3px solid #999999;
+      border-radius: 0 3px 3px 0;
+    }
+    .ant-cascader-menu-item-active::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0 !important;
+      height: 100%;
+      border-left: transparent;
+      border-radius: 3px 0 0 3px;
+    }
+  }
+  .ant-cascader-menu-item-content {
+    font-size: 12px;
+
+    font-weight: normal;
+    color: #333333;
+  }
+  .ant-cascader-menu-item-active {
+    height: 32px;
+    border-radius: 3px !important;
+    overflow: hidden;
+    position: relative;
+    .ant-cascader-menu-item-content {
+      font-size: 12px;
+      font-weight: normal;
+      color: var(--primary-color);
+      line-height: 17px;
+    }
+    .anticon-right {
+      color: var(--primary-color);
+    }
+  }
+  .ant-cascader-menu-item-active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1px;
+    height: 100%;
+    border-left: 3px solid var(--primary-color);
+    border-radius: 3px 0 0 3px;
+  }
+}
+
+
