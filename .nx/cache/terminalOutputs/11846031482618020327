@@ -1,0 +1,57 @@
+[2m> [22mstorybook dev
+
+[1m@storybook/cli v7.6.20[22m[0m[0m
+[0m[0m
+info => Starting manager..
+info => Starting preview..
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+[38;2;241;97;140m╭────────────────────────────────────────────────────╮[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [38;2;162;224;94mStorybook [1m7.6.20[22m for [1mreact-vite[22m started[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m   [90m[4m531 ms[24m for manager and [4m11 s[24m for preview[39m          [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    Local:            [36mhttp://localhost:58607/[39m       [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m    On your network:  [36mhttp://10.20.34.151:58607/[39m    [38;2;241;97;140m│[39m
+[38;2;241;97;140m│[39m                                                    [38;2;241;97;140m│[39m
+[38;2;241;97;140m╰────────────────────────────────────────────────────╯[39m
+[2m下午7:08:55[22m [31m[1m[vite][22m[39m Pre-transform error: Failed to resolve import "@storybook/react/dist/entry-preview.mjs" from "../../../../../virtual:/@storybook/builder-vite/vite-app.js". Does the file exist?
+[2m下午7:08:55[22m [31m[1m[vite][22m[39m [31mInternal server error: Failed to resolve import "@storybook/react/dist/entry-preview.mjs" from "../../../../../virtual:/@storybook/builder-vite/vite-app.js". Does the file exist?[39m
+  Plugin: [35mvite:import-analysis[39m
+  File: [36m/virtual:/@storybook/builder-vite/vite-app.js[39m:7:47
+[33m  5  |      
+  6  |    const getProjectAnnotations = async () => {
+  7  |      const configs = await Promise.all([import('@storybook/react/dist/entry-preview.mjs'),
+     |                                                ^
+  8  |  import('@storybook/react/dist/entry-preview-docs.mjs'),
+  9  |  import('@storybook/addon-essentials/docs/preview'),[39m
+      at TransformPluginContext._formatError (file:///D:/myproject/org/node_modules/vite/dist/node/chunks/dep-DbT5NFX0.js:49258:41)
+      at TransformPluginContext.error (file:///D:/myproject/org/node_modules/vite/dist/node/chunks/dep-DbT5NFX0.js:49253:16)
+      at normalizeUrl (file:///D:/myproject/org/node_modules/vite/dist/node/chunks/dep-DbT5NFX0.js:64241:23)
+      at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at async file:///D:/myproject/org/node_modules/vite/dist/node/chunks/dep-DbT5NFX0.js:64373:39
+      at async Promise.all (index 2)
+      at async TransformPluginContext.transform (file:///D:/myproject/org/node_modules/vite/dist/node/chunks/dep-DbT5NFX0.js:64300:7)
+      at async PluginContainer.transform (file:///D:/myproject/org/node_modules/vite/dist/node/chunks/dep-DbT5NFX0.js:49099:18)
+      at async loadAndTransform (file:///D:/myproject/org/node_modules/vite/dist/node/chunks/dep-DbT5NFX0.js:51938:27)
+      at async viteTransformMiddleware (file:///D:/myproject/org/node_modules/vite/dist/node/chunks/dep-DbT5NFX0.js:62055:24)
+X [ERROR] No matching export in "../../../node_modules/antd/es/index.js" for import "ColorPicker"
+
+    ../../../node_modules/@ant-design/pro-field/es/components/ColorPicker/index.js:4:9:
+      4 │ import { ColorPicker as ColorPickerV5, ConfigProvider, version } fr...
+        ╵          ~~~~~~~~~~~
+
+D:\myproject\org\node_modules\@storybook\cli\bin\index.js:23
+  throw error;
+  ^
+
+Error: Build failed with 1 error:
+../../../node_modules/@ant-design/pro-field/es/components/ColorPicker/index.js:4:9: ERROR: No matching export in "../../../node_modules/antd/es/index.js" for import "ColorPicker"
+    at failureErrorWithLog (D:\myproject\org\node_modules\[4mesbuild[24m\lib\main.js:1472:15)
+    at D:\myproject\org\node_modules\[4mesbuild[24m\lib\main.js:945:25
+    at D:\myproject\org\node_modules\[4mesbuild[24m\lib\main.js:1353:9
+[90m    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)[39m {
+  errors: [36m[Getter/Setter][39m,
+  warnings: [36m[Getter/Setter][39m
+}
+
+Node.js v20.9.0
