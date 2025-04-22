@@ -1,0 +1,1451 @@
+{
+  "columns": [
+    { "columnDefine": "code", "columnComment": "对账编码" },
+    { "columnDefine": "companyName", "columnComment": "公司" },
+    { "columnDefine": "saleOrgName", "columnComment": "销售组织" },
+    { "columnDefine": "year", "columnComment": "对账年度" },
+    { "columnDefine": "month", "columnComment": "对账月份" },
+    { "columnDefine": "saleRegionName", "columnComment": "销售区域" },
+    { "columnDefine": "loanRange", "columnComment": "信贷范围" },
+    { "columnDefine": "merchantName", "columnComment": "经销商名称" },
+    { "columnDefine": "merchantCode", "columnComment": "经销商编码" },
+    { "columnDefine": "initialFee", "columnComment": "期初金额" },
+    { "columnDefine": "borrowFee", "columnComment": "借方金额" },
+    { "columnDefine": "loanFee", "columnComment": "贷方金额" },
+    { "columnDefine": "endFee", "columnComment": "期末金额" },
+    { "columnDefine": "publishEmployeeName", "columnComment": "发布人" },
+    { "columnDefine": "publishTime", "columnComment": "发布时间" },
+    { "columnDefine": "financialStatus", "columnComment": "对账状态" },
+    { "columnDefine": "status", "columnComment": "处理状态" },
+    { "columnDefine": "handleDate", "columnComment": "处理日期" },
+    { "columnDefine": "date_detail_bill", "columnComment": "日期(对账详情单)" },
+    {
+      "columnDefine": "type_detail_bill",
+      "columnComment": "业务类型(对账详情单)"
+    },
+    {
+      "columnDefine": "price_detail_bill",
+      "columnComment": "发生金额(对账详情单)"
+    },
+    {
+      "columnDefine": "code_detail_bill",
+      "columnComment": "凭证号(对账详情单)"
+    },
+    {
+      "columnDefine": "saleCode_detail_bill",
+      "columnComment": "销售单据号(对账详情单)"
+    },
+    { "columnDefine": "desc_detail_bill", "columnComment": "说明(对账详情单)" },
+
+    {
+      "columnDefine": "date_detail_handle",
+      "columnComment": "处理日期(处理情况)"
+    },
+    {
+      "columnDefine": "type_detail_handle",
+      "columnComment": "处理类型(处理情况)"
+    },
+    {
+      "columnDefine": "man_detail_handle",
+      "columnComment": "处理人(处理情况)"
+    },
+    {
+      "columnDefine": "status_detail_handle",
+      "columnComment": "对账状态(处理情况)"
+    },
+    {
+      "columnDefine": "opinion_detail_handle",
+      "columnComment": "处理意见(处理情况)"
+    },
+
+    {
+      "columnDefine": "componyCode_detail_sale",
+      "columnComment": "公司代码(销售凭证)"
+    },
+    {
+      "columnDefine": "scope_detail_sale",
+      "columnComment": "信贷范围(销售凭证)"
+    },
+    {
+      "columnDefine": "sign_detail_sale",
+      "columnComment": "供方/贷方标识(销售凭证)"
+    },
+    {
+      "columnDefine": "subject_detail_sale",
+      "columnComment": "总张科目(销售凭证)"
+    },
+    {
+      "columnDefine": "name_detail_sale",
+      "columnComment": "总分账名称(销售凭证)"
+    },
+    {
+      "columnDefine": "price_detail_sale",
+      "columnComment": "总账金额(销售凭证)"
+    },
+    {
+      "columnDefine": "code_detail_sale",
+      "columnComment": "物料编码(销售凭证)"
+    },
+    {
+      "columnDefine": "num_status_detail_sale",
+      "columnComment": "数量(销售凭证)"
+    },
+    { "columnDefine": "remark_detail_sale", "columnComment": "备注(销售凭证)" },
+    {
+      "columnDefine": "date_detail_sale",
+      "columnComment": "过账日期(销售凭证)"
+    },
+
+    {
+      "columnDefine": "voucher_detail_sale_bill",
+      "columnComment": "开票凭证(销售单据)"
+    },
+    {
+      "columnDefine": "currency_detail_sale_bill",
+      "columnComment": "凭证货币(销售单据)"
+    },
+    {
+      "columnDefine": "project_detail_sale_bill",
+      "columnComment": "项目(销售单据)"
+    },
+    {
+      "columnDefine": "num_detail_sale_bill",
+      "columnComment": "开票数量(销售单据)"
+    },
+    {
+      "columnDefine": "goods_detail_sale_bill",
+      "columnComment": "物料(销售单据)"
+    },
+    {
+      "columnDefine": "subtotal_status_detail_sale_bill",
+      "columnComment": "小计(销售单据)"
+    },
+    {
+      "columnDefine": "price_detail_sale_bill",
+      "columnComment": "含税单价(销售单据)"
+    },
+    {
+      "columnDefine": "desc_detail_sale_bill",
+      "columnComment": "描述(销售单据)"
+    }
+  ],
+  "list": [
+    {
+      "columnDefine": "id",
+      "columnComment": "逻辑主键",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "code",
+      "columnComment": "对账编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "financialApplyCode",
+      "columnComment": "申请编码",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "financialApplyId",
+      "columnComment": "申请id",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "sendOrgId",
+      "columnComment": "发起组织id",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "sendOrgCode",
+      "columnComment": "发起组织code",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "companyName",
+      "columnComment": "公司",
+      "columnType": "options",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "saleOrgName",
+      "columnComment": "销售组织",
+      "columnType": "options",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "saleOrgCode",
+      "columnComment": "销售组织code",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "year",
+      "columnComment": "对账年度",
+      "columnType": "date",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "month",
+      "columnComment": "对账月份",
+      "columnType": "date",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "saleRegionName",
+      "columnComment": "销售区域",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "loanRange",
+      "columnComment": "信贷范围",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "merchantName",
+      "columnComment": "经销商名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "merchantCode",
+      "columnComment": "经销商编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "initialFee",
+      "columnComment": "期初金额",
+      "columnType": "number",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "borrowFee",
+      "columnComment": "借方金额",
+      "columnType": "number",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "loanFee",
+      "columnComment": "贷方金额",
+      "columnType": "number",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "endFee",
+      "columnComment": "期末金额",
+      "columnType": "number",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "publishEmployeeName",
+      "columnComment": "发布人",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "publishTime",
+      "columnComment": "发布时间",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "financialStatusDesc",
+      "columnComment": "对账状态",
+      "columnType": "options",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "handleStateDesc",
+      "columnComment": "处理状态",
+      "columnType": "options",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "handleDate",
+      "columnComment": "处理日期",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "startTime",
+      "columnComment": "开始时间",
+      "columnType": "date",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "endTime",
+      "columnComment": "结束时间",
+      "columnType": "date",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "saleOrgId",
+      "columnComment": "销售组织id",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "saleRegionId",
+      "columnComment": "销售区域id",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "saleRegionCode",
+      "columnComment": "销售区域code",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "merchantId",
+      "columnComment": "经销商code",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "publishEmployeeId",
+      "columnComment": "发布人id",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "publishEmployeeCode",
+      "columnComment": "发布人code",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "handleState",
+      "columnComment": "处理状态;",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operIdCreate",
+      "columnComment": "创建人userId",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operIdMod",
+      "columnComment": "修改人userId",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operNameCreate",
+      "columnComment": "创建人userName",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operNameMod",
+      "columnComment": "修改人userName",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "createTime",
+      "columnComment": "创建时间",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "updateTime",
+      "columnComment": "修改时间",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "remark",
+      "columnComment": "备注",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "whetherRead",
+      "columnComment": "是否已读 只针对经销商操作  厂商查看",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    }
+  ],
+  "searchs": [
+    {
+      "columnDefine": "companyCode",
+      "columnComment": "公司机构",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "saleOrgCode",
+      "columnComment": "销售组织",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "publishTime",
+      "columnComment": "发布日期",
+      "columnType": "date",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "yearAndMonth",
+      "columnComment": "期间",
+      "columnType": "date",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "merchantCode",
+      "columnComment": "经销商编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "publishEmployeeName",
+      "columnComment": "发布人",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "financialStatus",
+      "columnComment": "对账状态",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "handle_state",
+      "columnComment": "处理状态",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    }
+  ],
+  "details": {
+    "main": {
+      "moduleName": "财务对账",
+      "moduleCode": "main",
+      "layoutGrid": 3,
+      "columns": [
+        {
+          "columnDefine": "id",
+          "columnComment": "逻辑主键",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "code",
+          "columnComment": "对账编码",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "financialApplyCode",
+          "columnComment": "申请编码",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "financialApplyId",
+          "columnComment": "申请id",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "sendOrgId",
+          "columnComment": "发起组织id",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "sendOrgCode",
+          "columnComment": "发起组织code",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "companyName",
+          "columnComment": "公司",
+          "columnType": "options",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+          "dataSource": "organization_source_type",
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "saleOrgName",
+          "columnComment": "销售组织",
+          "columnType": "options",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+          "dataSource": "organization_source_type",
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "saleOrgCode",
+          "columnComment": "销售组织code",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "year",
+          "columnComment": "对账年度",
+          "columnType": "date",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "month",
+          "columnComment": "对账月份",
+          "columnType": "date",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "saleRegionName",
+          "columnComment": "销售区域",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "loanRange",
+          "columnComment": "信贷范围",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "merchantName",
+          "columnComment": "经销商名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "merchantCode",
+          "columnComment": "经销商编码",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "initialFee",
+          "columnComment": "期初金额",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "borrowFee",
+          "columnComment": "借方金额",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "loanFee",
+          "columnComment": "贷方金额",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "endFee",
+          "columnComment": "期末金额",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "publishEmployeeName",
+          "columnComment": "发布人",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "publishTime",
+          "columnComment": "发布时间",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "financialStatus",
+          "columnComment": "对账状态",
+          "columnType": "options",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+          "dataSource": "tradeReconStatus",
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "status",
+          "columnComment": "处理状态",
+          "columnType": "options",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+          "dataSource": "process_status",
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "handleDate",
+          "columnComment": "处理日期",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "startTime",
+          "columnComment": "开始时间",
+          "columnType": "date",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "endTime",
+          "columnComment": "结束时间",
+          "columnType": "date",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "saleOrgId",
+          "columnComment": "销售组织id",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "saleRegionId",
+          "columnComment": "销售区域id",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "saleRegionCode",
+          "columnComment": "销售区域code",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "merchantId",
+          "columnComment": "经销商code",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "publishEmployeeId",
+          "columnComment": "发布人id",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "publishEmployeeCode",
+          "columnComment": "发布人code",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "handleState",
+          "columnComment": "处理状态;",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operIdCreate",
+          "columnComment": "创建人userId",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operIdMod",
+          "columnComment": "修改人userId",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operNameCreate",
+          "columnComment": "创建人userName",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operNameMod",
+          "columnComment": "修改人userName",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "createTime",
+          "columnComment": "创建时间",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "updateTime",
+          "columnComment": "修改时间",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "remark",
+          "columnComment": "备注",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "whetherRead",
+          "columnComment": "是否已读 只针对经销商操作  厂商查看",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        }
+      ]
+    }
+  }
+}

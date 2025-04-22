@@ -1,0 +1,7 @@
+{
+  "searchs": [
+    { "columnDefine": "code", "columnComment": "编号", "columnType": "string", "conditions": "=", "defaultValue": "undefined" },
+    { "columnDefine": "name", "columnComment": "姓名", "columnType": "string", "conditions": "=", "defaultValue": "undefined" },
+    { "columnDefine": "phone", "columnComment": "电话", "columnType": "string", "conditions": "=", "defaultValue": "undefined" }
+  ]
+}

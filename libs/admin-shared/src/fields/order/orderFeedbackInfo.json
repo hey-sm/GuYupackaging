@@ -1,0 +1,317 @@
+{
+  "columns": [
+    { "columnDefine": "infoCode", "columnComment": "信息订单编号" },
+    { "columnDefine": "companyOrgName", "columnComment": "公司机构" },
+    { "columnDefine": "saleOrgName", "columnComment": "销售组织" },
+    { "columnDefine": "deptOrgName", "columnComment": "销售部门" },
+    { "columnDefine": "regionOrgName", "columnComment": "销售大区" },
+    { "columnDefine": "publishingUnit", "columnComment": "发表单位" },
+    { "columnDefine": "feedbackName", "columnComment": "反馈类型" },
+    { "columnDefine": "feedbackGoodsName", "columnComment": "反馈商品名称" },
+    { "columnDefine": "feedbackGoodsCode", "columnComment": "反馈商品编码" },
+    { "columnDefine": "quantity", "columnComment": "涉及数量" },
+    { "columnDefine": "uploadDate", "columnComment": "上传日期" },
+    { "columnDefine": "feedbackPerson", "columnComment": "提交反馈人" },
+    { "columnDefine": "problemPoint", "columnComment": "问题点" },
+    { "columnDefine": "feedbackContent", "columnComment": "反馈内容" },
+    { "columnDefine": "processStatusDesc", "columnComment": "处理状态" },
+
+    { "columnDefine": "merchantName", "columnComment": "经销商" },
+    { "columnDefine": "merchantCode", "columnComment": "经销商编码" },
+    { "columnDefine": "vin", "columnComment": "商品VIN码" },
+    { "columnDefine": "opinions", "columnComment": "处理意见" },
+    { "columnDefine": "rectificationPlan", "columnComment": "整改方案" },
+    { "columnDefine": "chargeUserName", "columnComment": "负责人" },
+    { "columnDefine": "chargeUserPhone", "columnComment": "负责人手机号" },
+    { "columnDefine": "createTime", "columnComment": "提交时间" },
+    { "columnDefine": "annexUrl", "columnComment": "附件" }
+  ],
+  "list": [
+    {
+      "columnDefine": "infoCode",
+      "columnComment": "信息订单编号",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 150,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "companyOrgName",
+      "columnComment": "公司机构",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 150,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "saleOrgName",
+      "columnComment": "销售组织",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 150,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "deptOrgName",
+      "columnComment": "销售部门",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 150,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "regionOrgName",
+      "columnComment": "销售大区",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 150,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "publishingUnit",
+      "columnComment": "发表单位",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 200,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "feedbackName",
+      "columnComment": "反馈类型",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 120,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "feedbackGoodsName",
+      "columnComment": "反馈商品名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 150,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "feedbackGoodsCode",
+      "columnComment": "反馈商品编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 150,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "quantity",
+      "columnComment": "涉及数量",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "uploadDate",
+      "columnComment": "上传日期",
+      "columnType": "date",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 180,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "feedbackPerson",
+      "columnComment": "提交反馈人",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 120,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "problemPoint",
+      "columnComment": "问题点",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "feedbackContent",
+      "columnComment": "反馈内容",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 300,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "processStatusDesc",
+      "columnComment": "处理状态",
+      "columnType": "options",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "annexUrl",
+      "columnComment": "附件",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    }
+  ],
+  "searchs": [
+    {
+      "columnDefine": "companyOrgCode",
+      "columnComment": "公司机构",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": false,
+      "dataSource": "company",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "saleOrgCode",
+      "columnComment": "销售组织",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": false,
+      "dataSource": "salesOrg",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "deptOrgCode",
+      "columnComment": "销售部门",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": false,
+      "dataSource": "dept",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "regionOrgCode",
+      "columnComment": "销售大区",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": false,
+      "dataSource": "salesRegion",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "merchantCode",
+      "columnComment": "经销商编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "merchantName",
+      "columnComment": "经销商名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "feedbackCode",
+      "columnComment": "反馈类型",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true,
+      "dataSource": "feedback_type"
+    },
+    {
+      "columnDefine": "processStatus",
+      "columnComment": "处理状态",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true,
+      "dataSource": "process_status"
+    },
+    {
+      "columnDefine": "feedbackGoodsCode",
+      "columnComment": "商品编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "feedbackGoodsName",
+      "columnComment": "商品名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true
+    }
+  ],
+  "details": {
+    "main": {
+      "moduleName": "信息订单反馈表",
+      "moduleCode": "main",
+      "layoutGrid": 3,
+      "columns": []
+    }
+  }
+}

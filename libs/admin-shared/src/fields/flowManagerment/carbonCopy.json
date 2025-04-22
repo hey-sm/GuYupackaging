@@ -1,0 +1,637 @@
+{
+  "columns": [],
+  "list": [
+    {
+      "columnDefine": "id",
+      "columnComment": "逻辑主键",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "carbonCopyTypeDesc",
+      "columnComment": "抄送类型",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "userId",
+      "columnComment": "抄送人Id",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "userCode",
+      "columnComment": "抄送人code",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "userName",
+      "columnComment": "抄送人name",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "productDesc",
+      "columnComment": "所属产品",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "flowModelKey",
+      "columnComment": "流程模型key",
+      "columnType": "options",
+      "dataSource": "status_defult",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "flowModelName",
+      "columnComment": "流程模型名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "busKey",
+      "columnComment": "业务分类key",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "busName",
+      "columnComment": "业务分类名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "nodeId",
+      "columnComment": "节点id",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "nodeName",
+      "columnComment": "节点名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "statusDesc",
+      "columnComment": "状态",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operIdCreate",
+      "columnComment": "创建人userId",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operNameCreate",
+      "columnComment": "创建人userName",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operIdMod",
+      "columnComment": "更新人userId",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operNameMod",
+      "columnComment": "更新人userName",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "createTime",
+      "columnComment": "创建时间",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "updateTime",
+      "columnComment": "更新时间",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "remark",
+      "columnComment": "备注",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    }
+  ],
+  "searchs": [
+    {
+      "columnDefine": "userCode",
+      "columnComment": "抄送人code",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "isCommon": true
+    },
+    {
+      "columnDefine": "userName",
+      "columnComment": "抄送人name",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "isCommon": true
+    }
+  ],
+  "details": {
+    "main": {
+      "moduleName": "工作流-业务流程-抄送人员设置",
+      "moduleCode": "main",
+      "layoutGrid": 3,
+      "columns": [
+        {
+          "columnDefine": "id",
+          "columnComment": "逻辑主键",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "carbonCopyType",
+          "columnComment": "抄送类型",
+          "columnType": "options",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+          "dataSource": "sex",
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "product",
+          "columnComment": "所属产品",
+          "columnType": "options",
+          "dataSource": "status_defult",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "flowModelKey",
+          "columnComment": "流程模型key",
+          "columnType": "options",
+          "dataSource": "status_defult",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "flowModelName",
+          "columnComment": "流程模型名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "busKey",
+          "columnComment": "业务分类key",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "busName",
+          "columnComment": "业务分类名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "nodeId",
+          "columnComment": "节点id",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "nodeName",
+          "columnComment": "节点名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "userId",
+          "columnComment": "抄送人Id",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "userCode",
+          "columnComment": "抄送人code",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "userName",
+          "columnComment": "抄送人name",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "status",
+          "columnComment": "状态",
+          "columnType": "options",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+          "dataSource": "status_defult",
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operIdCreate",
+          "columnComment": "创建人userId",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operNameCreate",
+          "columnComment": "创建人userName",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operIdMod",
+          "columnComment": "更新人userId",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operNameMod",
+          "columnComment": "更新人userName",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "createTime",
+          "columnComment": "创建时间",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "updateTime",
+          "columnComment": "更新时间",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "remark",
+          "columnComment": "备注",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        }
+      ]
+    }
+  }
+}

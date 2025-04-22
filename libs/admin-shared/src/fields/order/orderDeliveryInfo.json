@@ -1,0 +1,321 @@
+{
+  "columns": [
+    { "columnDefine": "deptName", "columnComment": "销售部门" },
+    { "columnDefine": "regionalArea", "columnComment": "销售大区" },
+    { "columnDefine": "orderCode", "columnComment": "订单编码" },
+    { "columnDefine": "orderTypeDesc", "columnComment": "订单类型" },
+    { "columnDefine": "sendCode", "columnComment": "发货单号" },
+    { "columnDefine": "receiveMerchantName", "columnComment": "订货单位" },
+    { "columnDefine": "receiveMerchantCode", "columnComment": "订货单位编码" },
+    { "columnDefine": "orderGoodsNumber", "columnComment": "下单数量" },
+    { "columnDefine": "num", "columnComment": "发货数量" },
+    { "columnDefine": "unitName", "columnComment": "单位" },
+    { "columnDefine": "sendTime", "columnComment": "发货时间" },
+    { "columnDefine": "arrivalTime", "columnComment": "预计到货时间" },
+    { "columnDefine": "deliveryStatusDesc", "columnComment": "发货状态" },
+    { "columnDefine": "signStatusDesc", "columnComment": "签收状态" },
+    { "columnDefine": "signCustomerName", "columnComment": "签收人" },
+    { "columnDefine": "signTime", "columnComment": "签收时间" },
+    { "columnDefine": "remark", "columnComment": "备注" },
+
+    { "columnDefine": "goodsName", "columnComment": "商品名称" },
+    { "columnDefine": "goodsSpec", "columnComment": "商品规格" },
+    { "columnDefine": "goodsCode", "columnComment": "商品编码" },
+    { "columnDefine": "orderStatusDesc", "columnComment": "订单状态" },
+    { "columnDefine": "stuckStatusDesc", "columnComment": "滞留状态" },
+    { "columnDefine": "sapVinCode", "columnComment": "商品VIN码" }
+  ],
+  "list": [
+    {
+      "columnDefine": "deptName",
+      "columnComment": "销售部门",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "regionalArea",
+      "columnComment": "销售大区",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "orderCode",
+      "columnComment": "订单编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 220,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "orderTypeDesc",
+      "columnComment": "订单类型",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "sendCode",
+      "columnComment": "发货单号",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "receiveMerchantName",
+      "columnComment": "订货单位",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 200,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "receiveMerchantCode",
+      "columnComment": "订货单位编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 120,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "orderGoodsNumber",
+      "columnComment": "下单数量",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "num",
+      "columnComment": "发货数量",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "unitName",
+      "columnComment": "单位",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "sendTime",
+      "columnComment": "发货时间",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "arrivalTime",
+      "columnComment": "预计到货时间",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 120,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "deliveryStatusDesc",
+      "columnComment": "发货状态",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "signStatusDesc",
+      "columnComment": "签收状态",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "signCustomerName",
+      "columnComment": "签收人",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "signTime",
+      "columnComment": "签收时间",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "remark",
+      "columnComment": "备注",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 200,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    }
+  ],
+  "searchs": [
+    {
+      "columnDefine": "saleOrgCode",
+      "columnComment": "销售组织",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": false,
+      "dataSource": "salesOrg",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "deptCode",
+      "columnComment": "销售部门",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": false,
+      "dataSource": "dept",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "regionalAreaCode",
+      "columnComment": "销售大区",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": false,
+      "dataSource": "salesRegion",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "orderCode",
+      "columnComment": "订单编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "sapOrderCode",
+      "columnComment": "SAP订单编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "receiveMerchantCode",
+      "columnComment": "经销商编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "receiveMerchantName",
+      "columnComment": "经销商名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "sendCode",
+      "columnComment": "发货单编号",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "sendTime",
+      "columnComment": "发货时间",
+      "columnType": "datetime",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "signStatus",
+      "columnComment": "签收状态",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    }
+  ],
+  "details": {
+    "main": {
+      "moduleName": "发货信息",
+      "moduleCode": "main",
+      "layoutGrid": 3,
+      "columns": []
+    }
+  }
+}

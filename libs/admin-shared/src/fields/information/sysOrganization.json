@@ -1,0 +1,954 @@
+{
+  "columns": [],
+  "list": [
+    {
+      "columnDefine": "id",
+      "columnComment": "逻辑主键",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "parentId",
+      "columnComment": "父级ID",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "parentCode",
+      "columnComment": "父级编号",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "sapType",
+      "columnComment": "SAP组织机构类型;",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "name",
+      "columnComment": "名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "typeDesc",
+      "columnComment": "类型",
+      "columnType": "options",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "parentName",
+      "columnComment": "上级",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "parentType",
+      "columnComment": "父级类型",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "code",
+      "columnComment": "机构编码",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "pinyin",
+      "columnComment": "拼音全称",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "py",
+      "columnComment": "拼音简称",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "dataSourceDesc",
+      "columnComment": "数据来源",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "sort",
+      "columnComment": "本级排序列号（升序）",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "builderDate",
+      "columnComment": "组织建立时间",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "beginDate",
+      "columnComment": "组织生效时间",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "destroyDate",
+      "columnComment": "组织失效日期",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "status",
+      "columnComment": "状态;",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operIdCreate",
+      "columnComment": "创建人userId",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operNameCreate",
+      "columnComment": "创建人userName",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operIdMod",
+      "columnComment": "更新人userId",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operNameMod",
+      "columnComment": "更新人userName",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "createTime",
+      "columnComment": "创建时间",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "updateTime",
+      "columnComment": "更新时间",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "remark",
+      "columnComment": "备注",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    }
+  ],
+  "searchs": [
+    {
+      "columnDefine": "id",
+      "columnComment": "逻辑主键",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "parentId",
+      "columnComment": "父级ID",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "parentCode",
+      "columnComment": "父级编号",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "sapType",
+      "columnComment": "SAP组织机构类型;",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "parentName",
+      "columnComment": "父级名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "parentType",
+      "columnComment": "父级类型",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "code",
+      "columnComment": "机构编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "name",
+      "columnComment": "机构全称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "type",
+      "columnComment": "组织类型;",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "pinyin",
+      "columnComment": "拼音全称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "py",
+      "columnComment": "拼音简称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "dataSource",
+      "columnComment": "数据来源;",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "sort",
+      "columnComment": "本级排序列号（升序）",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "builderDate",
+      "columnComment": "组织建立时间",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "beginDate",
+      "columnComment": "组织生效时间",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "destroyDate",
+      "columnComment": "组织失效日期",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "status",
+      "columnComment": "状态;",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operIdCreate",
+      "columnComment": "创建人userId",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operNameCreate",
+      "columnComment": "创建人userName",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operIdMod",
+      "columnComment": "更新人userId",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operNameMod",
+      "columnComment": "更新人userName",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "createTime",
+      "columnComment": "创建时间",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "updateTime",
+      "columnComment": "更新时间",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "remark",
+      "columnComment": "备注",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    }
+  ],
+  "details": {
+    "main": {
+      "moduleName": "组织架构表",
+      "moduleCode": "main",
+      "layoutGrid": 3,
+      "columns": [
+        {
+          "columnDefine": "id",
+          "columnComment": "逻辑主键",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "parentId",
+          "columnComment": "父级ID",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "parentCode",
+          "columnComment": "父级编号",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "sapType",
+          "columnComment": "SAP组织机构类型;",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "parentName",
+          "columnComment": "父级名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "parentType",
+          "columnComment": "父级类型",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "code",
+          "columnComment": "机构编码",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "name",
+          "columnComment": "机构全称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "type",
+          "columnComment": "组织类型;",
+          "columnType": "options",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+          "displayColumn": "code",
+          "dataSource": "organization_type",
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "pinyin",
+          "columnComment": "拼音全称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "py",
+          "columnComment": "拼音简称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "dataSource",
+          "columnComment": "数据来源;",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "sort",
+          "columnComment": "本级排序列号（升序）",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "builderDate",
+          "columnComment": "组织建立时间",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "beginDate",
+          "columnComment": "组织生效时间",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "destroyDate",
+          "columnComment": "组织失效日期",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "status",
+          "columnComment": "状态;",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operIdCreate",
+          "columnComment": "创建人userId",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operNameCreate",
+          "columnComment": "创建人userName",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operIdMod",
+          "columnComment": "更新人userId",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operNameMod",
+          "columnComment": "更新人userName",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "createTime",
+          "columnComment": "创建时间",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "updateTime",
+          "columnComment": "更新时间",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "remark",
+          "columnComment": "备注",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        }
+      ]
+    }
+  }
+}

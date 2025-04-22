@@ -1,0 +1,497 @@
+{
+  "columns": [
+    { "columnDefine": "id", "columnComment": "主键" },
+    { "columnDefine": "sort", "columnComment": "序列号" },
+    { "columnDefine": "code", "columnComment": "工厂代码" },
+    { "columnDefine": "name", "columnComment": "工厂名称" },
+    { "columnDefine": "resource", "columnComment": "数据来源" },
+    { "columnDefine": "status", "columnComment": "状态;StatusDeFultEnum" },
+    { "columnDefine": "operIdCreate", "columnComment": "创建人userId" },
+    { "columnDefine": "operIdMod", "columnComment": "修改人userId" },
+    { "columnDefine": "operNameCreate", "columnComment": "创建人userName" },
+    { "columnDefine": "operNameMod", "columnComment": "修改人userName" },
+    { "columnDefine": "createTime", "columnComment": "创建时间" },
+    { "columnDefine": "updateTime", "columnComment": "修改时间" }
+  ],
+  "list": [
+    {
+      "columnDefine": "id",
+      "columnComment": "主键",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "sort",
+      "columnComment": "序列号",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "code",
+      "columnComment": "工厂代码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "name",
+      "columnComment": "工厂名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "resource",
+      "columnComment": "数据来源",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "status",
+      "columnComment": "状态;StatusDeFultEnum",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operIdCreate",
+      "columnComment": "创建人userId",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operIdMod",
+      "columnComment": "修改人userId",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operNameCreate",
+      "columnComment": "创建人userName",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operNameMod",
+      "columnComment": "修改人userName",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "createTime",
+      "columnComment": "创建时间",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "updateTime",
+      "columnComment": "修改时间",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    }
+  ],
+  "searchs": [
+    {
+      "columnDefine": "id",
+      "columnComment": "主键",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "contain": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "sort",
+      "columnComment": "序列号",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "contain": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "code",
+      "columnComment": "工厂代码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "contain": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "name",
+      "columnComment": "工厂名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "contain": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "resource",
+      "columnComment": "数据来源",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "contain": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "status",
+      "columnComment": "状态;StatusDeFultEnum",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "contain": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operIdCreate",
+      "columnComment": "创建人userId",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "contain": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operIdMod",
+      "columnComment": "修改人userId",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "contain": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operNameCreate",
+      "columnComment": "创建人userName",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "contain": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operNameMod",
+      "columnComment": "修改人userName",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "contain": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "createTime",
+      "columnComment": "创建时间",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "contain": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "updateTime",
+      "columnComment": "修改时间",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "contain": "=",
+      "isCommon": false
+    }
+  ],
+  "details": {
+    "main": {
+      "moduleName": "sap生产工厂基础信息",
+      "moduleCode": "main",
+      "layoutGrid": 3,
+      "columns": [
+        {
+          "columnDefine": "id",
+          "columnComment": "主键",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "sort",
+          "columnComment": "序列号",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "code",
+          "columnComment": "工厂代码",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "name",
+          "columnComment": "工厂名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "resource",
+          "columnComment": "数据来源",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "status",
+          "columnComment": "状态;StatusDeFultEnum",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operIdCreate",
+          "columnComment": "创建人userId",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operIdMod",
+          "columnComment": "修改人userId",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operNameCreate",
+          "columnComment": "创建人userName",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operNameMod",
+          "columnComment": "修改人userName",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "createTime",
+          "columnComment": "创建时间",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "updateTime",
+          "columnComment": "修改时间",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        }
+      ]
+    }
+  }
+}

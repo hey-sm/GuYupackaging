@@ -1,0 +1,339 @@
+{
+  "columns": [
+    { "columnDefine": "approvalNo", "columnComment": "审批编号" },
+    { "columnDefine": "companyOrgName", "columnComment": "公司机构" },
+    { "columnDefine": "saleOrgName", "columnComment": "销售组织" },
+    { "columnDefine": "deptName", "columnComment": "销售部门" },
+    { "columnDefine": "merchantName", "columnComment": "经销商名称" },
+    { "columnDefine": "merchantCode", "columnComment": "SAP经销商编码" },
+    { "columnDefine": "saleRegionName", "columnComment": "销售大区" },
+    { "columnDefine": "regionalManagerName", "columnComment": "大区经理" },
+    { "columnDefine": "marketingManagerName", "columnComment": "营销经理" },
+    { "columnDefine": "assistantName", "columnComment": "业务助理" },
+    { "columnDefine": "assistantPeriod", "columnComment": "有效期" },
+    { "columnDefine": "statusDesc", "columnComment": "申请状态" },
+    { "columnDefine": "approvalNodeName", "columnComment": "申请节点" },
+    { "columnDefine": "developDate", "columnComment": "开发日期" },
+    { "columnDefine": "remark", "columnComment": "备注" },
+
+    { "columnDefine": "companyOrgId", "columnComment": "开户详情-公司机构" },
+    { "columnDefine": "legalName", "columnComment": "开户详情-法人名称" },
+    {
+      "columnDefine": "chargeUserName",
+      "columnComment": "开户详情-负责人名称"
+    },
+    {
+      "columnDefine": "chargeUserPhone",
+      "columnComment": "开户详情-负责人手机号码"
+    },
+    {
+      "columnDefine": "chargeUserIdCard",
+      "columnComment": "开户详情-负责人身份证"
+    },
+    {
+      "columnDefine": "designatedPayer",
+      "columnComment": "开户详情-指定打款人"
+    },
+    {
+      "columnDefine": "chargeUserTel",
+      "columnComment": "开户详情-负责人电话号码"
+    },
+    {
+      "columnDefine": "merchantDevelopNature",
+      "columnComment": "开户详情-经销商开发性质"
+    },
+
+    { "columnDefine": "faxNo", "columnComment": "开户详情-传真号码" },
+    { "columnDefine": "address", "columnComment": "开户详情-经销商地址" },
+    {
+      "columnDefine": "merchantCategoryDesc",
+      "columnComment": "开户详情-经销商类别"
+    },
+    { "columnDefine": "isOnGrid", "columnComment": "开户详情-是否并网" },
+    {
+      "columnDefine": "oldMerchantName",
+      "columnComment": "开户详情-原经销商名称"
+    },
+    {
+      "columnDefine": "busLicenseResourceUrl",
+      "columnComment": "开户详情-营业执照"
+    },
+    { "columnDefine": "rangeTable", "columnComment": "开户详情-授权范围" }
+  ],
+  "list": [
+    {
+      "columnDefine": "approvalNo",
+      "columnComment": "审批编号",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "companyOrgName",
+      "columnComment": "公司机构",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "saleOrgName",
+      "columnComment": "销售组织",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "deptName",
+      "columnComment": "销售部门",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "merchantName",
+      "columnComment": "经销商名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "merchantCode",
+      "columnComment": "SAP经销商编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "saleRegionName",
+      "columnComment": "销售大区",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "regionalManagerName",
+      "columnComment": "大区经理",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "marketingManagerName",
+      "columnComment": "营销经理",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "assistantName",
+      "columnComment": "业务助理",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "assistantPeriod",
+      "columnComment": "有效期",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "statusDesc",
+      "columnComment": "申请状态",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "approvalNodeName",
+      "columnComment": "申请节点",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "developDate",
+      "columnComment": "开发日期",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "remark",
+      "columnComment": "备注",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    }
+  ],
+  "searchs": [
+    {
+      "columnDefine": "companyOrgCode",
+      "columnComment": "公司机构",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "saleOrgCode",
+      "columnComment": "销售组织",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "deptCode",
+      "columnComment": "销售部门",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "include",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "merchantCode",
+      "columnComment": "经销商编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "merchantName",
+      "columnComment": "经销商名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "include",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "saleRegionCode",
+      "columnComment": "销售大区",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "regionalManagerName",
+      "columnComment": "大区经理",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "include",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "marketingManagerName",
+      "columnComment": "营销经理",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "include",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "status",
+      "columnComment": "经销商状态",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "createTime",
+      "columnComment": "入网日期",
+      "columnType": "date",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    }
+  ],
+  "details": {
+    "main": {
+      "moduleName": "基础信息",
+      "moduleCode": "main",
+      "layoutGrid": 3,
+      "columns": []
+    },
+    "children": [
+      {
+        "moduleName": "商品信息",
+        "moduleCode": "orderDetail",
+        "layoutGrid": 3,
+        "isForm": false,
+        "columns": []
+      }
+    ]
+  }
+}

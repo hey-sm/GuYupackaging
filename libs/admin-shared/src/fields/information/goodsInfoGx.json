@@ -1,0 +1,986 @@
+{
+  "columns": [],
+  "list": [
+    {
+      "columnDefine": "id",
+      "columnComment": "主键",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "goodsCode",
+      "columnComment": "物料号",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "goodsName",
+      "columnComment": "物料名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "factoryDesc",
+      "columnComment": "生产工厂",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "categoryName",
+      "columnComment": "产品分类",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "saleOrgDesc",
+      "columnComment": "销售组织",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "goodsSpecName",
+      "columnComment": "规格型号",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "price",
+      "columnComment": "价格",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "productId",
+      "columnComment": "产品id",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "productCode",
+      "columnComment": "产品编码",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "productType",
+      "columnComment": "产品类型;",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "productName",
+      "columnComment": "产品名称",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "orgId",
+      "columnComment": "销售组织id",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "orgCode",
+      "columnComment": "销售组织code",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+
+    {
+      "columnDefine": "distributionChannelId",
+      "columnComment": "分销渠道id",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "distributionChannelCode",
+      "columnComment": "分销渠道code",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "distributionChannelDesc",
+      "columnComment": "分销渠道",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "unitName",
+      "columnComment": "单位名称",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "statusDesc",
+      "columnComment": "状态",
+      "columnType": "options",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "way",
+      "columnComment": "销售方式",
+      "columnType": "options",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "remark",
+      "columnComment": "备注",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operIdCreate",
+      "columnComment": "创建人userId",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operIdMod",
+      "columnComment": "修改人userId",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operNameCreate",
+      "columnComment": "创建人userName",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "operNameMod",
+      "columnComment": "修改人userName",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "createTime",
+      "columnComment": "创建时间",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "updateTime",
+      "columnComment": "修改时间",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    }
+  ],
+  "searchs": [
+    {
+      "columnDefine": "id",
+      "columnComment": "主键",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "goodsCode",
+      "columnComment": "物料编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "goodsName",
+      "columnComment": "物料名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "goodsDesc",
+      "columnComment": "物料描述",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "goodsSpecName",
+      "columnComment": "规格型号",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "productId",
+      "columnComment": "产品id",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "productCode",
+      "columnComment": "产品编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "productType",
+      "columnComment": "产品类型;",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "productName",
+      "columnComment": "产品名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "orgId",
+      "columnComment": "销售组织id",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "orgCode",
+      "columnComment": "销售组织code",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "orgName",
+      "columnComment": "销售组织名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "distributionChannelId",
+      "columnComment": "分销渠道id",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "distributionChannelCode",
+      "columnComment": "分销渠道code",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "distributionChannelName",
+      "columnComment": "分销渠道名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "unitName",
+      "columnComment": "单位名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "status",
+      "columnComment": "状态;StatusDeFultEnum",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "remark",
+      "columnComment": "备注",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operIdCreate",
+      "columnComment": "创建人userId",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operIdMod",
+      "columnComment": "修改人userId",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operNameCreate",
+      "columnComment": "创建人userName",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operNameMod",
+      "columnComment": "修改人userName",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "createTime",
+      "columnComment": "创建时间",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "updateTime",
+      "columnComment": "修改时间",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    }
+  ],
+  "details": {
+    "main": {
+      "moduleName": "物料基本信息表",
+      "moduleCode": "main",
+      "layoutGrid": 3,
+      "columns": [
+        {
+          "columnDefine": "id",
+          "columnComment": "主键",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "goodsCode",
+          "columnComment": "物料编码",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "goodsName",
+          "columnComment": "物料名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "goodsDesc",
+          "columnComment": "物料描述",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "goodsSpecName",
+          "columnComment": "规格型号",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "productId",
+          "columnComment": "产品id",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "productCode",
+          "columnComment": "产品编码",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "productType",
+          "columnComment": "产品类型;",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "productName",
+          "columnComment": "产品名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "orgId",
+          "columnComment": "销售组织id",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "orgCode",
+          "columnComment": "销售组织code",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "orgName",
+          "columnComment": "销售组织名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "distributionChannelId",
+          "columnComment": "分销渠道id",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "distributionChannelCode",
+          "columnComment": "分销渠道code",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "distributionChannelName",
+          "columnComment": "分销渠道名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "unitName",
+          "columnComment": "单位名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "status",
+          "columnComment": "状态;StatusDeFultEnum",
+          "columnType": "options",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "remark",
+          "columnComment": "备注",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operIdCreate",
+          "columnComment": "创建人userId",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operIdMod",
+          "columnComment": "修改人userId",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operNameCreate",
+          "columnComment": "创建人userName",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operNameMod",
+          "columnComment": "修改人userName",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "createTime",
+          "columnComment": "创建时间",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "updateTime",
+          "columnComment": "修改时间",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        }
+      ]
+    }
+  }
+}

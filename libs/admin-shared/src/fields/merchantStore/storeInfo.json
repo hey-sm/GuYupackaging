@@ -1,0 +1,1273 @@
+{
+  "columns": [
+    { "columnDefine": "name", "columnComment": "门店名称" },
+    { "columnDefine": "code", "columnComment": "门店编码" },
+    { "columnDefine": "account", "columnComment": "门店账号" },
+    { "columnDefine": "chargeName", "columnComment": "门店负责人" },
+    { "columnDefine": "phone", "columnComment": "手机号" },
+    { "columnDefine": "merchantCode", "columnComment": "SAP经销商编码" },
+    { "columnDefine": "merchantName", "columnComment": "上级经销商名称" },
+    { "columnDefine": "storeTypeName", "columnComment": "店面类型" },
+    { "columnDefine": "provinceName", "columnComment": "省" },
+    { "columnDefine": "cityName", "columnComment": "市" },
+    { "columnDefine": "districtName", "columnComment": "区" },
+    { "columnDefine": "streetName", "columnComment": "街道" },
+    { "columnDefine": "storeAddress", "columnComment": "具体地址" },
+    { "columnDefine": "auditStatus", "columnComment": "审核状态" },
+    { "columnDefine": "createTime", "columnComment": "创建时间" },
+    { "columnDefine": "detail_name", "columnComment": "门店名称(详情)" },
+    { "columnDefine": "detail_code", "columnComment": "门店编码(详情)" },
+    { "columnDefine": "detail_user", "columnComment": "负责人姓名(详情)" },
+    { "columnDefine": "detail_phone", "columnComment": "联系方式(详情)" },
+    { "columnDefine": "detail_status", "columnComment": "门店状态(详情)" },
+    { "columnDefine": "detail_type", "columnComment": "门店类型(详情)" },
+    { "columnDefine": "detail_superCode", "columnComment": "上级编码(详情)" },
+    { "columnDefine": "detail_time", "columnComment": "创建时间(详情)" },
+    { "columnDefine": "detail_superName", "columnComment": "上级经销商(详情)" },
+    { "columnDefine": "detail_address", "columnComment": "门店地址(详情)" },
+    { "columnDefine": "detail_photo", "columnComment": "门头照(详情)" }
+  ],
+  "list": [
+    {
+      "columnDefine": "merchantCode",
+      "columnComment": "SAP经销商编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "merchantName",
+      "columnComment": "上级经销商名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+
+    {
+      "columnDefine": "regionalManagerName",
+      "columnComment": "大区经理",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "marketingManagerName",
+      "columnComment": "营销经理",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "code",
+      "columnComment": "门店编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "name",
+      "columnComment": "门店名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "chargeName",
+      "columnComment": "门店负责人",
+      "columnType": "options",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "chargeNamePhone",
+      "columnComment": "手机号",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "provinceName",
+      "columnComment": "省",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "cityName",
+      "columnComment": "市",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "districtName",
+      "columnComment": "区",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "storeAddress",
+      "columnComment": "具体地址",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "statusDesc",
+      "columnComment": "审核状态",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "storeTypeName",
+      "columnComment": "门店类型",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "createTime",
+      "columnComment": "创建时间",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    }
+  ],
+  "searchs": [
+    {
+      "columnDefine": "id",
+      "columnComment": "逻辑主键",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "name",
+      "columnComment": "门店名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "code",
+      "columnComment": "门店编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "serialNumber",
+      "columnComment": "门店编号",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "chargeName",
+      "columnComment": "负责人名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "chargeNamePhone",
+      "columnComment": "联系方式",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "merchantId",
+      "columnComment": "所属经销商id",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "merchantCode",
+      "columnComment": "经销商编码(SAP)",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "merchantName",
+      "columnComment": "经销商名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "saleOrgId",
+      "columnComment": "销售组织ID",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "saleOrgCode",
+      "columnComment": "销售组织编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "saleOrgName",
+      "columnComment": "销售组织名称",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "storeTypeCode",
+      "columnComment": "店面类型;",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "storeTypeName",
+      "columnComment": "店面类型;",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "provinceCode",
+      "columnComment": "省code",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "provinceName",
+      "columnComment": "省名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "cityCode",
+      "columnComment": "市code",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "cityName",
+      "columnComment": "市名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "districtCode",
+      "columnComment": "区code",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "districtName",
+      "columnComment": "区名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "streetCode",
+      "columnComment": "街道code",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "storeAddress",
+      "columnComment": "街道名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "storeAddress",
+      "columnComment": "详细地址",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "doorResourceId",
+      "columnComment": "门头照",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "status",
+      "columnComment": "状态",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "auditStatus",
+      "columnComment": "审核状态;",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operIdCreate",
+      "columnComment": "创建人userId",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operNameCreate",
+      "columnComment": "创建人userName",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operIdMod",
+      "columnComment": "更新人userId",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "operNameMod",
+      "columnComment": "更新人userName",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "createTime",
+      "columnComment": "创建时间",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "updateTime",
+      "columnComment": "更新时间",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "remark",
+      "columnComment": "备注",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": true,
+      "conditions": "=",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "companyOrgName",
+      "columnComment": "公司机构名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "saleRegionName",
+      "columnComment": "所属销售大区NAME",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "regionalManagerName",
+      "columnComment": "大区经理name",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "marketingManagerName",
+      "columnComment": "营销经理name",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "deptName",
+      "columnComment": "销售部门name",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": false
+    }
+  ],
+  "details": {
+    "main": {
+      "moduleName": "门店信息",
+      "moduleCode": "main",
+      "layoutGrid": 3,
+      "columns": [
+        {
+          "columnDefine": "id",
+          "columnComment": "逻辑主键",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": true,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "name",
+          "columnComment": "门店名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "code",
+          "columnComment": "门店编码",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "serialNumber",
+          "columnComment": "门店编号",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "chargeName",
+          "columnComment": "负责人名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "chargeNamePhone",
+          "columnComment": "联系方式",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "merchantId",
+          "columnComment": "所属经销商id",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "merchantCode",
+          "columnComment": "经销商编码(SAP)",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "merchantName",
+          "columnComment": "经销商名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "saleOrgId",
+          "columnComment": "销售组织ID",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "saleOrgCode",
+          "columnComment": "销售组织编码",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "saleOrgName",
+          "columnComment": "销售组织名称",
+          "columnType": "options",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "storeTypeCode",
+          "columnComment": "店面类型;",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "storeTypeName",
+          "columnComment": "店面类型;",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "provinceCode",
+          "columnComment": "省code",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "provinceName",
+          "columnComment": "省名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "cityCode",
+          "columnComment": "市code",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "cityName",
+          "columnComment": "市名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "districtCode",
+          "columnComment": "区code",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "districtName",
+          "columnComment": "区名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "streetCode",
+          "columnComment": "街道code",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "streetName",
+          "columnComment": "街道名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "storeAddress",
+          "columnComment": "详细地址",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "doorResourceId",
+          "columnComment": "门头照",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "status",
+          "columnComment": "状态",
+          "columnType": "options",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "auditStatus",
+          "columnComment": "审核状态;",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operIdCreate",
+          "columnComment": "创建人userId",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operNameCreate",
+          "columnComment": "创建人userName",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operIdMod",
+          "columnComment": "更新人userId",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "operNameMod",
+          "columnComment": "更新人userName",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "createTime",
+          "columnComment": "创建时间",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "updateTime",
+          "columnComment": "更新时间",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "remark",
+          "columnComment": "备注",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": true,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": false,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": false,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "companyOrgName",
+          "columnComment": "公司机构名称",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "saleRegionName",
+          "columnComment": "所属销售大区NAME",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "regionalManagerName",
+          "columnComment": "大区经理name",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "marketingManagerName",
+          "columnComment": "营销经理name",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        },
+        {
+          "columnDefine": "deptName",
+          "columnComment": "销售部门name",
+          "columnType": "string",
+          "defaultValue": null,
+          "disabled": false,
+          "placeholder": "",
+          "compentWidth": 100,
+          "allowClear": false,
+          "formColumn": 1,
+
+          "isCommit": true,
+          "required": false,
+          "readOnly": false,
+          "isHide": false,
+          "isDetailShow": true,
+
+          "regexs": []
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "columns": [
+    { "columnDefine": "parentMerchantCode", "columnComment": "所属一网编码" },
+    { "columnDefine": "parentMerchantName", "columnComment": "所属一网名称" },
+    { "columnDefine": "companyOrgName", "columnComment": "公司机构" },
+    { "columnDefine": "saleOrgName", "columnComment": "销售组织" },
+    { "columnDefine": "saleRegionName", "columnComment": "销售大区" },
+    { "columnDefine": "merchantCode", "columnComment": "二网编码" },
+    { "columnDefine": "merchantName", "columnComment": "二网名称" },
+    { "columnDefine": "netStatusDesc", "columnComment": "二网状态" },
+    { "columnDefine": "merchantMobile", "columnComment": "二网登录账号" },
+    { "columnDefine": "chargeUserName", "columnComment": "负责人" },
+    { "columnDefine": "chargeUserTel", "columnComment": "负责人手机号" },
+    { "columnDefine": "provinceName", "columnComment": "省" },
+    { "columnDefine": "cityName", "columnComment": "市" },
+    { "columnDefine": "districtName", "columnComment": "区" },
+    { "columnDefine": "streetName", "columnComment": "街道" },
+    { "columnDefine": "address", "columnComment": "具体地址" },
+    { "columnDefine": "statusDesc", "columnComment": "审核状态" },
+    { "columnDefine": "developDate", "columnComment": "入网日期" },
+
+    { "columnDefine": "doorHeadPhotos", "columnComment": "详情-门头照片" },
+    {
+      "columnDefine": "busLicenseResourceUrl",
+      "columnComment": "详情-营业执照"
+    }
+  ],
+  "list": [
+    {
+      "columnDefine": "parentMerchantCode",
+      "columnComment": "所属一网编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "parentMerchantName",
+      "columnComment": "所属一网名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "companyOrgName",
+      "columnComment": "公司机构",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "saleOrgName",
+      "columnComment": "销售组织",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "saleRegionName",
+      "columnComment": "销售大区",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "merchantCode",
+      "columnComment": "二网编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "merchantName",
+      "columnComment": "二网名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "netStatusDesc",
+      "columnComment": "二网状态",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "merchantMobile",
+      "columnComment": "二网登录账号",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "chargeUserName",
+      "columnComment": "负责人",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "chargeUserTel",
+      "columnComment": "负责人手机号",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "provinceName",
+      "columnComment": "省",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "cityName",
+      "columnComment": "市",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "districtName",
+      "columnComment": "区",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "address",
+      "columnComment": "具体地址",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+
+    {
+      "columnDefine": "developDate",
+      "columnComment": "入网日期",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    }
+  ],
+  "searchs": [
+    {
+      "columnDefine": "companyOrgCode",
+      "columnComment": "公司机构",
+      "columnType": "options",
+      "dataSource": "company",
+      "isOrg": true,
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "saleOrgCode",
+      "columnComment": "销售组织",
+      "columnType": "options",
+      "dataSource": "salesOrg",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "deptCode",
+      "columnComment": "销售部门",
+      "columnType": "options",
+      "dataSource": "dept",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "saleRegionCode",
+      "columnComment": "销售大区",
+      "columnType": "options",
+      "dataSource": "salesRegion",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "parentMerchantCode",
+      "columnComment": "一网编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "parentMerchantName",
+      "columnComment": "一网名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "merchantCode",
+      "columnComment": "二网编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "merchantName",
+      "columnComment": "二网名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "netStatus",
+      "columnComment": "经销商状态",
+      "columnType": "options",
+      "dataSource": "neted_status",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+
+    {
+      "columnDefine": "createTime",
+      "columnComment": "入网日期",
+      "columnType": "date",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    }
+  ],
+  "details": {
+    "main": {
+      "moduleName": "基础信息",
+      "moduleCode": "main",
+      "layoutGrid": 3,
+      "columns": []
+    },
+    "children": [
+      {
+        "moduleName": "商品信息",
+        "moduleCode": "orderDetail",
+        "layoutGrid": 3,
+        "isForm": false,
+        "columns": []
+      }
+    ]
+  }
+}

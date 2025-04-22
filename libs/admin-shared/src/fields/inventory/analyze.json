@@ -1,0 +1,265 @@
+{
+  "columns": [],
+  "list": [
+    {
+      "columnDefine": "merchantCode",
+      "columnComment": "所属经销商编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 140,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "merchantName",
+      "columnComment": "所属经销商名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 140,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "warehouseName",
+      "columnComment": "所属仓库",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 140,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "strainName",
+      "columnComment": "品系",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "categoryName",
+      "columnComment": "品类",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "sapColorName",
+      "columnComment": "颜色",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "goodsName",
+      "columnComment": "商品名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 180,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "goodsCode",
+      "columnComment": "商品编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 120,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "vin",
+      "columnComment": "商品VIN码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 120,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "vehicleNum",
+      "columnComment": "整车入库数量",
+      "columnType": "string",
+      "isShow": false,
+      "alineType": "center",
+      "columnWidth": 120,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "inNum",
+      "columnComment": "入库记录",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "outNum",
+      "columnComment": "出库记录",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "age",
+      "columnComment": "商品总库龄",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": 120,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    }
+  ],
+  "searchs": [
+    {
+      "columnDefine": "companyOrgId",
+      "columnComment": "公司机构",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true,
+      "dataSource": "company",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "saleOrgId",
+      "columnComment": "销售组织",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": false,
+      "dataSource": "salesOrg",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "deptOrgId",
+      "columnComment": "销售部门",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": false,
+      "dataSource": "dept",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "regionOrgId",
+      "columnComment": "销售大区",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": false,
+      "dataSource": "salesRegion",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "merchantName",
+      "columnComment": "经销商名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "merchantCode",
+      "columnComment": "经销商编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "strainName",
+      "columnComment": "品系",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "categoryName",
+      "columnComment": "品类",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "sapColorName",
+      "columnComment": "颜色",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "vin",
+      "columnComment": "商品VIN码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": false
+    }
+  ],
+  "details": {
+    "main": {
+      "moduleName": "基础信息",
+      "moduleCode": "main",
+      "layoutGrid": 3,
+      "columns": []
+    },
+    "children": [
+      {
+        "moduleName": "商品信息",
+        "moduleCode": "orderDetail",
+        "layoutGrid": 3,
+        "isForm": false,
+        "columns": []
+      }
+    ]
+  }
+}

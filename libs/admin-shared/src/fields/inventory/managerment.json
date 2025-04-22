@@ -1,0 +1,188 @@
+{
+  "columns": [],
+  "list": [
+    {
+      "columnDefine": "merchantCode",
+      "columnComment": "经销商编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "merchantName",
+      "columnComment": "经销商名称",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "vehicleNum",
+      "columnComment": "整车库存",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "partsNum",
+      "columnComment": "配件库存",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "guangxuanNum",
+      "columnComment": "广宣品库存",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "warehouseNum",
+      "columnComment": "仓库数量",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    }
+  ],
+  "searchs": [
+    {
+      "columnDefine": "companyOrgId",
+      "columnComment": "公司机构",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true,
+      "dataSource": "company",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "saleOrgId",
+      "columnComment": "销售组织",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": false,
+      "dataSource": "salesOrg",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "deptOrgId",
+      "columnComment": "销售部门",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": false,
+      "dataSource": "dept",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "regionOrgId",
+      "columnComment": "销售大区",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": false,
+      "dataSource": "salesRegion",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "merchantName",
+      "columnComment": "经销商名称",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "merchantCode",
+      "columnComment": "经销商编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": false
+    },
+    {
+      "columnDefine": "warehouseNum",
+      "columnComment": "仓库数量",
+      "columnType": "number",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": ">",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "vehicleNum",
+      "columnComment": "整车库存",
+      "columnType": "number",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": ">",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "partsNum",
+      "columnComment": "配件库存",
+      "columnType": "number",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": ">",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "guangxuanNum",
+      "columnComment": "广宣品库存",
+      "columnType": "number",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": ">",
+      "isCommon": true
+    }
+  ],
+  "details": {
+    "main": {
+      "moduleName": "基础信息",
+      "moduleCode": "main",
+      "layoutGrid": 3,
+      "columns": []
+    },
+    "children": [
+      {
+        "moduleName": "商品信息",
+        "moduleCode": "orderDetail",
+        "layoutGrid": 3,
+        "isForm": false,
+        "columns": []
+      }
+    ]
+  }
+}

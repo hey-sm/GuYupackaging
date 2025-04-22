@@ -1,0 +1,397 @@
+{
+  "columns": [
+    { "columnDefine": "process", "columnComment": "是否处理" },
+    { "columnDefine": "originalOrderCode", "columnComment": "订单编码" },
+    { "columnDefine": "saleOrgName", "columnComment": "销售组织" },
+    { "columnDefine": "saleDepartmentName", "columnComment": "销售部门" },
+    { "columnDefine": "orderTypeDesc", "columnComment": "订单类型" },
+    { "columnDefine": "sapOrderCode", "columnComment": "变更前SAP订单编码" },
+    { "columnDefine": "newSapOrderCode", "columnComment": "变更后SAP订单编码" },
+    { "columnDefine": "buyerName", "columnComment": "订货单位" },
+    { "columnDefine": "amountPaid", "columnComment": "订单金额" },
+    { "columnDefine": "createOrderTime", "columnComment": "下单日期" },
+    { "columnDefine": "regionalArea", "columnComment": "大区区域" },
+    { "columnDefine": "regionalCustomerName", "columnComment": "大区经理" },
+    { "columnDefine": "marketingCustomerName", "columnComment": "营销经理" },
+    { "columnDefine": "businessName", "columnComment": "业务助理" },
+    { "columnDefine": "selfName", "columnComment": "是否自提" },
+    { "columnDefine": "auditName", "columnComment": "是否审核" },
+    { "columnDefine": "auditTime", "columnComment": "提交日期" },
+    { "columnDefine": "uploadTime", "columnComment": "上传日期" },
+    { "columnDefine": "statusDesc", "columnComment": "订单状态" },
+    { "columnDefine": "preDeliveryDate", "columnComment": "预发货日期" },
+    { "columnDefine": "productionDate", "columnComment": "排产日期" },
+    { "columnDefine": "contactName", "columnComment": "联系人" },
+    { "columnDefine": "contactPhone", "columnComment": "联系电话" },
+    { "columnDefine": "reason", "columnComment": "更换原因" },
+
+    { "columnDefine": "detail_title", "columnComment": "商品信息-名称" },
+    { "columnDefine": "detail_goodsCode", "columnComment": "商品信息-编码" },
+    { "columnDefine": "detail_unitName", "columnComment": "商品信息-单位" },
+    { "columnDefine": "detail_number", "columnComment": "商品信息-订单数量" },
+    {
+      "columnDefine": "detail_goodsSpecName",
+      "columnComment": "商品信息-规格"
+    },
+    { "columnDefine": "detail_vin", "columnComment": "商品信息-商品VIN码" },
+    { "columnDefine": "detail_unitPrice", "columnComment": "商品信息-单价" },
+    {
+      "columnDefine": "detail_createOrderTime",
+      "columnComment": "商品信息-下单日期"
+    },
+    {
+      "columnDefine": "detail_sapDeliveryAddress",
+      "columnComment": "商品信息-工厂"
+    }
+  ],
+  "list": [
+    {
+      "columnDefine": "process",
+      "columnComment": "是否处理",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "originalOrderCode",
+      "columnComment": "订单编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "saleOrgName",
+      "columnComment": "销售组织",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "saleDepartmentName",
+      "columnComment": "销售部门",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "orderTypeDesc",
+      "columnComment": "订单类型",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "sapOrderCode",
+      "columnComment": "变更前SAP订单编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "newSapOrderCode",
+      "columnComment": "变更后SAP订单编码",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "buyerName",
+      "columnComment": "订货单位",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "amountPaid",
+      "columnComment": "订单金额",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "createOrderTime",
+      "columnComment": "下单日期",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "regionalArea",
+      "columnComment": "大区区域",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "regionalCustomerName",
+      "columnComment": "大区经理",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "marketingCustomerName",
+      "columnComment": "营销经理",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "businessName",
+      "columnComment": "业务助理",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "selfName",
+      "columnComment": "是否自提",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "auditName",
+      "columnComment": "审核状态",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "auditTime",
+      "columnComment": "审核日期",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "uploadStatusDesc",
+      "columnComment": "上传状态",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "uploadTime",
+      "columnComment": "上传日期",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "statusDesc",
+      "columnComment": "订单状态",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "preDeliveryDate",
+      "columnComment": "预发货日期",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    },
+    {
+      "columnDefine": "productionDate",
+      "columnComment": "排产日期",
+      "columnType": "string",
+      "isShow": true,
+      "alineType": "center",
+      "columnWidth": null,
+      "isHighlight": false,
+      "highlightConfigs": [],
+      "isSum": false
+    }
+  ],
+  "searchs": [
+    {
+      "columnDefine": "saleOrgCode",
+      "columnComment": "销售组织",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": false,
+      "dataSource": "salesOrg",
+      "isOrg": true
+    },
+    {
+      "columnDefine": "originalOrderCode",
+      "columnComment": "订单编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "sapOrderCode",
+      "columnComment": "SAP订单编码",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "buyerName",
+      "columnComment": "订货单位",
+      "columnType": "string",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "contain",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "orderType",
+      "columnComment": "订单类型",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true,
+      "dataSource": "order_type"
+    },
+    {
+      "columnDefine": "status",
+      "columnComment": "订单状态",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true,
+      "dataSource": "order_status"
+    },
+    {
+      "columnDefine": "createOrderTime",
+      "columnComment": "下单日期",
+      "columnType": "date",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "auditStatus",
+      "columnComment": "订单状态",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true,
+      "dataSource": "change_status"
+    },
+    {
+      "columnDefine": "auditTime",
+      "columnComment": "审核日期",
+      "columnType": "date",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true
+    },
+    {
+      "columnDefine": "uploadStatus",
+      "columnComment": "上传状态",
+      "columnType": "options",
+      "defaultValue": null,
+      "disabled": false,
+      "conditions": "=",
+      "isCommon": true,
+      "dataSource": "upload_status"
+    }
+  ],
+  "details": {
+    "main": {
+      "moduleName": "订单_变更_记录",
+      "moduleCode": "main",
+      "layoutGrid": 3,
+      "columns": []
+    }
+  }
+}
