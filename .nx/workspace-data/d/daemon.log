@@ -1,9 +1,0 @@
-[NX Daemon Server] - 2025-04-22T15:55:26.731Z - Started listening on: \\.\pipe\nx\C:\Users\admin\AppData\Local\Temp\8f2c1c29b7439ef1a730\d.sock
-[NX Daemon Server] - 2025-04-22T15:55:26.736Z - [WATCHER]: Subscribed to changes within: D:\myproject\org (native)
-[NX Daemon Server] - 2025-04-22T15:55:26.748Z - Established a connection. Number of open connections: 1
-[NX Daemon Server] - 2025-04-22T15:55:26.752Z - Closed a connection. Number of open connections: 0
-[NX Daemon Server] - 2025-04-22T15:55:26.752Z - Established a connection. Number of open connections: 1
-[NX Daemon Server] - 2025-04-22T15:55:26.754Z - [REQUEST]: Client Request for Project Graph Received
-[NX Daemon Server] - 2025-04-22T15:55:27.051Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
-[NX Daemon Server] - 2025-04-22T15:55:27.052Z - [REQUEST]: 
-[NX Daemon Server] - 2025-04-22T15:55:27.052Z - [REQUEST]: 
