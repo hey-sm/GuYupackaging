@@ -35,23 +35,31 @@ export const useAuthStore = create(
     logout: () => void;
     getMenus: () => Promise<SysMenuTreeResponse[]>;
     getUser: () => Promise<void>;
-    setINfoList: (value:any) => void;
+    setINfoList: (value: any) => void;
+    theme: 'light' | 'dark';
+    setTheme: (theme: 'light' | 'dark') => void;
   }>((set, get) => ({
+    theme: 'light',
     loading: false,
     menus: [],
-    infoList:[],
+    infoList: [],
     classify: [],
-    setINfoList: (data:any) => {
-      const infoList:any = get().infoList;
-      const index = infoList.findIndex((item:any)=>item?.path === data?.path)
+    setTheme: (theme) => {
+      set({ theme });
+    },
+    setINfoList: (data: any) => {
+      const infoList: any = get().infoList;
+      const index = infoList.findIndex(
+        (item: any) => item?.path === data?.path
+      );
       if (index !== -1) {
-        const list = infoList.map((t:any) => {
-          return t.path === data.path ? data: t;
+        const list = infoList.map((t: any) => {
+          return t.path === data.path ? data : t;
         });
-        set({ infoList: list});
+        set({ infoList: list });
       } else {
-        infoList.push(data)
-        set({ infoList: infoList});
+        infoList.push(data);
+        set({ infoList: infoList });
       }
     },
     login: async (credentials) => {
@@ -66,7 +74,7 @@ export const useAuthStore = create(
         useSessionStore.getState().setSession(session);
         return session;
       } else {
-        message.error(res?.detail)
+        message.error(res?.message);
       }
       return null;
     },

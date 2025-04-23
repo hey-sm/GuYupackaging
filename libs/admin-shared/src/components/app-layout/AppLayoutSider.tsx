@@ -19,6 +19,12 @@ const AppLayoutSider: React.FC<LayoutSiderProps> = ({
   ...props
 }) => {
   const navigate = useNavigate();
+  const [responsiveCollapsed, setResponsiveCollapsed] = React.useState(false);
+
+  const sureCollapsed = useMemo(() => {
+    return collapsed || responsiveCollapsed;
+  }, [collapsed, responsiveCollapsed]);
+
   const { pathname, search } = useLocation();
 
   const { isLoading, data: menus = [] } = useGetMenus<SysMenuTreeResponse>();
@@ -125,14 +131,21 @@ const AppLayoutSider: React.FC<LayoutSiderProps> = ({
   return (
     <Layout.Sider
       width={240}
+      breakpoint="lg"
+      collapsedWidth="0"
+      onCollapse={(collapsed, type) => {
+        if (type === 'responsive') {
+          setResponsiveCollapsed(collapsed);
+        }
+      }}
       trigger={null}
       collapsible
-      collapsed={collapsed}
-      theme="dark"
+      collapsed={sureCollapsed}
+      // theme="dark"
       {...props}
     >
       <Container>
-        {/* {isLoading ? (
+        {isLoading ? (
           <div className="p-4">
             <Skeleton paragraph={{ rows: 12 }} active />
           </div>
@@ -143,21 +156,11 @@ const AppLayoutSider: React.FC<LayoutSiderProps> = ({
               selectedKeys={selectKey}
               defaultOpenKeys={openKeys}
               onClick={handleClickMenu}
-              theme="dark"
+              // theme="dark"
               items={items}
             />
           </Scrollbars>
-        )} */}
-        <Scrollbars autoHide>
-          <Menu
-            mode="inline"
-            selectedKeys={selectKey}
-            defaultOpenKeys={openKeys}
-            onClick={handleClickMenu}
-            theme="dark"
-            items={items}
-          />
-        </Scrollbars>
+        )}
       </Container>
     </Layout.Sider>
   );
@@ -167,7 +170,7 @@ const Container = styled.div`
   width: 100%;
   height: 100vh;
   z-index: 3;
-
+  /*
   .ant-menu-dark {
     &.ant-menu {
       color: #fff;
@@ -178,7 +181,7 @@ const Container = styled.div`
         }
       }
     }
-  }
+  } */
 
   .logo {
     position: relative;

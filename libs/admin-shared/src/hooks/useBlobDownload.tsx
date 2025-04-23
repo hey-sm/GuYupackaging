@@ -1,10 +1,3 @@
-/*
- * @Author: liaolin
- * @Date: 2023-04-15 10:42:18
- * @LastEditors: liaolin
- * @LastEditTime: 2023-05-05 10:57:48
- * @Description: 导出
- */
 import axios from 'axios';
 import { useSessionStore } from '../auth';
 type Type = 'fetch' | 'axios';
@@ -36,18 +29,18 @@ const axiosDownload = (
   src: string,
   name: string,
   suffix: string,
-  data:any,
+  data: any,
   headers = {},
-  callBack?:()=> void
+  callBack?: () => void
 ) => {
   const session = useSessionStore.getState().session;
   const header = {
-    Authorization: session
-  }
+    Authorization: session,
+  };
   axios({
     url: src,
     method: 'GET',
-    headers: {...header, ...headers},
+    headers: { ...header, ...headers },
     params: data,
     responseType: 'blob', // important
   }).then((response) => {
@@ -58,6 +51,6 @@ const axiosDownload = (
     document.body.appendChild(link);
     link.click();
     link.parentNode?.removeChild(link);
-    callBack?.()
+    callBack?.();
   });
 };

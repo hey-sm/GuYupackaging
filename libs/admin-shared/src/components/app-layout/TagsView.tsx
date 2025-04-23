@@ -70,7 +70,12 @@ export const TagsView = () => {
   );
 
   return (
-    <Container>
+    <Container
+      className="
+      shadow-[2px_2px_8px_0_rgba(0,0,0,0.25),1px_1px_2px_0_rgba(82,90,102,0.04)]
+    dark:shadow-[2px_2px_8px_0_rgba(210,210,210,1.08),1px_1px_2px_0_rgba(210,210,210,1.04)]
+    "
+    >
       <Tabs
         type="editable-card"
         hideAdd
@@ -85,9 +90,7 @@ export const TagsView = () => {
 };
 
 const Container = styled.div`
-  box-shadow: 2px 2px 8px 0px rgba(82, 90, 102, 0.08),
-    1px 1px 2px 0px rgba(82, 90, 102, 0.04);
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 0 20px;
   height: 60px;
   position: relative;

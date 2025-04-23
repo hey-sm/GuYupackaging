@@ -1,10 +1,12 @@
 import { Down } from '@icon-park/react';
 import { Avatar, Dropdown, DropDownProps } from 'antd';
 import { motion } from 'framer-motion';
-import { FC, useMemo, useState } from 'react';
+import { FC, useCallback, useMemo, useState } from 'react';
 import styled, { createGlobalStyle, css } from 'styled-components';
 import { useGetIdentity, useLogout } from '../../auth';
 import { UserIdentity } from '../../types';
+import ChangeTheme from './ChangeTheme';
+import { useAuthStore } from '@org/admin-shared';
 
 const variants = {
   open: { transform: `rotateX(0)` },
@@ -18,6 +20,7 @@ export type UserMenuProps = {
 export const UserMenu: FC<UserMenuProps> = (props) => {
   const { menu: menuProp } = props;
   const { isLoading, data } = useGetIdentity<UserIdentity>();
+  const { theme, setTheme } = useAuthStore((state) => state);
 
   const logoutMutation = useLogout();
 
@@ -37,7 +40,17 @@ export const UserMenu: FC<UserMenuProps> = (props) => {
       ],
     };
   }, [logoutMutation, menuProp]);
-
+  const handleThemeChange = useCallback(
+    (theme: 'light' | 'dark') => {
+      setTheme(theme);
+      if (theme === 'dark') {
+        document.body.classList.toggle('dark');
+      } else {
+        document.body.classList.remove('dark');
+      }
+    },
+    [theme]
+  );
   return (
     <Container>
       {!isLoading && data?.fullName && (
@@ -64,6 +77,31 @@ export const UserMenu: FC<UserMenuProps> = (props) => {
           <GlobalStyle />
         </div>
       )}
+      <div className="user-menu">
+        <ChangeTheme theme={theme} onChange={handleThemeChange} />
+        <div className="flex">
+          <Avatar src={data?.avatar} size={32} />
+          <StyledDropdown
+            onOpenChange={setOpen}
+            overlayClassName="user-menu-dropdown"
+            menu={menu}
+            trigger={['click']}
+          >
+            <a className="full-name">
+              <span>{data?.fullName}</span>
+              <div className="arrow">
+                <motion.div
+                  animate={open ? 'open' : 'closed'}
+                  variants={variants}
+                >
+                  <Down />
+                </motion.div>
+              </div>
+            </a>
+          </StyledDropdown>
+        </div>
+        <GlobalStyle />
+      </div>
     </Container>
   );
 };
@@ -97,6 +135,7 @@ const Container = styled.div`
   align-items: center;
 
   .user-menu {
+    gap: 12px;
     display: flex;
   }
 

@@ -1,11 +1,3 @@
-/*
- * @Author: liaolin
- * @Date: 2023-04-10 11:18:13
- * @LastEditors: liaolin
- * @LastEditTime: 2023-04-12 17:05:48
- * @Description: 请填写简介
- * 仅限内部使用
- */
 import { LoginPublic } from '@org/features/components';
 import { useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';

@@ -7,8 +7,9 @@ import {
   ProtectedRoute,
   Exhibit,
   Invoice,
+  useAuthStore,
 } from '@org/admin-shared';
-import { ConfigProvider } from 'antd';
+import { ConfigProvider, theme as AntdTheme } from 'antd';
 import zhCN from 'antd/es/locale/zh_CN';
 import { Admin } from '@org/features/architecture';
 
@@ -42,8 +43,8 @@ const router = createHashRouter([
       {
         path: 'workbench',
         element: (
-          <div className="w-full h-full flex items-center justify-center text-[36px]">
-            欢迎来到包装材料平台
+          <div className="w-full h-full flex items-center justify-center text-[36px] text-color-primary">
+            欢迎来到XXXXXXX平台
           </div>
         ),
       },
@@ -66,10 +67,17 @@ const router = createHashRouter([
 ]);
 
 export function App() {
+  const theme = useAuthStore((state) => state.theme);
   return (
     <AliyunOSSProvider config={aliyunOSSConfig}>
       <AliveScope>
-        <ConfigProvider locale={zhCN}>
+        <ConfigProvider
+          locale={zhCN}
+          theme={{
+            cssVar: true,
+            algorithm: theme === 'dark' ? AntdTheme.darkAlgorithm : undefined,
+          }}
+        >
           <Admin authProvider={authProvider} resources={[]}>
             <RouterProvider router={router} />
           </Admin>

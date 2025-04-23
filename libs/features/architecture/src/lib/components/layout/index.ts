@@ -6,3 +6,4 @@ export * from './SidebarToggleButton';
 export * from './UserMenu';
 export * from './UserMenuContext';
 export * from './useSidebarState';
+export * from './ChangeTheme';

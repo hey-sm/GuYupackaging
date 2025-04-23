@@ -2,7 +2,6 @@ import {
   createAdmin,
   queryOwnSysEmployee,
   listSysMenuTreeButton,
-  // } from 'admin-shared';
 } from '@org/admin-shared';
 import { AuthProvider } from '@org/features/architecture';
 import { sortBy, uniqBy } from 'lodash-es';

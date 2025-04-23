@@ -1,4 +1,4 @@
-import { Layout } from 'antd';
+import { Layout, App } from 'antd';
 import { FC, ReactNode } from 'react';
 import styled from 'styled-components';
 import UserMenu from './UserMenu';
@@ -13,8 +13,9 @@ const DefaultUserMenu = <UserMenu />;
 
 export const AppBar: FC<AppBarProps> = (props) => {
   const { children, className, userMenu = DefaultUserMenu } = props;
+
   return (
-    <Root className={className}>
+    <Root className={className} theme={'light'}>
       <div>{children}</div>
       {userMenu}
     </Root>
@@ -24,7 +25,7 @@ export const AppBar: FC<AppBarProps> = (props) => {
 export const Root = styled(Layout.Header)`
   height: 60px;
   padding: 0 18px;
-  background: #ffffff;
+  /* background: #ffffff; */
   box-shadow: 2px 2px 8px 0px rgba(82, 90, 102, 0.08),
     1px 1px 2px 0px rgba(82, 90, 102, 0.04);
   display: flex;

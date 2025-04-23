@@ -128,11 +128,13 @@ const AppLayoutHeader = ({ collapsed, onChange }: AppLayoutHeaderProps) => {
             filterOption={handleMenuFilter}
             onSelect={handleMenuChange}
             placeholder="快速跳转菜单"
-            bordered={false}
+            // bordered={false}
+            variant="borderless"
             suffixIcon={<SearchOutlined />}
             showSearch
             allowClear
-            style={{ width: 200 }}
+            size={'middle'}
+            // style={{ width: 200 }}
           />
         </Space>
       </div>

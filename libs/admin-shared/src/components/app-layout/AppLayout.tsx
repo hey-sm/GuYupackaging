@@ -1,7 +1,7 @@
 import { Layout } from 'antd';
 import { useGetIdentity, useGetMenus } from '@org/features/architecture';
 import { last } from 'lodash-es';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import KeepAlive from 'react-activation';
 import { Outlet, useLocation, useMatches } from 'react-router-dom';
 import styled from 'styled-components';
@@ -91,7 +91,7 @@ const Container = styled(Layout)`
   }
 
   .ant-layout-content {
-    background-color: #f7f8fa;
+    /* background-color: #f7f8fa; */
     display: flex;
     flex-direction: column;
     height: 100%;
