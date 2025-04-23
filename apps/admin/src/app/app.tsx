@@ -5,7 +5,6 @@ import {
   ProtectedRoute,
   Exhibit,
   Invoice,
-  useAuthStore,
 } from '@org/admin-shared';
 import { ConfigProvider, theme as AntdTheme } from 'antd';
 import zhCN from 'antd/es/locale/zh_CN';
@@ -16,7 +15,7 @@ import { AliveScope } from 'react-activation';
 import { createHashRouter, Navigate, RouterProvider } from 'react-router-dom';
 import 'moment/dist/locale/zh-cn';
 
-import { AliyunOSSProvider, useTheme } from '@org/shared';
+import { AliyunOSSProvider, ColorPicker, useTheme } from '@org/shared';
 import { authProvider } from './authProvider';
 
 moment.locale('zh-cn');
@@ -42,7 +41,7 @@ const router = createHashRouter([
         path: 'workbench',
         element: (
           <div className="w-full h-full flex items-center justify-center text-[36px] text-color-primary">
-            欢迎来到XXXXXXX平台
+            <ColorPicker />
           </div>
         ),
       },

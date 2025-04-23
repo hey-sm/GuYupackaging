@@ -19,7 +19,6 @@ export default defineConfig({
   },
 
   plugins: [WindiCSS(), react(), nxViteTsPaths()],
-
   // Uncomment this if you are using workers.
   // worker: {
   //  plugins: [ nxViteTsPaths() ],
