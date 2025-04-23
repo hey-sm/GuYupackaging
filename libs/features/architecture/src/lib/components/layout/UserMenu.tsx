@@ -6,7 +6,6 @@ import styled, { createGlobalStyle, css } from 'styled-components';
 import { useGetIdentity, useLogout } from '../../auth';
 import { UserIdentity } from '../../types';
 import ChangeTheme from './ChangeTheme';
-import { useAuthStore } from '@org/admin-shared';
 
 const variants = {
   open: { transform: `rotateX(0)` },
@@ -14,13 +13,14 @@ const variants = {
 };
 
 export type UserMenuProps = {
+  theme?: 'light' | 'dark';
+  setTheme?: (theme: 'light' | 'dark') => void;
   menu?: DropDownProps['menu'];
 };
 
 export const UserMenu: FC<UserMenuProps> = (props) => {
-  const { menu: menuProp } = props;
+  const { menu: menuProp, theme, setTheme } = props;
   const { isLoading, data } = useGetIdentity<UserIdentity>();
-  const { theme, setTheme } = useAuthStore((state) => state);
 
   const logoutMutation = useLogout();
 
@@ -42,11 +42,11 @@ export const UserMenu: FC<UserMenuProps> = (props) => {
   }, [logoutMutation, menuProp]);
   const handleThemeChange = useCallback(
     (theme: 'light' | 'dark') => {
-      setTheme(theme);
+      setTheme?.(theme);
       if (theme === 'dark') {
-        document.body.classList.toggle('dark');
+        document.body.classList = 'dark';
       } else {
-        document.body.classList.remove('dark');
+        document.body.classList = 'light';
       }
     },
     [theme]
@@ -119,10 +119,9 @@ const GlobalStyle = createGlobalStyle`${css`
         border-radius: 6px;
         font-size: 12px;
         line-height: 12px;
-        color: #1d2129;
         &:hover {
           color: #0081ff;
-          background: #e8f4ff;
+          /* background: #e8f4ff; */
         }
       }
     }

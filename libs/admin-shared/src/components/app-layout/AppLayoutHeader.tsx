@@ -5,7 +5,6 @@ import {
   TeamOutlined,
   SearchOutlined,
 } from '@ant-design/icons';
-import { SysMenuTreeResponse } from '@org/admin-shared';
 import { Space, Modal, Select } from 'antd';
 import {
   AppBar,
@@ -18,15 +17,12 @@ import { useCallback, useMemo, createElement } from 'react';
 import { useNavigate } from 'react-router-dom';
 import EditPassword from '../../auth/editPassword';
 import UserInfoModal from './userInfo';
+import { useCollapsed, useTheme } from '@org/shared';
 
-export interface AppLayoutHeaderProps {
-  collapsed: boolean;
-  onChange?: () => void;
-  onShowTheme?: () => void;
-}
-
-const AppLayoutHeader = ({ collapsed, onChange }: AppLayoutHeaderProps) => {
+const AppLayoutHeader = () => {
+  const { collapsed, setCollapsed } = useCollapsed();
   const navigate = useNavigate();
+  const { theme, setTheme } = useTheme();
 
   const logoutMutation = useLogout();
 
@@ -41,7 +37,7 @@ const AppLayoutHeader = ({ collapsed, onChange }: AppLayoutHeaderProps) => {
     });
   }, [logoutMutation]);
 
-  const { data: routes = [] } = useGetMenus<SysMenuTreeResponse>();
+  const { data: routes = [] } = useGetMenus<any>();
 
   const menus = useMemo(
     () => cloneDeep(routes).filter((v) => v.type === 'menu'),
@@ -87,6 +83,8 @@ const AppLayoutHeader = ({ collapsed, onChange }: AppLayoutHeaderProps) => {
     <AppBar
       userMenu={
         <UserMenu
+          theme={theme}
+          setTheme={setTheme}
           menu={{
             items: [
               {
@@ -121,7 +119,7 @@ const AppLayoutHeader = ({ collapsed, onChange }: AppLayoutHeaderProps) => {
         <Space>
           {createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
             className: 'trigger',
-            onClick: onChange,
+            onClick: () => setCollapsed(!collapsed),
           })}
           <Select
             options={menuOptions || []}

@@ -1,6 +1,4 @@
 import 'react-quill/dist/quill.snow.css';
-
-// 财务模块
 import {
   AppLayout,
   Login,
@@ -18,7 +16,7 @@ import { AliveScope } from 'react-activation';
 import { createHashRouter, Navigate, RouterProvider } from 'react-router-dom';
 import 'moment/dist/locale/zh-cn';
 
-import { AliyunOSSProvider } from '@org/shared';
+import { AliyunOSSProvider, useTheme } from '@org/shared';
 import { authProvider } from './authProvider';
 
 moment.locale('zh-cn');
@@ -67,7 +65,7 @@ const router = createHashRouter([
 ]);
 
 export function App() {
-  const theme = useAuthStore((state) => state.theme);
+  const { theme } = useTheme();
   return (
     <AliyunOSSProvider config={aliyunOSSConfig}>
       <AliveScope>
@@ -75,7 +73,10 @@ export function App() {
           locale={zhCN}
           theme={{
             cssVar: true,
-            algorithm: theme === 'dark' ? AntdTheme.darkAlgorithm : undefined,
+            algorithm:
+              theme === 'dark'
+                ? AntdTheme.darkAlgorithm
+                : AntdTheme.defaultAlgorithm,
           }}
         >
           <Admin authProvider={authProvider} resources={[]}>

@@ -1,29 +1,21 @@
-import { Layout, Menu, Skeleton } from 'antd';
+import { Drawer, Layout, Menu, Skeleton } from 'antd';
 import { ItemType, SubMenuType } from 'antd/lib/menu/interface';
 import { useGetMenus } from '@org/features/architecture';
 import { cloneDeep } from 'lodash-es';
 import { Scrollbars } from 'rc-scrollbars';
-import React, { useCallback, useMemo } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { SysMenuTreeResponse } from '../../model';
 import AppIcon from '../app-icons';
+import { CloseOutlined } from '@ant-design/icons';
+import { useCollapsed } from '@org/shared';
 
-interface LayoutSiderProps {
-  collapsed: boolean;
-}
-
-const AppLayoutSider: React.FC<LayoutSiderProps> = ({
-  collapsed,
-  ...props
-}) => {
+const AppLayoutSider: React.FC = () => {
+  const { collapsed, setCollapsed } = useCollapsed();
   const navigate = useNavigate();
-  const [responsiveCollapsed, setResponsiveCollapsed] = React.useState(false);
-
-  const sureCollapsed = useMemo(() => {
-    return collapsed || responsiveCollapsed;
-  }, [collapsed, responsiveCollapsed]);
+  const [responsiveCollapsed, setResponsiveCollapsed] = useState(false);
 
   const { pathname, search } = useLocation();
 
@@ -127,42 +119,75 @@ const AppLayoutSider: React.FC<LayoutSiderProps> = ({
         .map((menu) => buildMenuItem(menu)),
     [allMenus, buildMenuItem]
   );
-
   return (
-    <Layout.Sider
-      width={240}
-      breakpoint="lg"
-      collapsedWidth="0"
-      onCollapse={(collapsed, type) => {
-        if (type === 'responsive') {
-          setResponsiveCollapsed(collapsed);
-        }
-      }}
-      trigger={null}
-      collapsible
-      collapsed={sureCollapsed}
-      // theme="dark"
-      {...props}
-    >
-      <Container>
-        {isLoading ? (
-          <div className="p-4">
-            <Skeleton paragraph={{ rows: 12 }} active />
-          </div>
-        ) : (
-          <Scrollbars autoHide>
-            <Menu
-              mode="inline"
-              selectedKeys={selectKey}
-              defaultOpenKeys={openKeys}
-              onClick={handleClickMenu}
-              // theme="dark"
-              items={items}
-            />
-          </Scrollbars>
-        )}
-      </Container>
-    </Layout.Sider>
+    <>
+      <Layout.Sider
+        breakpoint="lg"
+        collapsedWidth="0"
+        onBreakpoint={(broken) => {
+          setResponsiveCollapsed(broken);
+          setCollapsed(broken);
+        }}
+        trigger={null}
+        collapsed={(collapsed && !responsiveCollapsed) || responsiveCollapsed}
+      >
+        <Container>
+          {isLoading ? (
+            <div className="p-4">
+              <Skeleton paragraph={{ rows: 12 }} active />
+            </div>
+          ) : (
+            <Scrollbars autoHide>
+              <Menu
+                mode="inline"
+                selectedKeys={selectKey}
+                defaultOpenKeys={openKeys}
+                onClick={handleClickMenu}
+                // theme="dark"
+                items={items}
+              />
+            </Scrollbars>
+          )}
+        </Container>
+      </Layout.Sider>
+      {responsiveCollapsed && (
+        <Drawer
+          open={!collapsed}
+          placement="left"
+          title={null}
+          styles={{
+            header: {
+              height: 0,
+            },
+            body: {
+              padding: 0,
+            },
+          }}
+          onClose={() => {
+            setCollapsed(true);
+          }}
+          // loading={true}
+        >
+          <Container style={{ height: 'calc(100vh - 33px)' }}>
+            {isLoading ? (
+              <div className="p-4">
+                <Skeleton paragraph={{ rows: 12 }} active />
+              </div>
+            ) : (
+              <Scrollbars autoHide>
+                <Menu
+                  mode="inline"
+                  selectedKeys={selectKey}
+                  defaultOpenKeys={openKeys}
+                  onClick={handleClickMenu}
+                  items={items}
+                />
+              </Scrollbars>
+            )}
+          </Container>
+        </Drawer>
+      )}
+    </>
   );
 };
 

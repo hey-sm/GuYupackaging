@@ -72,8 +72,8 @@ export const TagsView = () => {
   return (
     <Container
       className="
-      shadow-[2px_2px_8px_0_rgba(0,0,0,0.25),1px_1px_2px_0_rgba(82,90,102,0.04)]
-    dark:shadow-[2px_2px_8px_0_rgba(210,210,210,1.08),1px_1px_2px_0_rgba(210,210,210,1.04)]
+      shadow-[3px_1px_4px_0_rgba(0,0,0,0.25),4px_0_2px_0_rgba(82,90,102,0.04)]
+    dark:shadow-[3px_1px_4px_0_rgba(210,210,210,1.08),4px_0_2px_0_rgba(210,210,210,1.04)]
     "
     >
       <Tabs

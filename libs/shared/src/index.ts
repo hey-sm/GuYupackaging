@@ -6,3 +6,4 @@ export * from './lib/dynamic-form-set';
 export * from './lib/form-components';
 export * from './lib/form-dynamic';
 export * from './lib/utils';
+export * from './lib/jotaihooks';

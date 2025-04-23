@@ -36,7 +36,25 @@ body {
   margin: 0;
   font-family: 'AlibabaPuHuiTi' !important;
 }
+body {
+  .ant-layout-header,
+  .ant-layout-sider {
+    background-color: #ffffff;
+  }
+}
+body.light {
+  .ant-layout-header,
+  .ant-layout-sider {
+    background-color: #ffffff;
+  }
+}
 
+body.dark {
+  .ant-layout-header,
+  .ant-layout-sider {
+    background-color: #001529;
+  }
+}
 @layer base {
   :root {
     --color-primary: 12, 112, 238;
@@ -85,11 +103,11 @@ img.ant-image-preview-img {
   height: 56px;
   font-size: 16px;
   font-weight: 500;
-  color: #333;
+  // color: #333;
   border-radius: 8px 8px 0 0;
 }
 .store_commodity {
-  .ant-form-item-label{
+  .ant-form-item-label {
     flex: 0 0 90px !important;
   }
 }
@@ -101,17 +119,18 @@ img.ant-image-preview-img {
   color: #333;
 }
 /**卡片阴影**/
-.irtp_card_shadow{
-  box-shadow: 2px 2px 8px 0px rgba(82,90,102,0.08), 1px 1px 2px 0px rgba(82,90,102,0.04);
+.irtp_card_shadow {
+  box-shadow: 2px 2px 8px 0px rgba(82, 90, 102, 0.08),
+    1px 1px 2px 0px rgba(82, 90, 102, 0.04);
 }
 /**Table边线**/
-.ant-table-thead tr th{
+.ant-table-thead tr th {
   font-size: 14px;
-  font-family: Alibaba PuHuiTi 2.0-65 Medium, Alibaba PuHuiTi 20;
+  font-family: Alibaba PuHuiTi 2-65 Medium, Alibaba PuHuiTi 20;
   font-weight: bold !important;
-  color: #242A38 !important;
+  color: #242a38 !important;
   line-height: 22px;
-  border-bottom: 1px solid #E5E6EB !important;
+  border-bottom: 1px solid #e5e6eb !important;
 }
 .label {
   display: block;
@@ -187,13 +206,12 @@ img.ant-image-preview-img {
   background: #bbbdbf;
 }
 
-
 :root {
   --primary-color: #0c70ee;
   --color-333: #333333;
   --buyer-color: #666666;
   --buyer-f3: #f3f3f3;
-  --model-tetx: #4E5969;
+  --model-tetx: #4e5969;
   --buyer-backGround: #ecf2fe;
   --color-text: #37445f;
 }
@@ -213,51 +231,50 @@ img.ant-image-preview-img {
   display: flex;
   align-items: center;
 }
-.icon_height{
-  .ant-form-item{
+.icon_height {
+  .ant-form-item {
     margin-bottom: 0 !important;
   }
 }
 
 /**表头选中样式**/
 .checkTable {
-  background-color: #EBF5FF !important;
+  background-color: #ebf5ff !important;
 }
 /**上传文件样式**/
-.uploadDesc{
+.uploadDesc {
   font-size: 12px;
-  font-family: Alibaba PuHuiTi 2.0-55 Regular, Alibaba PuHuiTi 20;
+  font-family: Alibaba PuHuiTi 2-55 Regular, Alibaba PuHuiTi 20;
   font-weight: 400;
-  color: #86909C;
+  color: #86909c;
   line-height: 12px;
 }
-.upload_irtp{
-
-  .ant-upload.ant-upload-select-picture-card{
+.upload_irtp {
+  .ant-upload.ant-upload-select-picture-card {
     background-color: #ffffff !important;
   }
-  .anticon{
+  .anticon {
     font-size: 24px;
     color: var(--primary-color);
   }
 }
-.ant-upload-list-item-list-type-text{
+.ant-upload-list-item-list-type-text {
   width: 104px;
   margin-left: -20px;
 }
-.icon_btn{
+.icon_btn {
   width: 93px;
   height: 32px;
   border-radius: 6px 6px 6px 6px;
   opacity: 1;
-  border: 1px solid #D4D6D9;
+  border: 1px solid #d4d6d9;
   font-size: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: Alibaba PuHuiTi 2.0-55 Regular, Alibaba PuHuiTi 20;
+  font-family: Alibaba PuHuiTi 2-55 Regular, Alibaba PuHuiTi 20;
   font-weight: 400;
-  color: #31373D;
+  color: #31373d;
   line-height: 14px;
   margin-left: -20px;
 }
@@ -281,7 +298,7 @@ img.ant-image-preview-img {
   height: 56px;
   font-size: 16px;
   font-weight: 500;
-  color: #333;
+  // color: #333;
   border-radius: 8px 8px 0 0;
 }
 
@@ -380,8 +397,8 @@ img.ant-image-preview-img {
   color: #ff5600;
 }
 
-.list_main{
-  .ant-form-item-label{
+.list_main {
+  .ant-form-item-label {
     flex: 0 0 100px !important;
   }
 }
@@ -392,9 +409,9 @@ img.ant-image-preview-img {
   .ant-tooltip-inner {
     background-color: #fff;
     font-size: 12px;
-    font-family: Alibaba PuHuiTi 2.0-55 Regular, Alibaba PuHuiTi 20;
+    font-family: Alibaba PuHuiTi 2-55 Regular, Alibaba PuHuiTi 20;
     font-weight: 400;
-    color: #4E5969;
+    color: #4e5969;
     line-height: 20px;
     border-radius: 4px;
     box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.12);
@@ -419,20 +436,20 @@ img.ant-image-preview-img {
   border-radius: 3px;
 } */
 /**默认图片圆角**/
-.ant-image-img{
+.ant-image-img {
   border-radius: 2px;
 }
 .ant-table-cell {
-  .ant-image{
+  .ant-image {
     display: block;
   }
-  img{
+  img {
     // display: block;
-    vertical-align:top;
+    vertical-align: top;
   }
 }
 /**模态框样式**/
-.irtp_model_witdh{
+.irtp_model_witdh {
   overflow-y: auto !important;
   overflow-x: hidden !important;
   // scrollbar-width: none;
@@ -452,13 +469,13 @@ img.ant-image-preview-img {
 //   border-radius: 6px 6px 6px 6px;
 //   opacity: 1;
 // }
-.ant-btn-default:hover{
-  color: #0081FF !important;
+.ant-btn-default:hover {
+  color: #0081ff !important;
 }
 .irtp_model {
   scrollbar-width: none !important;
-  .span{
-    color: #E53434;
+  .span {
+    color: #e53434;
   }
   .irtp_model_small_text {
     font-size: 14px;
@@ -467,13 +484,12 @@ img.ant-image-preview-img {
     color: var(--model-tetx);
     line-height: 22px;
     margin-bottom: 6px;
-
   }
   .irtp_model_smart_text {
     font-size: 16px;
-    font-family: Alibaba PuHuiTi 2.0-75 SemiBold, Alibaba PuHuiTi 20;
+    font-family: Alibaba PuHuiTi 2-75 SemiBold, Alibaba PuHuiTi 20;
     font-weight: bold;
-    color: #1D2129;
+    color: #1d2129;
     line-height: 24px;
     margin-top: 20px;
     letter-spacing: 1px;
@@ -560,5 +576,3 @@ img.ant-image-preview-img {
     border-radius: 3px 0 0 3px;
   }
 }
-
-

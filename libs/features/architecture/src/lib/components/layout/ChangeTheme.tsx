@@ -2,7 +2,7 @@ import { MoonOutlined, SunOutlined } from '@ant-design/icons';
 import React, { useCallback } from 'react';
 
 export type ChangeThemeProps = {
-  theme: 'light' | 'dark';
+  theme?: 'light' | 'dark';
   onChange?: (curTheme: 'light' | 'dark') => void;
 };
 

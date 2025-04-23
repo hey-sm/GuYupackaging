@@ -1,11 +1,9 @@
 import { Layout } from 'antd';
-import { useGetIdentity, useGetMenus } from '@org/features/architecture';
+import { useGetIdentity } from '@org/features/architecture';
 import { last } from 'lodash-es';
-import React, { useEffect, useState } from 'react';
 import KeepAlive from 'react-activation';
 import { Outlet, useLocation, useMatches } from 'react-router-dom';
 import styled from 'styled-components';
-import { LayoutEvent, useLayout } from '../../hooks';
 import GlobalStyle from '../../themes/global.style';
 
 import GlobalSpinner from '../GlobalSpinner';
@@ -15,20 +13,16 @@ import AppLayoutSider from './AppLayoutSider';
 import TagsView from './TagsView';
 
 export const AppLayout = () => {
-  const { listen } = useLayout();
+  // useEffect(() => {
+  //   const layoutListen = listen(LayoutEvent.CHANGE_SIDER, (e) => {
+  //     const et = e as CustomEvent<boolean>;
+  //     setCollapsed(et.detail);
+  //   });
 
-  const [collapsed, setCollapsed] = useState(false);
-
-  useEffect(() => {
-    const layoutListen = listen(LayoutEvent.CHANGE_SIDER, (e) => {
-      const et = e as CustomEvent<boolean>;
-      setCollapsed(et.detail);
-    });
-
-    return () => {
-      layoutListen();
-    };
-  }, [listen]);
+  //   return () => {
+  //     layoutListen();
+  //   };
+  // }, [listen]);
 
   const { isLoading, data: userInfo } = useGetIdentity();
 
@@ -51,12 +45,9 @@ export const AppLayout = () => {
     <Container>
       <GlobalStyle />
       <>
-        <AppLayoutSider collapsed={collapsed} />
+        <AppLayoutSider />
         <Layout className="layout-main">
-          <AppLayoutHeader
-            collapsed={collapsed}
-            onChange={() => setCollapsed(!collapsed)}
-          />
+          <AppLayoutHeader />
           <Layout.Content className="layout-main-content">
             <TagsView />
 

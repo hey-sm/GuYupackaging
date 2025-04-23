@@ -36,17 +36,11 @@ export const useAuthStore = create(
     getMenus: () => Promise<SysMenuTreeResponse[]>;
     getUser: () => Promise<void>;
     setINfoList: (value: any) => void;
-    theme: 'light' | 'dark';
-    setTheme: (theme: 'light' | 'dark') => void;
   }>((set, get) => ({
-    theme: 'light',
     loading: false,
     menus: [],
     infoList: [],
     classify: [],
-    setTheme: (theme) => {
-      set({ theme });
-    },
     setINfoList: (data: any) => {
       const infoList: any = get().infoList;
       const index = infoList.findIndex(
