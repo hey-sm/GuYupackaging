@@ -108,7 +108,7 @@ const EditPassword = () => {
   const checkCodeModal = useMemo(
     () => (
       <Modal
-        visible={checkShow}
+        open={checkShow}
         title={false}
         footer={false}
         onCancel={() => {
@@ -165,7 +165,7 @@ const EditPassword = () => {
         }}
       >
         <EditOutlined />
-        <span className='ml-2.5'>修改密码</span>
+        <span className="ml-2.5">修改密码</span>
       </div>
 
       <Modal
@@ -221,7 +221,7 @@ const EditPassword = () => {
         height={166}
       >
         <ModalContainer>
-          <Form form={form} className='irtp_model'>
+          <Form form={form} className="irtp_model">
             {/* <Form.Item label="账号">
               <Input
                 value={auth.userInfo?.userName || ''}
@@ -229,18 +229,18 @@ const EditPassword = () => {
                 style={{ width: 300 }}
               />
             </Form.Item> */}
-            <div className='irtp_model_small_text'>
-              <span className='span'>*</span>
+            <div className="irtp_model_small_text">
+              <span className="span">*</span>
               <span>新密码</span>
             </div>
             <Form.Item
               name="password"
               rules={[{ validator: Pwd, required: true }]}
             >
-              <Input placeholder="新密码" style={{ width: 368 }} />
+              <Input placeholder="新密码" />
             </Form.Item>
-            <div className='irtp_model_small_text'>
-              <span className='span'>*</span>
+            <div className="irtp_model_small_text">
+              <span className="span">*</span>
               <span>确认新密码</span>
             </div>
             <Form.Item
@@ -253,7 +253,7 @@ const EditPassword = () => {
               ]}
               name="confirmPassword"
             >
-              <Input placeholder="确认新密码" style={{ width: 368 }} />
+              <Input placeholder="确认新密码" />
             </Form.Item>
             {/* <Form.Item label="手机号">
               <Input

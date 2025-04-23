@@ -53,7 +53,7 @@ export const UserMenu: FC<UserMenuProps> = (props) => {
   );
   return (
     <Container>
-      {!isLoading && data?.fullName && (
+      {/* {!isLoading && data?.fullName && (
         <div className="user-menu">
           <Avatar src={data?.avatar} size={32} />
           <StyledDropdown
@@ -76,7 +76,7 @@ export const UserMenu: FC<UserMenuProps> = (props) => {
           </StyledDropdown>
           <GlobalStyle />
         </div>
-      )}
+      )} */}
       <div className="user-menu">
         <ChangeTheme theme={theme} onChange={handleThemeChange} />
         <div className="flex">

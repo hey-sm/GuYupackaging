@@ -19,7 +19,7 @@ const UserInfoModal = () => {
       </span>
       <DraggableModal
         title="个人信息"
-        width="50%"
+        // width="80%"
         height={420}
         open={visible}
         footer={false}

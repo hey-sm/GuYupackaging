@@ -47,7 +47,7 @@ const ButtonWrapper = styled.div`
   button {
     background: transparent !important;
     transition: color 0.3s;
-    color: rgba(0, 0, 0, 0.45) !important;
+    /* color: rgba(0, 0, 0, 0.45) !important; */
     &:hover {
       color: rgba(0, 0, 0, 0.75) !important;
     }
