@@ -4,6 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start:admin": "nx serve admin",
+    "build:admin": "NODE_OPTIONS=--max-old-space-size=8192 nx build admin",
+    "preview:admin": "nx preview admin",
     "start:f-cmpt": "nx storybook features-components",
     "start:f-arch": "nx storybook features-architecture"
   },
