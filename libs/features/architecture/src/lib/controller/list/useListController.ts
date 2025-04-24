@@ -83,49 +83,48 @@ export const useListController = <RecordType extends RaRecord = any>(
     disableSyncWithLocation,
   });
 
-  const [selectedIds, selectionModifiers] = useRecordSelection(resource as string);
-
-  const {
-    data = [],
-    pageInfo,
-    total = 0,
-    error,
-    isLoading,
-    isFetching,
-    refetch,
-  } = useGetList<RecordType>(
-    resource as string,
-    {
-      pagination: {
-        page: query.page,
-        perPage: query.perPage,
-      },
-      sort: { field: query.sort, order: query.order },
-      filter: { ...query.filter, ...filter },
-      meta,
-    },
-    {
-      keepPreviousData: true,
-      retry: false,
-      ...(otherQueryOptions as any),
-    }
+  const [selectedIds, selectionModifiers] = useRecordSelection(
+    resource as string
   );
+
+  const { data = [], pageInfo, total = 0, error, isLoading, isFetching, refetch } = useMemo(() => {
+    return useGetList<RecordType>(
+      resource as string,
+      {
+        pagination: {
+          page: query.page,
+          perPage: query.perPage,
+        },
+        sort: { field: query.sort, order: query.order },
+        filter: { ...query.filter, ...filter },
+        meta,
+      },
+      {
+        keepPreviousData: true,
+        retry: false,
+        ...(otherQueryOptions as any),
+      }
+    );
+  }, [resource, query.page, query.perPage, query.sort, query.order, query.filter, filter, meta, otherQueryOptions]);
 
   // change page if there is no data
   useEffect(() => {
-    if (query.page <= 0 || (!isFetching && query.page > 1 && data.length === 0)) {
+    if (
+      query?.page <= 0 ||
+      (!isFetching && query?.page > 1 && data?.length === 0)
+    ) {
       // Query for a page that doesn't exist, set page to 1
-      queryModifiers.setPage(1);
+      queryModifiers?.setPage(1);
       return;
     }
     if (total == null) {
       return;
     }
     const totalPages = Math.ceil(total / query.perPage) || 1;
-    if (!isFetching && query.page > totalPages) {
+    if (!isFetching && query?.page > totalPages) {
       // Query for a page out of bounds, set page to the last existing page
       // It occurs when deleting the last element of the last page
-      queryModifiers.setPage(totalPages);
+      queryModifiers?.setPage(totalPages);
     }
   }, [isFetching, query.page, query.perPage, data, queryModifiers, total]);
 
@@ -162,8 +161,12 @@ export const useListController = <RecordType extends RaRecord = any>(
     setSort: queryModifiers.setSort,
     showFilter: queryModifiers.showFilter,
     total: total,
-    hasNextPage: pageInfo ? !!pageInfo.hasNextPage : total != null ? query.page * query.perPage < total : false,
-    hasPreviousPage: pageInfo ? !!pageInfo.hasPreviousPage : query.page > 1,
+    hasNextPage: pageInfo
+      ? !!pageInfo?.hasNextPage
+      : total != null
+      ? query?.page * query?.perPage < total
+      : false,
+    hasPreviousPage: pageInfo ? !!pageInfo?.hasPreviousPage : query?.page > 1,
   };
 };
 

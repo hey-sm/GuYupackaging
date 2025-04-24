@@ -21,6 +21,7 @@ import { authProvider } from './authProvider';
 import { Workbench } from '@org/admin-modules';
 import { useTranslation } from 'react-i18next';
 import { useMemo } from 'react';
+import { LoadingBarContainer } from 'react-top-loading-bar';
 
 moment.locale('zh-cn');
 
@@ -70,20 +71,26 @@ export function App() {
   return (
     <AliyunOSSProvider config={aliyunOSSConfig}>
       <AliveScope>
-        <ConfigProvider
-          locale={currentLang === 'zh' ? zhCN : enUS}
-          theme={{
-            cssVar: true,
-            algorithm:
-              theme === 'dark'
-                ? AntdTheme.darkAlgorithm
-                : AntdTheme.defaultAlgorithm,
+        <LoadingBarContainer
+          props={{
+            color: 'blue',
           }}
         >
-          <Admin authProvider={authProvider} resources={[]}>
-            <RouterProvider router={router} />
-          </Admin>
-        </ConfigProvider>
+          <ConfigProvider
+            locale={currentLang === 'zh' ? zhCN : enUS}
+            theme={{
+              cssVar: true,
+              algorithm:
+                theme === 'dark'
+                  ? AntdTheme.darkAlgorithm
+                  : AntdTheme.defaultAlgorithm,
+            }}
+          >
+            <Admin authProvider={authProvider} resources={[]}>
+              <RouterProvider router={router} />
+            </Admin>
+          </ConfigProvider>
+        </LoadingBarContainer>
       </AliveScope>
     </AliyunOSSProvider>
   );

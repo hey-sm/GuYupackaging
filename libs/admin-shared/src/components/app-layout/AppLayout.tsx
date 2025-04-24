@@ -5,12 +5,14 @@ import KeepAlive from 'react-activation';
 import { Outlet, useLocation, useMatches } from 'react-router-dom';
 import styled from 'styled-components';
 import GlobalStyle from '../../themes/global.style';
+import { useLoadingBar } from 'react-top-loading-bar';
 
 import GlobalSpinner from '../GlobalSpinner';
 
 import AppLayoutHeader from './AppLayoutHeader';
 import AppLayoutSider from './AppLayoutSider';
 import TagsView from './TagsView';
+import { useEffect, useLayoutEffect } from 'react';
 
 export const AppLayout = () => {
   // useEffect(() => {
@@ -25,7 +27,9 @@ export const AppLayout = () => {
   // }, [listen]);
 
   const { isLoading, data: userInfo } = useGetIdentity();
-
+  const { start, complete, decrease, increase } = useLoadingBar({
+    height: 3,
+  });
   // const getMenus = useGetMenus();
 
   // 如果last(matches) handle 的 cache = true 说明要缓存
@@ -40,7 +44,12 @@ export const AppLayout = () => {
   // if (isLoading || getMenus.isLoading) {
   //   return <GlobalSpinner size="large" tip="系统资源加载中..." />;
   // }
-
+  useLayoutEffect(() => {
+    start();
+  }, []);
+  useEffect(() => {
+    complete();
+  }, [location.pathname]);
   return (
     <Container>
       <GlobalStyle />

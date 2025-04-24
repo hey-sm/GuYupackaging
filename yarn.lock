@@ -4578,6 +4578,7 @@ __metadata:
     react-resizable: ^3.0.4
     react-router-dom: 6.8.1
     react-sortable-hoc: ^2.0.0
+    react-top-loading-bar: ^3.0.2
     react-use: ^17.4.0
     react-virtualized-auto-sizer: ^1.0.7
     react-virtuoso: ^4.1.0
@@ -20145,6 +20146,15 @@ __metadata:
     "@types/react":
       optional: true
   checksum: a7b0bf493c9231065ebafa84c4237aed997c746c561196121b7de82fe155a5355b372db5070a3ac9fe980cf7f60dc0f1e8cf6402a2aa5b2957392932ccf76e76
+  languageName: node
+  linkType: hard
+
+"react-top-loading-bar@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "react-top-loading-bar@npm:3.0.2"
+  peerDependencies:
+    react: ^16 || ^17 || ^18 || ^19
+  checksum: 5425a356fbea928f0ed823cd98bb88b753746a3bbd30b4be6eb068bab02c8be2c27161a4ef38aaa295756bb109408951ab50009ac7deee56657f8ef4f3184860
   languageName: node
   linkType: hard
 
