@@ -18,18 +18,20 @@ import { useNavigate } from 'react-router-dom';
 import EditPassword from '../../auth/editPassword';
 import UserInfoModal from './userInfo';
 import { useCollapsed, useTheme } from '@org/shared';
+import { useTranslation } from 'react-i18next';
 
 const AppLayoutHeader = () => {
   const { collapsed, setCollapsed } = useCollapsed();
   const navigate = useNavigate();
   const { theme, setTheme } = useTheme();
+  const { t } = useTranslation();
 
   const logoutMutation = useLogout();
 
   /** 退出登录 */
   const handleLogout = useCallback(() => {
     Modal.confirm({
-      title: '退出登录',
+      title: t('header.logout'),
       content: '是否确认退出登录？',
       onOk: () => {
         logoutMutation.mutate();
@@ -105,7 +107,7 @@ const AppLayoutHeader = () => {
                 label: (
                   <Space>
                     <LogoutOutlined />
-                    <span className="ml-[2px]">退出登录</span>
+                    <span className="ml-[2px]">{t('header.logout')}</span>
                   </Space>
                 ),
                 onClick: handleLogout,

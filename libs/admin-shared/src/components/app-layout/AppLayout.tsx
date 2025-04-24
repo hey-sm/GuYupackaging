@@ -82,7 +82,6 @@ const Container = styled(Layout)`
   }
 
   .ant-layout-content {
-    /* background-color: #f7f8fa; */
     display: flex;
     flex-direction: column;
     height: 100%;

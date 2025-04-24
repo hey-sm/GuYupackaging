@@ -15,8 +15,9 @@ import { AliveScope } from 'react-activation';
 import { createHashRouter, Navigate, RouterProvider } from 'react-router-dom';
 import 'moment/dist/locale/zh-cn';
 
-import { AliyunOSSProvider, ColorPicker, useTheme } from '@org/shared';
+import { AliyunOSSProvider, useTheme } from '@org/shared';
 import { authProvider } from './authProvider';
+import { Workbench } from '@org/admin-modules';
 
 moment.locale('zh-cn');
 
@@ -39,11 +40,7 @@ const router = createHashRouter([
       { index: true, element: <Navigate to="/workbench" replace /> },
       {
         path: 'workbench',
-        element: (
-          <div className="w-full h-full flex items-center justify-center text-[36px] text-color-primary">
-            <ColorPicker />
-          </div>
-        ),
+        element: <Workbench />,
       },
     ],
   },

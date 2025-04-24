@@ -37,5 +37,6 @@ nx serve admin
 包管理工具使用`yarn3.x`
 
 安装依赖
-`yarn`
+`yarn@3.x`
 
+使用管理员身份运行vscode

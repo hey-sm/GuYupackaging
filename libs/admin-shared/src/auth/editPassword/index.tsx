@@ -23,8 +23,10 @@ import { ForgetPwdEditRequest } from '../../model';
 import { useAuthStore } from '../auth.store';
 import Countdown, { CountdownRef } from './Countdown';
 import { Pwd, cPwd } from './rules';
+import { useTranslation } from 'react-i18next';
 
 const EditPassword = () => {
+  const { t } = useTranslation();
   const [visible, setVisible] = useState(false);
   const [checkShow, setShow] = useState(false);
   const [captchaVisible, setCaptchaVisible] = useState(false);
@@ -48,7 +50,7 @@ const EditPassword = () => {
         if (data?.code === '200') {
           form.resetFields();
           setVisible(false);
-          message.success('处理成功！系统退出请重新登录');
+          message.success(t('header.changeSuccess'));
           auth.logout();
         }
       },
@@ -165,7 +167,7 @@ const EditPassword = () => {
         }}
       >
         <EditOutlined />
-        <span className="ml-2.5">修改密码</span>
+        <span className="ml-2.5">{t('header.changepassword')}</span>
       </div>
 
       <Modal

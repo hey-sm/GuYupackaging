@@ -1,6 +1,14 @@
 {
-  "common": {
-    "welcome": "Welcome",
-    "login": "Sign in"
+  "header": {
+    "login": "Sign in",
+    "personalinfo": "personal info",
+    "changepassword": "change password",
+    "logout": "logout",
+    "test":"test",
+    "changeSuccess":"Successful handling! Please log in again when the system exits",
+    "logoutTip":"Have you confirmed your logout?"
+  },
+  "workbench":{
+    "welcome": "Welcome"
   }
 }

@@ -8,7 +8,9 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "types": ["./src/lib/types.d.ts"],
+    "types": [
+      "./src/lib/types.d.ts"
+    ],
     "esModuleInterop": true
   },
   "files": [],
@@ -17,5 +19,8 @@
     {
       "path": "./tsconfig.lib.json"
     }
-  ]
+  ],
+  "common": {
+    "personalinfo": "personal info"
+  }
 }

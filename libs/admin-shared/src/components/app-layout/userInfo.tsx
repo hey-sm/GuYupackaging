@@ -2,12 +2,13 @@ import { Card, Descriptions } from 'antd';
 import { useGetIdentity } from '@org/features/architecture';
 import { useState } from 'react';
 import DraggableModal from '../draggable-modal';
+import { useTranslation } from 'react-i18next';
 
 const { Item } = Descriptions;
 const UserInfoModal = () => {
   const { data: userInfo } = useGetIdentity();
   const [visible, setVisible] = useState(false);
-
+  const { t } = useTranslation();
   return (
     <>
       <span
@@ -15,10 +16,10 @@ const UserInfoModal = () => {
           setVisible(true);
         }}
       >
-        个人信息
+        {t('header.personalinfo')}
       </span>
       <DraggableModal
-        title="个人信息"
+        title={t('header.test')}
         // width="80%"
         height={420}
         open={visible}

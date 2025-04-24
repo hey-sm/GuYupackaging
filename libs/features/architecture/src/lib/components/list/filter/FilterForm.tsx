@@ -104,19 +104,11 @@ export const FilterForm: FC<
 };
 
 const Root = styled.div`
-  .ant-form .ant-form-item-label > label {
-    color: #4e5969;
-  }
-
   .ant-input,
   .ant-picker-input > input {
     &::placeholder {
-      color: #86909c;
+      /* color: #86909c; */
     }
-  }
-
-  .ant-select-selection-placeholder {
-    color: #86909c;
   }
 
   .ant-pro-query-filter-actions {
@@ -134,8 +126,6 @@ const Root = styled.div`
     .ant-btn-default {
       display: flex;
       align-items: center;
-      color: #1d2129;
-      background-color: #f2f3f5;
       border: none;
     }
   }

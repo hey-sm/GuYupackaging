@@ -1,6 +1,15 @@
 {
-  "common": {
+  "header": {
     "welcome": "欢迎",
-    "login": "登录"
+    "login": "登录",
+    "personalinfo": "个人信息",
+    "changepassword": "修改密码",
+    "logout": "退出登录",
+    "test":"测试",
+    "changeSuccess":"处理成功！系统退出请重新登录",
+    "logoutTip":"是否确认退出登录？"
+  },
+  "workbench":{
+    "welcome": "Welcome"
   }
 }

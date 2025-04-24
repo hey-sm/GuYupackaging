@@ -1,7 +1,10 @@
 {
-    "i18n-ally.localesPaths": [
-        "libs/i18n",
-        "libs/i18n/src/locales"
-    ],
-    "i18n-ally.keystyle": "nested"
+  "i18n-ally.localesPaths": ["libs/i18n", "libs/i18n/src/locales"],
+  "i18n-ally.keystyle": "nested", // JSON 的嵌套风格（可选）
+  "i18n-ally.sortKeys": false, // 自动排序 Key（可选）
+  "i18n-ally.sourceLanguage": "en", // 源语言（默认）
+  "i18n-ally.displayLanguage": "zh", // 在 VSCode 里显示的语言
+  "i18n-ally.enabledParsers": ["json"], // 支持的文件格式
+  "i18n-ally.namespace": true, // 是否启用命名空间（可选）
+  "i18n-ally.pathMatcher": "{locale}.{ext}" // 文件名匹配规则
 }

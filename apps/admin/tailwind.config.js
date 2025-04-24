@@ -15,7 +15,7 @@ module.exports = {
     extend: {
       colors: {
         "color-primary": "var(--ant-color-primary)"
-      }
+      },
     },
   },
   plugins: [],

@@ -6,6 +6,8 @@ import styled, { createGlobalStyle, css } from 'styled-components';
 import { useGetIdentity, useLogout } from '../../auth';
 import { UserIdentity } from '../../types';
 import ChangeTheme from './ChangeTheme';
+import SwitchLang from './SwitchLang';
+import { useTranslation } from 'react-i18next';
 
 const variants = {
   open: { transform: `rotateX(0)` },
@@ -20,6 +22,7 @@ export type UserMenuProps = {
 
 export const UserMenu: FC<UserMenuProps> = (props) => {
   const { menu: menuProp, theme, setTheme } = props;
+  const { t } = useTranslation();
   const { isLoading, data } = useGetIdentity<UserIdentity>();
 
   const logoutMutation = useLogout();
@@ -32,7 +35,7 @@ export const UserMenu: FC<UserMenuProps> = (props) => {
       items: [
         {
           key: 'logout',
-          label: <span>退出登录</span>,
+          label: <span>{t('header.logout')}</span>,
           onClick: () => {
             logoutMutation.mutate();
           },
@@ -79,7 +82,10 @@ export const UserMenu: FC<UserMenuProps> = (props) => {
       )} */}
       <div className="user-menu">
         <ChangeTheme theme={theme} onChange={handleThemeChange} />
-        <div className="flex">
+        <div>
+          <SwitchLang />
+        </div>
+        <div className="flex items-center">
           <Avatar src={data?.avatar} size={32} />
           <StyledDropdown
             onOpenChange={setOpen}
@@ -100,8 +106,8 @@ export const UserMenu: FC<UserMenuProps> = (props) => {
             </a>
           </StyledDropdown>
         </div>
-        <GlobalStyle />
       </div>
+      <GlobalStyle />
     </Container>
   );
 };
@@ -113,6 +119,7 @@ const GlobalStyle = createGlobalStyle`${css`
         1px 1px 2px 0px rgba(82, 90, 102, 0.04);
       border-radius: 8px;
       padding: 4px;
+      top: 5px;
 
       .ant-dropdown-menu-item {
         padding: 14px 16px;
@@ -136,6 +143,7 @@ const Container = styled.div`
   .user-menu {
     gap: 12px;
     display: flex;
+    align-items: center;
   }
 
   .full-name {

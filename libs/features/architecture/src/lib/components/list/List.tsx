@@ -41,7 +41,16 @@ export const List: FC<ListProps & { children?: ReactNode }> = ({
       <Root className={clsx('list-page', className)}>
         {aside}
         <div className="main">
-          {!!filters && <div className="filters">{filters}</div>}
+          {!!filters && (
+            <div
+              className="
+          filters
+               shadow-md
+          dark:shadow-[0_0_5px_0_rgba(210,210,210,13.08),0_2px_0_0_rgba(210,210,210,6.04)]"
+            >
+              {filters}
+            </div>
+          )}
 
           {(!!actions || !!bulkActionButtons) && (
             <Space className="actions">
@@ -75,24 +84,24 @@ const Root = styled.div`
   }
 
   .filters {
-    box-shadow: 2px 2px 8px 0px rgba(82, 90, 102, 0.08),
-      1px 1px 2px 0px rgba(82, 90, 102, 0.04);
+    /* box-shadow: 2px 2px 8px 0px rgba(82, 90, 102, 0.08),
+      1px 1px 2px 0px rgba(82, 90, 102, 0.04); */
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    background-color: #fff;
+    /* background-color: #fff; */
     margin-bottom: 2px;
     z-index: 10;
     position: relative;
 
     .ant-pro-query-filter {
       padding: 20px 20px 0px 20px;
-      .ant-input-affix-wrapper{
+      .ant-input-affix-wrapper {
         border-radius: 6px;
       }
-      .ant-select-selector{
+      .ant-select-selector {
         border-radius: 6px !important;
       }
-      .ant-picker-range{
+      .ant-picker-range {
         border-radius: 6px !important;
       }
     }
@@ -107,7 +116,6 @@ const Root = styled.div`
       1px 1px 2px 0px rgba(82, 90, 102, 0.04);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    background-color: #fff;
     z-index: 8;
     position: relative;
 

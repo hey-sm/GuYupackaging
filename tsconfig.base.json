@@ -16,6 +16,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@org/admin-modules": ["libs/admin-modules/src/index.ts"],
       "@org/admin-shared": ["libs/admin-shared/src/index.ts"],
       "@org/features/architecture": ["libs/features/architecture/src/index.ts"],
       "@org/features/components": ["libs/features/components/src/index.ts"],
