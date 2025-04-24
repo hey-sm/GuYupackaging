@@ -58,7 +58,9 @@ export const List: FC<ListProps & { children?: ReactNode }> = ({
             </Space>
           )}
 
-          <div className="content">{children}</div>
+          <div className="content shadow-md dark:shadow-[0_0_5px_0_rgba(210,210,210,13.08),0_2px_0_0_rgba(210,210,210,6.04)]">
+            {children}
+          </div>
         </div>
       </Root>
     </ListBase>
@@ -112,8 +114,8 @@ const Root = styled.div`
   }
 
   .content {
-    box-shadow: 2px 2px 8px 0px rgba(82, 90, 102, 0.08),
-      1px 1px 2px 0px rgba(82, 90, 102, 0.04);
+    /* box-shadow: 2px 2px 8px 0px rgba(82, 90, 102, 0.08),
+      1px 1px 2px 0px rgba(82, 90, 102, 0.04); */
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     z-index: 8;
