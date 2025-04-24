@@ -8,6 +8,7 @@ import {
 } from '@org/admin-shared';
 import { ConfigProvider, theme as AntdTheme } from 'antd';
 import zhCN from 'antd/es/locale/zh_CN';
+import enUS from 'antd/es/locale/en_US';
 import { Admin } from '@org/features/architecture';
 
 import moment from 'moment';
@@ -18,6 +19,8 @@ import 'moment/dist/locale/zh-cn';
 import { AliyunOSSProvider, useTheme } from '@org/shared';
 import { authProvider } from './authProvider';
 import { Workbench } from '@org/admin-modules';
+import { useTranslation } from 'react-i18next';
+import { useMemo } from 'react';
 
 moment.locale('zh-cn');
 
@@ -62,11 +65,13 @@ const router = createHashRouter([
 
 export function App() {
   const { theme } = useTheme();
+  const { i18n } = useTranslation();
+  const currentLang = useMemo(() => i18n.language, [i18n.language]);
   return (
     <AliyunOSSProvider config={aliyunOSSConfig}>
       <AliveScope>
         <ConfigProvider
-          locale={zhCN}
+          locale={currentLang === 'zh' ? zhCN : enUS}
           theme={{
             cssVar: true,
             algorithm:
