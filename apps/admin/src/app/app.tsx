@@ -73,7 +73,7 @@ export function App() {
       <AliveScope>
         <LoadingBarContainer
           props={{
-            color: 'blue',
+            color: 'var(--primary-color)',
           }}
         >
           <ConfigProvider
