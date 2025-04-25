@@ -20,7 +20,7 @@ import { AliyunOSSProvider, useTheme } from '@org/shared';
 import { authProvider } from './authProvider';
 import { Workbench } from '@org/admin-modules';
 import { useTranslation } from 'react-i18next';
-import { useMemo } from 'react';
+import { useEffect, useMemo } from 'react';
 import { LoadingBarContainer } from 'react-top-loading-bar';
 
 moment.locale('zh-cn');
@@ -46,6 +46,10 @@ const router = createHashRouter([
         path: 'workbench',
         element: <Workbench />,
       },
+      {
+        path: 'workbench2',
+        element: <Workbench />,
+      },
     ],
   },
   {
@@ -68,6 +72,19 @@ export function App() {
   const { theme } = useTheme();
   const { i18n } = useTranslation();
   const currentLang = useMemo(() => i18n.language, [i18n.language]);
+
+  useEffect(() => {
+    const originalConsoleError = console.error;
+    console.error = (...args) => {
+      if (typeof args[0] === 'string' && args[0]?.includes('findDOMNode')) {
+        return; // 忽略警告
+      }
+      originalConsoleError(...args);
+    };
+    return () => {
+      console.error = originalConsoleError; // 恢复
+    };
+  }, []);
   return (
     <AliyunOSSProvider config={aliyunOSSConfig}>
       <AliveScope>

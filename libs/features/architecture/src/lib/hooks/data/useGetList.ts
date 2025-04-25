@@ -46,7 +46,7 @@ export const useGetList = <RecordType extends RaRecord = any>(
           filter,
           meta,
         })
-        .then(({ data, total, pageInfo }) => ({
+        ?.then(({ data, total, pageInfo }) => ({
           data,
           total,
           pageInfo,

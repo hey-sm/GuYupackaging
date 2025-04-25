@@ -2,11 +2,11 @@ import { Layout } from 'antd';
 import { useGetIdentity } from '@org/features/architecture';
 import { last } from 'lodash-es';
 import KeepAlive from 'react-activation';
-import { Outlet, useLocation, useMatches } from 'react-router-dom';
+import { Outlet, useLocation, useMatches, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import GlobalStyle from '../../themes/global.style';
 import { useLoadingBar } from 'react-top-loading-bar';
-
+import i18n from 'i18next';
 import GlobalSpinner from '../GlobalSpinner';
 
 import AppLayoutHeader from './AppLayoutHeader';
@@ -15,6 +15,7 @@ import TagsView from './TagsView';
 import { useEffect, useLayoutEffect } from 'react';
 
 export const AppLayout = () => {
+  const navigate = useNavigate();
   // useEffect(() => {
   //   const layoutListen = listen(LayoutEvent.CHANGE_SIDER, (e) => {
   //     const et = e as CustomEvent<boolean>;
@@ -49,7 +50,20 @@ export const AppLayout = () => {
   }, []);
   useEffect(() => {
     complete();
-  }, [location.pathname]);
+    // 只在初始化时绑定一次语言变化监听
+    const handleLanguageChange = () => {
+      navigate(`${location.pathname}?force=${Date.now()}`, { replace: true });
+    };
+
+    i18n.on('languageChanged', handleLanguageChange);
+
+    return () => {
+      i18n.off('languageChanged', handleLanguageChange); // 清理监听
+      start();
+    };
+  }, [location.pathname, location.search]); // 空依赖，仅运行一次
+
+  // 监听后续变更
   return (
     <Container>
       <GlobalStyle />

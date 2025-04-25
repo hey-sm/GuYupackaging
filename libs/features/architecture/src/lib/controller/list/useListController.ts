@@ -87,25 +87,31 @@ export const useListController = <RecordType extends RaRecord = any>(
     resource as string
   );
 
-  const { data = [], pageInfo, total = 0, error, isLoading, isFetching, refetch } = useMemo(() => {
-    return useGetList<RecordType>(
-      resource as string,
-      {
-        pagination: {
-          page: query.page,
-          perPage: query.perPage,
-        },
-        sort: { field: query.sort, order: query.order },
-        filter: { ...query.filter, ...filter },
-        meta,
+  const {
+    data = [],
+    pageInfo,
+    total = 0,
+    error,
+    isLoading,
+    isFetching,
+    refetch,
+  } = useGetList<RecordType>(
+    resource as string,
+    {
+      pagination: {
+        page: query.page,
+        perPage: query.perPage,
       },
-      {
-        keepPreviousData: true,
-        retry: false,
-        ...(otherQueryOptions as any),
-      }
-    );
-  }, [resource, query.page, query.perPage, query.sort, query.order, query.filter, filter, meta, otherQueryOptions]);
+      sort: { field: query.sort, order: query.order },
+      filter: { ...query.filter, ...filter },
+      meta,
+    },
+    {
+      keepPreviousData: true,
+      retry: false,
+      ...(otherQueryOptions as any),
+    }
+  );
 
   // change page if there is no data
   useEffect(() => {

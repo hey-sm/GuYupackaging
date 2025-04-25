@@ -33,16 +33,6 @@ export function initI18n() {
         // // 初始化后强制检测
         // i18n.changeLanguage(i18n.language).then(() => {
         //   console.log('当前语言:', i18n.language);
-        //   console.log('localStorage:', localStorage.getItem('i18nextLng'));
-        // });
-        // // 监听后续变更
-        // i18n.on('languageChanged', (lng) => {
-        //   console.log(
-        //     '语言变更:',
-        //     lng,
-        //     'localStorage:',
-        //     localStorage.getItem('i18nextLng')
-        //   );
         // });
       }
     );
